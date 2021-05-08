@@ -15,8 +15,8 @@ export const StyledHeader = styled.div`
 	transition: all 0.5s;
 	/* padding: 5rem; */
 
-	@media (max-width: 991px) {
-		//xl 1199px, 991 lg
+	@media (max-width: 992px) {
+		//xl 1199px, 992 lg
 		left: -330px;
 	}
 

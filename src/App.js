@@ -16,9 +16,9 @@ function App() {
 	return (
 		
 		<div>
-			<Background />
+			{/* <Background />
 			<Header />
-			<MobileHeader/>
+			<MobileHeader/> */}
 
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>

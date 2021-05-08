@@ -7,7 +7,7 @@ export default function Header() {
 	return (
 		<StyledHeader>
 			<ProfilePicture />
-			<h1>Vilmar Cabanero</h1>
+			<h1>Vilmar Cabañero</h1>
 			<SocialLinks />
 			<NavLinks />
 		</StyledHeader>
