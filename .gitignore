@@ -11,6 +11,9 @@
 # production
 /build
 
+#npm lang gamitin
+/yarn.lock
+
 # misc
 .DS_Store
 .env.local

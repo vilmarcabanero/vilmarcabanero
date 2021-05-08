@@ -6,7 +6,8 @@ export const StyledNavLinks = styled.div`
 
 	a {
 		text-decoration: none;
-		display: flex;
+		display: grid;
+    grid-template-columns: 10% auto auto;
 		align-items: center;
 		justify-content: flex-start;
 		padding: 1rem;
