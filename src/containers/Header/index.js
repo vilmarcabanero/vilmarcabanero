@@ -4,6 +4,7 @@ import SocialLinks from '../../components/SocialLinks'
 import NavLinks from '../../components/NavLinks'
 
 export default function Header() {
+	
 	return (
 		<StyledHeader>
 			<ProfilePicture />

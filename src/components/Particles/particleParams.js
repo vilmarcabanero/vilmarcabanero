@@ -3,7 +3,7 @@ const particlesParams = {
 		number: {
 			// value: 80,
 			// value: 65,
-			value: 30,
+			value: 60,
 			density: {
 				enable: true,
 				value_area: 800,
@@ -56,7 +56,7 @@ const particlesParams = {
 		},
 		move: {
 			enable: true,
-			speed: 0.15,
+			speed: 0.5,
 			direction: 'none',
 			random: false,
 			straight: false,

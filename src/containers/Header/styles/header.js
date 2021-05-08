@@ -7,12 +7,13 @@ export const StyledHeader = styled.div`
 	top: 0;
 	bottom: 0;
 	color: white;
-	background-color: rgba(0, 0, 0, 0.7);
+	/* background-color: rgba(0, 0, 0, 0.7); */
+	background-color: ${props => props.theme.headerBackground};
 	box-shadow: 5px 5px 10px gray;
 	border-radius: 5px;
 
-	transition: all ease-in-out 0.5s;
-	transition: all 0.5s;
+	transition: all ease-in-out 1s;
+	transition: all 1s;
 	/* padding: 5rem; */
 
 	@media (max-width: 992px) {

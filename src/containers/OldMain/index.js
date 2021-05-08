@@ -1,9 +1,6 @@
+import { StyledMain } from './styles/main'
 import { CgSun } from 'react-icons/cg'
 import { HiMoon } from 'react-icons/hi'
-
-import  {Container} from './styles/main'
-
-import Banner from '../../components/Banner'
 
 export default function Main(props) {
 	function changeTheme() {
@@ -17,10 +14,10 @@ export default function Main(props) {
 	const icon =
 		props.theme === 'light' ? <CgSun size={40} /> : <HiMoon size={40} />
 
+
 	return (
-		<Container>
-				<Banner/>
-		</Container>
+		<StyledMain>
+			<button onClick={changeTheme}> {icon} </button>
+		</StyledMain>
 	)
 }
-
