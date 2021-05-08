@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom'
 import { StyledNavLinks } from './styles/navLinks'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import {
 	faHome,
 	faUser,
@@ -12,30 +12,30 @@ import {
 export default function NavLinks() {
 	return (
 		<StyledNavLinks>
-			<a href='/'>
+			<Link to='/'>
 				<FontAwesomeIcon className='icon' icon={faHome} />
 				<span> Home </span>
-			</a>
+			</Link>
 
-			<a href='/'>
+			<Link to='/about'>
 				<FontAwesomeIcon className='icon' icon={faUser} />
 				<span> About </span>
-			</a>
+			</Link>
 
-			<a href='/'>
+			<Link to='/resume'>
 				<FontAwesomeIcon className='icon' icon={faFile} />
 				<span> Resume </span>
-			</a>
+			</Link>
 
-			<a href='/'>
+			<Link to='/projects'>
 				<FontAwesomeIcon className='icon' icon={faFileCode} />
 				<span> Projects </span>
-			</a>
+			</Link>
 
-			<a href='/'>
+			<Link to='/contact'>
 				<FontAwesomeIcon className='icon' icon={faEnvelope} />
 				<span> Contact </span>
-			</a>
+			</Link>
 		</StyledNavLinks>
 	)
 }

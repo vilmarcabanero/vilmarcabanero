@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import Main from '../containers/Main'
 import Banner from '../components/Banner'
 
-const Home = () => {
+const Resume = () => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -17,4 +17,4 @@ const Home = () => {
 	)
 }
 
-export default Home
+export default Resume

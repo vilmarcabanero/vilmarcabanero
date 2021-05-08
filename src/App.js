@@ -4,8 +4,11 @@ import { AnimatePresence } from 'framer-motion'
 
 import Background from './containers/Background'
 import Header from './containers/Header'
-
 import HomePage from './pages/Home'
+import AboutPage from './pages/About'
+import ResumePage from './pages/Resume'
+import ProjectsPage from './pages/Projects'
+import ContactPage from './pages/Contact'
 
 function App() {
 	const location = useLocation()
@@ -17,7 +20,11 @@ function App() {
 
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
-					<Route exact path='/s' component={HomePage} />
+					<Route exact path='/' component={HomePage} />
+					<Route exact path='/about' component={AboutPage} />
+					<Route exact path='/resume' component={ResumePage} />
+					<Route exact path='/projects' component={ProjectsPage} />
+					<Route exact path='/contact' component={ContactPage} />
 				</Switch>
 			</AnimatePresence>
 		</div>
