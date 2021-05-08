@@ -12,4 +12,9 @@ export const StyledHeader = styled.div`
   box-shadow: 5px 5px 10px gray;
   border-radius: 5px;
   /* padding: 5rem; */
+
+  h1 {
+    text-align: center;
+    font-size: 24px;
+  }
 `

@@ -2,11 +2,15 @@ import {StyledHeader} from './styles/header'
 import ProfilePicture from '../../components/ProfilePicture'
 import SocialLinks from '../../components/SocialLinks'
 
+
+
 export default function Header() {
 	return (
 		<StyledHeader>
       <ProfilePicture/>
+			<h1>Vilmar Cabanero</h1>
       <SocialLinks/>
+			
 			<h1>Hello</h1>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsum
