@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import Main from '../containers/Main'
+import Contact from '../components/Contact'
 import { ThemeProvider } from 'styled-components'
 import { themes } from '../helpers/theme'
 
-const Contact = () => {
+const ContactPage = () => {
 	const [theme, setTheme] = useState('dark')
 	return (
 		<motion.div
@@ -14,12 +14,10 @@ const Contact = () => {
 			transition={{ duration: 0.5 }}
 		>
 			<ThemeProvider theme={themes[theme]}>
-				<Main theme={theme} setTheme={setTheme}>
-				<h1>This is the Contact page.</h1>
-				</Main>
+				<Contact theme={theme} setTheme={setTheme}  />
 			</ThemeProvider>
 		</motion.div>
 	)
 }
 
-export default Contact
+export default ContactPage

@@ -17,6 +17,9 @@ import DarkPage from './pages/Dark'
 import Main from './containers/Main'
 import Banner from './components/Banner'
 
+import { Row, Col } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.css'
+
 const App = () => {
 	const [theme, setTheme] = useState('dark')
 	const location = useLocation()
