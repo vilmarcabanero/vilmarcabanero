@@ -8,7 +8,7 @@ export const StyledProfile = styled.img`
 	display: block;
 	border-radius: 50%;
 	box-shadow: 5px 5px 10px gray;
-	border: 1px solid gray;
+	/* border: 1px solid gray; */
 	transition: 1s;
 
 	&:hover {

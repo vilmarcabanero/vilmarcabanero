@@ -17,8 +17,8 @@ export const StyledSocialLinks = styled.div`
 		color: white;
 		display: inline-block;
 		background: #212431;
-    border: 1px solid gray;
-		box-shadow: 4px 4px 8px gray;
+    /* border: 1px solid gray; */
+		box-shadow: 3px 3px 6px gray;
 		margin-right: 4px;
 		border-radius: 50%;
 		text-align: center;
