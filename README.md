@@ -1,7 +1,7 @@
+<img width="100%" height="100%" style="display:inline; border-radius:5px; box-shadow: 5px 5px 10px gray;" align="center" src="./banner.JPG" />
 
-<img width="100%" height="100%" style="display:inline" align="center" src="./banner.JPG" />
+[//]: # 'IMG SHIELDS FROM: https://github.com/alexandresanlim/Badges4-README.md-Profile'
 
-[//]: # (IMG SHIELDS FROM: https://github.com/alexandresanlim/Badges4-README.md-Profile)
 <h2><samp>👋 Hi</samp></h2>
 
 <samp>
@@ -30,7 +30,6 @@
 <img width="49%" heigth="100%" style="display:inline" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vilmarcabanero&hide=html,css,scss,sass,shell=html&theme=gotham&langs_count=6&layout=compact" />
 </p>
 
-
 <h2><samp>💪 STRONG STACK</samp></h2>
 
 <p>
@@ -39,8 +38,6 @@
     <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB">
     <img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white">
 </p>
-
-
 
 <h2><samp>🎨 FRONTEND TECHNOLOGIES</samp></h2>
 
@@ -71,7 +68,6 @@
 <p>
     <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white">
 <p>
-
 
 <h2><samp>🌏 SERVER</samp></h2>
 
