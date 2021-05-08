@@ -12,7 +12,6 @@ import AboutPage from './pages/About'
 import ResumePage from './pages/Resume'
 import ProjectsPage from './pages/Projects'
 import ContactPage from './pages/Contact'
-import DarkPage from './pages/Dark'
 
 import Main from './containers/Main'
 import Banner from './components/Banner'
@@ -44,7 +43,6 @@ const App = () => {
 					<Route exact path='/resume' component={ResumePage} />
 					<Route exact path='/projects' component={ProjectsPage} />
 					<Route exact path='/contact' component={ContactPage} />
-					<Route exact path='/dark' component={DarkPage} />
 				</Switch>
 			</AnimatePresence>
 		</div>
