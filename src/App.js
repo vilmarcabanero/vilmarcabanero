@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion'
 
 import Background from './containers/Background'
 import Header from './containers/Header'
+import MobileHeader from './containers/MobileHeader'
 import HomePage from './pages/Home'
 import AboutPage from './pages/About'
 import ResumePage from './pages/Resume'
@@ -17,6 +18,7 @@ function App() {
 		<div>
 			<Background />
 			<Header />
+			<MobileHeader/>
 
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
