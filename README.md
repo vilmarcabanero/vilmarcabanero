@@ -8,9 +8,9 @@
     <ul>
         <li><strong>What I'm currently building?</strong>
             <ul>
-                <li>Entropiya<a href="https://github.com/vilmarcabanero/entropiya-client">🔜</a></li>
-                <li>Niventa<a href="https://github.com/vilmarcabanero/niventa-client">🔜</a></li>
-                <li>Portfolio 🔜</li>
+                <li>Entropiya<a href="https://github.com/vilmarcabanero/entropiya-client">📦</a></li>
+                <li>Niventa<a href="https://github.com/vilmarcabanero/niventa-client">📦</a></li>
+                <li>Portfolio <a href="https://github.com/vilmarcabanero/vilmarcabanero">📦</a></li>
             </ul>
         </li><br/>
         <li><strong>What I'm planning to study?</strong>
@@ -27,7 +27,7 @@
 <p align="center">
 <img width="49%" heigth="100%" style="display:inline" align="center" src="https://github-readme-stats.vercel.app/api?username=vilmarcabanero&show_icons=true&line_height=27&count_private=true&theme=gotham&card_width=300&include_all_commits=true" />
 
-<img width="49%" heigth="100%" style="display:inline" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vilmarcabanero&hide=html,css,scss,sass,shell=html&theme=gotham&langs_count=6&layout=compact" />
+<img width="49%" heigth="100%" style="display:inline" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vilmarcabanero&hide=shell,html,css,scss,sass=html&theme=gotham&langs_count=6&layout=compact" />
 </p>
 
 <h2><samp>💪 STRONG STACK</samp></h2>
