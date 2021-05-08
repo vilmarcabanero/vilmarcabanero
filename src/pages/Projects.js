@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import Main from '../containers/Main'
+import Projects from '../components/Projects'
 import { ThemeProvider } from 'styled-components'
 import { themes } from '../helpers/theme'
 
-const Projects = () => {
+const ProjectPage = () => {
 	const [theme, setTheme] = useState('dark')
 	return (
 		<motion.div
@@ -14,12 +14,10 @@ const Projects = () => {
 			transition={{ duration: 0.5 }}
 		>
 			<ThemeProvider theme={themes[theme]}>
-				<Main theme={theme} setTheme={setTheme}>
-					This is the projects page.
-				</Main>
+				<Projects theme={theme} setTheme={setTheme}/>
 			</ThemeProvider>
 		</motion.div>
 	)
 }
 
-export default Projects
+export default ProjectPage

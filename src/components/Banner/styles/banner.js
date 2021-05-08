@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
 	position: relative;
 	margin-left: 300px;
+	width: inherit;
 	height: 100vh;
 
 	display: flex;
@@ -36,6 +37,7 @@ export const Container = styled.div`
 	}
 
 	background-color: ${props => props.theme.bannerBackground};
+
 `
 
 export const Section = styled.section`

@@ -9,7 +9,7 @@ export const StyledHeader = styled.div`
 	color: white;
 	/* background-color: rgba(0, 0, 0, 0.7); */
 	background-color: ${props => props.theme.headerBackground};
-	box-shadow: 5px 5px 10px gray;
+	box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
 	border-radius: 5px;
 
 	transition: all ease-in-out 1s;

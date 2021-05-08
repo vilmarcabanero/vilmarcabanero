@@ -4,7 +4,7 @@ import {
 	Name,
 	Details,
 	ButtonGroup,
-	Button
+	Button,
 } from './styles/banner'
 import { Row, Col } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -12,15 +12,16 @@ import profile from '../../assets/images/profile-pic.jpg'
 
 export default function Banner() {
 	return (
-		<Container >
+		<Container>
 			<Section className='text-center'>
+				<Row>
 					<Name>Hi. I'm Vilmar.</Name>
 					<Details>
 						I'm an engineer turned developer. I specialize in Full Stack
 						Development using the MERN technology.
 					</Details>
+				</Row>
 			</Section>
 		</Container>
-	
 	)
 }

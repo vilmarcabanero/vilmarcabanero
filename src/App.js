@@ -26,26 +26,24 @@ const App = () => {
 			<ThemeProvider theme={themes[theme]}>
 				<Background theme={theme} setTheme={setTheme} />
 				<Header theme={theme} setTheme={setTheme} />
-				<MobileHeader theme={theme} setTheme={setTheme}/>
+				<MobileHeader theme={theme} setTheme={setTheme} />
 
-				<Banner theme={theme} setTheme={setTheme} />
+				{/* <Banner theme={theme} setTheme={setTheme} />
 
-				<Main theme={theme} setTheme={setTheme} />
-				
-				</ThemeProvider>
+				<Main theme={theme} setTheme={setTheme} /> */}
+			</ThemeProvider>
 			{/* <NightMode/> */}
-{/* 
+
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
-					<Route exact path='/' component={HomePage} />
+					<Route theme={theme} setTheme={setTheme} exact path='/' component={HomePage} />
 					<Route exact path='/about' component={AboutPage} />
 					<Route exact path='/resume' component={ResumePage} />
 					<Route exact path='/projects' component={ProjectsPage} />
 					<Route exact path='/contact' component={ContactPage} />
 					<Route exact path='/dark' component={DarkPage} />
 				</Switch>
-			</AnimatePresence> */}
-		
+			</AnimatePresence>
 		</div>
 	)
 }

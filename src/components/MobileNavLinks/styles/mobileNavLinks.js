@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const StyledMobileNavLinks = styled.div`
 	padding: 0;
 
+	background-color: ${props => props.theme.headerBackground};
+	box-shadow: 5px -5px 10px ${props => props.theme.boxShadowColor};
+	border-radius: 5px;
+
 	.col {
 		padding: 0;
 	}

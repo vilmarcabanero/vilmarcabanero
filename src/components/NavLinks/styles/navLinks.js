@@ -7,7 +7,7 @@ export const StyledNavLinks = styled.div`
 	a {
 		text-decoration: none;
 		display: grid;
-    grid-template-columns: 10% auto auto;
+		grid-template-columns: 10% auto auto;
 		align-items: center;
 		justify-content: flex-start;
 		padding: 1rem;
@@ -53,6 +53,12 @@ export const StyledNavLinks = styled.div`
 
 		&:hover {
 			color: white;
+		}
+	}
+
+	.active {
+		.icon, span {
+			color: #149ddd;
 		}
 	}
 `

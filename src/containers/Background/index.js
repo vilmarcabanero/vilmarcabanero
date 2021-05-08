@@ -15,7 +15,7 @@ export default function Background(props) {
 		}
 	}
 	const icon =
-		props.theme === 'light' ? <CgSun size={40} /> : <HiMoon size={40} />
+		props.theme === 'light' ? <CgSun className='toggle' /> : <HiMoon className='toggle' />
 
 	return (
 		<div>

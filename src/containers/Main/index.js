@@ -3,6 +3,6 @@ import Banner from '../../components/Banner'
 
 export default function Main() {
 	return (<Container>
-		<h1>Hello from Main.</h1>
+		<h1 id='main'>Hello from Main.</h1>
 	</Container>)
 }

@@ -1,10 +1,8 @@
-import styled from "styled-components";
-
+import styled from 'styled-components'
 
 export const StyledBackground = styled.div`
-  z-index: -999;
+	z-index: -999;
 `
-
 
 export const Toggle = styled.button`
 	position: fixed;
@@ -13,9 +11,10 @@ export const Toggle = styled.button`
 	cursor: pointer;
 	height: 50px;
 	width: 50px;
+
 	border-radius: 50%;
 	border: none;
-  z-index: 9999;
+	z-index: 9999;
 	background-color: ${props => props.theme.tertiaryColor};
 	color: white;
 	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
@@ -23,5 +22,22 @@ export const Toggle = styled.button`
 		outline: none;
 	}
 	transition: all 0.5s ease;
-`
 
+	.toggle {
+		width: 40px;
+		height: 40px;
+	}
+
+	@media (max-width: 992px) {
+		//xl 1200px, 992 lg
+		top: 10px;
+		right: 15px;
+		height: 40px;
+		width: 40px;
+
+		.toggle {
+			width: 30px;
+			height: 30px;
+		}
+	}
+`
