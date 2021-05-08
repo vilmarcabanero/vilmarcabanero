@@ -1,24 +1,23 @@
 import { StyledSocialLinks } from './styles/socialLinks'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import {
-	faEyeSlash,
-	faUser,
-	faFile,
-	faFileCode,
-  faFacebookF
-} from '@fortawesome/free-solid-svg-icons'
+	faFacebookF,
+	faTwitter,
+	faGithub,
+} from '@fortawesome/free-brands-svg-icons'
 
 export default function SocialLinks() {
 	return (
 		<StyledSocialLinks>
 			<a href='/'>
-				<FontAwesomeIcon className='icon' icon={faEyeSlash} />
+				<FontAwesomeIcon className='icon' icon={faFacebookF} />
 			</a>
 			<a href='/'>
-				<FontAwesomeIcon className='icon' icon={faUser} />
+				<FontAwesomeIcon className='icon' icon={faTwitter} />
 			</a>
 			<a href='/'>
-				<FontAwesomeIcon className='icon' icon={faFile} />
+				<FontAwesomeIcon className='icon' icon={faGithub} />
 			</a>
 		</StyledSocialLinks>
 	)

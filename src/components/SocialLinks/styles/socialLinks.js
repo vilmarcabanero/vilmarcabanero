@@ -5,6 +5,8 @@ export const StyledSocialLinks = styled.div`
 	justify-content: center;
 	align-items: center;
 
+	margin-top: 1rem;
+
 	a {
 
     display: flex;
@@ -17,7 +19,6 @@ export const StyledSocialLinks = styled.div`
 		background: #212431;
     border: 1px solid gray;
 		box-shadow: 4px 4px 8px gray;
-		line-height: 1;
 		margin-right: 4px;
 		border-radius: 50%;
 		text-align: center;

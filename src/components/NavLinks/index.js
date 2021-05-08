@@ -1,21 +1,41 @@
-import StyledNavLinks from './styles/navLinks'
+import { StyledNavLinks } from './styles/navLinks'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import {
-	Row,
-	Col,
-} from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.css'
+	faHome,
+	faUser,
+	faFile,
+	faFileCode,
+	faEnvelope,
+} from '@fortawesome/free-solid-svg-icons'
 
 export default function NavLinks() {
-  return (
-    <StyledNavLinks>
+	return (
+		<StyledNavLinks>
+			<a href='/'>
+				<FontAwesomeIcon className='icon' icon={faHome} />
+				<span> Home </span>
+			</a>
 
-      <Row>
-        <Col xs={1}>
-        </Col>
-        <Col xs={11}>
-        </Col>
-      </Row>
+			<a href='/'>
+				<FontAwesomeIcon className='icon' icon={faUser} />
+				<span> About </span>
+			</a>
 
-    </StyledNavLinks>
-  )
+			<a href='/'>
+				<FontAwesomeIcon className='icon' icon={faFile} />
+				<span> Resume </span>
+			</a>
+
+			<a href='/'>
+				<FontAwesomeIcon className='icon' icon={faFileCode} />
+				<span> Projects </span>
+			</a>
+
+			<a href='/'>
+				<FontAwesomeIcon className='icon' icon={faEnvelope} />
+				<span> Contact </span>
+			</a>
+		</StyledNavLinks>
+	)
 }
