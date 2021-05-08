@@ -1,6 +1,6 @@
 export const LightTheme = {
-	bannerBackground: 'rgba(245, 248, 253, 0)',
-	bannerForeground: '#fff',
+	bannerBackground: 'rgba(245, 248, 253, 0.3)',
+	bannerForeground: 'black',
 	headerBackground: 'rgba(4, 11, 20, 0.9)',
 	titleColor: '173B6c',
 	fontColor: 'black',

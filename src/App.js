@@ -15,6 +15,7 @@ import ContactPage from './pages/Contact'
 import DarkPage from './pages/Dark'
 
 import Main from './containers/Main'
+import Banner from './components/Banner'
 
 const App = () => {
 	const [theme, setTheme] = useState('dark')
@@ -27,12 +28,14 @@ const App = () => {
 				<Header theme={theme} setTheme={setTheme} />
 				<MobileHeader theme={theme} setTheme={setTheme}/>
 
+				<Banner theme={theme} setTheme={setTheme} />
+
 				<Main theme={theme} setTheme={setTheme} />
-			
+				
 				</ThemeProvider>
 			{/* <NightMode/> */}
-
-			{/* <AnimatePresence exitBeforeEnter>
+{/* 
+			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
 					<Route exact path='/' component={HomePage} />
 					<Route exact path='/about' component={AboutPage} />

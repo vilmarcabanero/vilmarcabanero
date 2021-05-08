@@ -12,7 +12,7 @@ import {
 export default function NavLinks() {
 	return (
 		<StyledNavLinks>
-			<Link to='/dark'>
+			<Link to='/'>
 				<FontAwesomeIcon className='icon' icon={faHome} />
 				<span> Home </span>
 			</Link>

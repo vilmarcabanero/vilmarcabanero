@@ -21,25 +21,6 @@ export const Container = styled.div`
 	transition: all 1s ease;
 
 	h1 {
-		color: ${props => props.theme.titleColor};
-		transition: all 1s ease;
+		color: ${props => props.theme.bannerForeground};	
 	}
-`
-
-export const Toggle = styled.button`
-	position: fixed;
-	top: 35px;
-	right: 40px;
-	cursor: pointer;
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-	border: none;
-	background-color: ${props => props.theme.tertiaryColor};
-	color: white;
-	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
-	&:focus {
-		outline: none;
-	}
-	transition: all 1s ease;
 `

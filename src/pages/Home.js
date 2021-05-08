@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import Main from '../containers/Main'
 import { ThemeProvider } from 'styled-components'
 import { themes } from '../helpers/theme'
+import Banner from '../components/Banner'
 
 const Home = () => {
 	const [theme, setTheme] = useState('dark')
@@ -14,9 +14,7 @@ const Home = () => {
 			transition={{ duration: 0.5 }}
 		>
 			<ThemeProvider theme={themes[theme]}>
-				<Main theme={theme} setTheme={setTheme}>
-					This is the home page
-				</Main>
+			<Banner theme={theme} setTheme={setTheme}/>
 			</ThemeProvider>
 		</motion.div>
 	)

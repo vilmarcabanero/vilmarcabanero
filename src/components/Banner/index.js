@@ -1,13 +1,26 @@
-import { Container } from './styles/banner'
-import ProfilePicture from '../ProfilePicture'
+import {
+	Container,
+	Section,
+	Name,
+	Details,
+	ButtonGroup,
+	Button
+} from './styles/banner'
 import { Row, Col } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
-import styled from 'styled-components'
+import profile from '../../assets/images/profile-pic.jpg'
 
 export default function Banner() {
 	return (
-		<Container>
-
+		<Container >
+			<Section className='text-center'>
+					<Name>Hi. I'm Vilmar.</Name>
+					<Details>
+						I'm an engineer turned developer. I specialize in Full Stack
+						Development using the MERN technology.
+					</Details>
+			</Section>
 		</Container>
+	
 	)
 }
