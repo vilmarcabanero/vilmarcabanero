@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledMobileNavLinks = styled.div`
+export const Container = styled.div`
 	padding: 0;
 
 	background-color: ${props => props.theme.headerBackground};
@@ -67,6 +67,13 @@ export const StyledMobileNavLinks = styled.div`
 		padding-left: 1rem;
 		&:hover {
 			color: white;
+		}
+	}
+
+	.active {
+		.icon,
+		span {
+			color: #149ddd;
 		}
 	}
 `

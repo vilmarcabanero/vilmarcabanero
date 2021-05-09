@@ -15,6 +15,8 @@ const About = () => {
 		>
 			<ThemeProvider theme={themes[theme]}>
 				<Banner theme={theme} setTheme={setTheme}/>
+				I specialize in Full Stack
+						Development using the MERN technology.
 			</ThemeProvider>
 		</motion.div>
 	)

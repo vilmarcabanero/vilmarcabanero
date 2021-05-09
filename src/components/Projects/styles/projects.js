@@ -20,34 +20,6 @@ export const Container = styled.div`
 			height: 35px;
 		}
 	}
-
-	a {
-		display: flex;
-    justify-content: center;
-    align-items: center;
-
-		font-size: 2rem;
-		color: white;
-		background: #212431;
-    /* border: 1px solid gray; */
-		box-shadow: 5px 5px 10px gray;
-		margin-right: 4px;
-		border-radius: 50%;
-		text-align: center;
-		width: 50px;
-		height: 50px;
-		transition: 1s;
-
-		&:hover {
-			background: #149ddd;
-			color: #fff;
-			text-decoration: none;
-      transition: 0.5s;
-      box-shadow: 1px 1px 2px gray;
-		}
-
-	}
-
 `
 export const ProjectContainer = styled.div`
 	box-shadow: 5px 5px 10px gray;
@@ -86,5 +58,34 @@ export const Description = styled.p`
 
 	@media (max-width: 1200px) {
 		font-size: 15px;
+	}
+`
+export const Link = styled.a`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 2rem;
+	color: white;
+	background: #212431;
+	/* border: 1px solid gray; */
+	box-shadow: 5px 5px 10px gray;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	transition: 1s;
+
+	&:hover {
+		background: #149ddd;
+		color: #fff;
+		text-decoration: none;
+		transition: 0.5s;
+		box-shadow: 1px 1px 2px gray;
+	}
+
+	@media (min-width: 992px) {
+		margin-right: 2rem;
 	}
 `

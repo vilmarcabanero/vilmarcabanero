@@ -1,24 +1,36 @@
-import { StyledSocialLinks } from './styles/socialLinks'
+import { Container, Link } from './styles/socialLinks'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {
 	faFacebookF,
-	faTwitter,
 	faGithub,
+	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 
 export default function SocialLinks() {
 	return (
-		<StyledSocialLinks>
-			<a href='/'>
+		<Container>
+			<Link
+				href='https://www.facebook.com/io.cabanero'
+				target='_blank'
+				rel='noreferrer'
+			>
 				<FontAwesomeIcon className='icon' icon={faFacebookF} />
-			</a>
-			<a href='/'>
-				<FontAwesomeIcon className='icon' icon={faTwitter} />
-			</a>
-			<a href='/'>
+			</Link>
+			<Link
+				href='https://www.linkedin.com/in/vilmar-caba%C3%B1ero-b189a9184/'
+				target='_blank'
+				rel='noreferrer'
+			>
+				<FontAwesomeIcon className='icon' icon={faLinkedin} />
+			</Link>
+			<Link
+				href='https://github.com/vilmarcabanero'
+				target='_blank'
+				rel='noreferrer'
+			>
 				<FontAwesomeIcon className='icon' icon={faGithub} />
-			</a>
-		</StyledSocialLinks>
+			</Link>
+		</Container>
 	)
 }

@@ -1,4 +1,3 @@
-
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 const lightGray = '#D3D3D3'
@@ -17,7 +16,6 @@ const LoginScreen = () => {
 					<Styled>
 						<h1>Contact</h1>
 
-				
 						<div className='flex'>
 							<label className='custom-input'>
 								<input type='text' className='name' placeholder='' required />
@@ -237,7 +235,5 @@ const Styled = styled.div`
 			cursor: text;
 		}
 	}
-
-
-`
+```
 export default LoginScreen

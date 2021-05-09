@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
 	position: relative;
 	margin-left: 300px;
-	width: inherit;
 	height: 100vh;
 
 	display: flex;
@@ -37,7 +36,6 @@ export const Container = styled.div`
 	}
 
 	background-color: ${props => props.theme.bannerBackground};
-
 `
 
 export const Section = styled.section`
@@ -48,17 +46,59 @@ export const Section = styled.section`
 `
 
 export const Name = styled.h1`
-	font-size: 50px;
+	font-size: 3rem;
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
 	font-family: 'DM Mono', monospace;
 	text-align: center;
+
+	@media (max-width: 576px) {
+		font-size: 2rem;
+	}
 `
 
 export const Details = styled.h3`
-	font-size: 30px;
+	font-size: 1.75rem;
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
 	font-family: 'DM Sans', sans-serif;
 	text-align: center;
+
+	@media (max-width: 576px) {
+		font-size: 1.25rem;
+	}
+`
+
+export const Link = styled.a`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 2rem;
+	color: white;
+	background: #212431;
+	/* border: 1px solid gray; */
+	box-shadow: 3px 3px 6px gray;
+	margin-right: 2rem;
+	margin-top: 1.5rem;
+	border-radius: 50%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+
+	transition: 1s;
+
+	@media (max-width: 992px) {
+		width: 36px;
+		height: 36px;
+		font-size: 1.1rem;
+	}
+
+	&:hover {
+		background: #149ddd;
+		color: #fff;
+		text-decoration: none;
+		transition: 0.5s;
+		box-shadow: 1px 1px 2px gray;
+	}
 `

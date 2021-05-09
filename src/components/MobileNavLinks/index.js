@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css'
-import { StyledMobileNavLinks } from './styles/mobileNavLinks'
+import { Container } from './styles/mobileNavLinks'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faHome,
@@ -13,43 +13,43 @@ import { Row, Col } from 'react-bootstrap'
 
 export default function NavLinks() {
 	return (
-		<StyledMobileNavLinks>
+		<Container>
 			<Row>
 				<Col>
-					<Link to='/'>
+					<NavLink to='/' exact activeClassName='active'>
 						<FontAwesomeIcon className='icon' icon={faHome} />
 						<span> Home </span>
-					</Link>
+					</NavLink>
 				</Col>
 
 				<Col>
-					<Link to='/about'>
+					<NavLink to='/about' exact activeClassName='active'>
 						<FontAwesomeIcon className='icon' icon={faUser} />
 						<span> About </span>
-					</Link>
+					</NavLink>
 				</Col>
 
 				<Col>
-					<Link to='/resume'>
+					<NavLink to='/resume' exact activeClassName='active'>
 						<FontAwesomeIcon className='icon' icon={faFile} />
 						<span> Resume </span>
-					</Link>
+					</NavLink>
 				</Col>
 
 				<Col>
-					<Link to='/projects'>
+					<NavLink to='/projects' exact activeClassName='active'>
 						<FontAwesomeIcon className='icon' icon={faFileCode} />
 						<span> Projects </span>
-					</Link>
+					</NavLink>
 				</Col>
 
 				<Col>
-					<Link to='/contact'>
+					<NavLink to='/contact' exact activeClassName='active'>
 						<FontAwesomeIcon className='icon' icon={faEnvelope} />
 						<span> Contact </span>
-					</Link>
+					</NavLink>
 				</Col>
 			</Row>
-		</StyledMobileNavLinks>
+		</Container>
 	)
 }

@@ -1,44 +1,42 @@
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, FormGroup } from 'react-bootstrap'
 import {
-	Container, Styled
+	Container,
+	Form,
+	Title,
+	InputGroup,
+	Input,
+	Placeholder,
+	TextArea,
+	Button,
 } from './styles/contact'
 import 'bootstrap/dist/css/bootstrap.css'
 export default function Contact() {
 	return (
 		<Container>
-			<div class='container'>
+			<Row className='container d-flex justify-content-center align-items-center'>
+				<Form className='col-12'>
+					<Title>Contact </Title>
 
-      <form>
-					<Styled>
-						<h1>Contact</h1>
-				
-						<div className='flex'>
-							<label className='custom-input'>
-								<input type='text' className='email' placeholder='' required />
-								<span className='placeholder'>Full Name</span>
-							</label>
-						</div>
+					<InputGroup>
+						<Input type='text' required />
+						<Placeholder className='placeholder'> Full Name</Placeholder>
+					</InputGroup>
 
-						<div className='flex'>
-							<label className='custom-input'>
-								<input type='email' className='email' placeholder='' required />
-								<span className='placeholder'>Email address</span>
-							</label>
-						</div>
+					<InputGroup>
+						<Input type='text' required />
+						<Placeholder className='placeholder'> Email Address</Placeholder>
+					</InputGroup>
 
-						<label className='custom-input'>
-							<textarea className='email' placeholder='' rows='3' required />
-							<span className='placeholder'>Message</span>
-						</label>
+					<InputGroup>
+						<TextArea required />
+						<Placeholder className='placeholder'>Message</Placeholder>
+					</InputGroup>
 
-						<button type='submit' className='button'>
-							Send
-						</button>
-					</Styled>
-				</form>
-	
-
-			</div>
+					<Button type='submit' className='button'>
+						Send
+					</Button>
+				</Form>
+			</Row>
 		</Container>
 	)
 }
