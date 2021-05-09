@@ -1,5 +1,5 @@
 import { Container } from './index.style'
-import Banner from '../../components/Banner'
+// import Banner from '../../components/Banner'
 
 export default function Main() {
 	return (<Container>

@@ -4,10 +4,11 @@ import { Container } from './index.style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faHome,
-	faUser,
+	// faUser,
 	// faFile,
 	faFileCode,
 	faEnvelope,
+	faCode,
 } from '@fortawesome/free-solid-svg-icons'
 import { Row, Col } from 'react-bootstrap'
 
@@ -23,9 +24,9 @@ export default function NavLinks() {
 				</Col>
 
 				<Col>
-					<Link to='/about' exact activeClassName='active'>
-						<FontAwesomeIcon className='icon' icon={faUser} />
-						<span> About </span>
+					<Link to='/skills' exact activeClassName='active'>
+						<FontAwesomeIcon className='icon' icon={faCode} />
+						<span> Skills </span>
 					</Link>
 				</Col>
 
