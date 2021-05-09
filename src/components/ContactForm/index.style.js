@@ -176,3 +176,28 @@ export const Alert = styled.span`
 		border-radius: 10px;
 	}
 `
+
+export const SocialLinksContainer = styled.form`
+	position: relative;
+	z-index: 20;
+	padding: 1rem;
+	border-radius: 10px;
+	background-color: ${props => props.theme.containerColor};
+	color: white;
+	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
+	margin-top: 1rem;
+	@media (max-width: 576px) {
+		padding: 1rem;
+		margin-bottom: 3rem;
+	}
+
+`
+
+export const Name = styled.div`
+	margin-bottom: -0.5rem;
+	text-align: center;
+	font-size: 24px;
+	font-family: 'DM Mono', monospace;
+`
+
+

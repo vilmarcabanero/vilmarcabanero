@@ -7,14 +7,14 @@ body {
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Mono', monospace;
 }
 
-p, span, a {
+p, span, a, div {
   font-family: 'DM Sans', sans-serif;
 }
 

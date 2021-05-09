@@ -10,8 +10,11 @@ import {
 	TextArea,
 	Button,
 	Alert,
+	SocialLinksContainer,
+	Name
 } from './index.style'
 import 'bootstrap/dist/css/bootstrap.css'
+import SocialLinks from '../SocialLinks'
 
 export default function Contact() {
 	const [alert, setAlert] = useState(false)
@@ -28,7 +31,7 @@ export default function Contact() {
 	return (
 		<Container>
 			<Row className='container'>
-				<Col xl={6} lg={8} md={8} >
+				<Col xl={6} lg={8} md={8}>
 					<Form onSubmit={submit}>
 						<Title>Contact </Title>
 
@@ -55,6 +58,11 @@ export default function Contact() {
 								: ''}
 						</Alert>
 					</Form>
+
+					<SocialLinksContainer>
+					<Name>Vilmar Cabañero</Name>
+						<SocialLinks />
+					</SocialLinksContainer>
 				</Col>
 			</Row>
 		</Container>
