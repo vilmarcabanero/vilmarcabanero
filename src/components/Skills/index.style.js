@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const Container = styled.div`
 	position: relative;
 	margin-left: 300px;
+	margin-top: 7rem;
+	margin-bottom: 15rem;
 	height: 100vh;
 	color: ${props => props.theme.bannerForeground};
 
