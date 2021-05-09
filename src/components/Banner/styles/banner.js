@@ -36,6 +36,7 @@ export const Container = styled.div`
 	}
 
 	background-color: ${props => props.theme.bannerBackground};
+	
 `
 
 export const Section = styled.section`
@@ -43,6 +44,9 @@ export const Section = styled.section`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
+	padding: 2rem;
+	border-radius: 10px;
 `
 
 export const Name = styled.h1`
@@ -77,8 +81,7 @@ export const Link = styled.a`
 	font-size: 2rem;
 	color: white;
 	background: #212431;
-	/* border: 1px solid gray; */
-	box-shadow: 3px 3px 6px gray;
+	box-shadow: 3px 3px 6px ${props => props.theme.boxShadowColor};
 	margin-right: 2rem;
 	margin-top: 1.5rem;
 	border-radius: 50%;
@@ -99,6 +102,6 @@ export const Link = styled.a`
 		color: #fff;
 		text-decoration: none;
 		transition: 0.5s;
-		box-shadow: 1px 1px 2px gray;
+		box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
 	}
 `

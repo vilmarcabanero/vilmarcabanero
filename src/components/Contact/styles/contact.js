@@ -14,12 +14,18 @@ export const Container = styled.div`
 	transition: all ease-in-out 0.5s;
 	transition: all 1s;
 
+	
+
 	@media (max-width: 992px) {
 		//xl 1200px, 992 lg
 		margin-left: 0;
 	}
 
-	/* background-color: ${props => props.theme.bannerBackground}; */
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 `
 export const Form = styled.form`
 	position: relative;
@@ -27,9 +33,10 @@ export const Form = styled.form`
 	z-index: 20;
 	padding: 3rem;
 
-	border-radius: 5px;
-	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
+	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
 
 	@media (max-width: 576px) {
 		padding: 1rem;
@@ -127,7 +134,7 @@ export const Button = styled.button`
 	color: white;
 	width: 100%;
 	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
 	font-size: 1.2rem;
 	background-color: #06f;
 	border: 1px solid #06f;
@@ -135,5 +142,32 @@ export const Button = styled.button`
 	&:hover {
 		cursor: pointer;
 		background-color: transparent;
+	}
+
+	@media (max-width: 576px) {
+		margin-bottom: 5rem;
+	}
+`
+
+export const Alert = styled.span`
+	width: 100%;
+	color: steelblue;
+	background-color: white;
+	font-size: 1.1rem;
+	border-radius: 0 0 5px 5px;
+	padding: 4px 8px;
+	position: absolute;
+	
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	font-weight: 500;
+
+	@media (max-width: 576px) {
+		background-color: transparent;
+		color: white;
+		padding: 0;
+		box-shadow: 3px 3px 6px gray;
+		border-radius: 10px;
 	}
 `

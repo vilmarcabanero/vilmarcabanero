@@ -1,4 +1,5 @@
-import { Row, Col, FormGroup } from 'react-bootstrap'
+import { useState } from 'react'
+import { Row } from 'react-bootstrap'
 import {
 	Container,
 	Form,
@@ -8,13 +9,22 @@ import {
 	Placeholder,
 	TextArea,
 	Button,
+	Alert,
 } from './styles/contact'
 import 'bootstrap/dist/css/bootstrap.css'
+
 export default function Contact() {
+	const [alert, setAlert] = useState(false)
+
+	const submit = e => {
+		e.preventDefault()
+		setAlert(true)
+	}
+
 	return (
 		<Container>
-			<Row className='container d-flex justify-content-center align-items-center'>
-				<Form className='col-12'>
+			<Row className='container'>
+				<Form onSubmit={submit}>
 					<Title>Contact </Title>
 
 					<InputGroup>
@@ -32,9 +42,11 @@ export default function Contact() {
 						<Placeholder className='placeholder'>Message</Placeholder>
 					</InputGroup>
 
-					<Button type='submit' className='button'>
-						Send
-					</Button>
+					<Button type='submit'>Send</Button>
+
+					<Alert>
+					{alert ? 'Thank you for getting in touch with me! Kindly check your email for my response.' : ''} 
+					</Alert>
 				</Form>
 			</Row>
 		</Container>

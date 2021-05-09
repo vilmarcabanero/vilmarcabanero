@@ -1,10 +1,10 @@
-import { StyledHeader } from './styles/mobileHeader'
+import { Container } from './styles/mobileHeader'
 import MobileNavLinks from '../../components/MobileNavLinks'
 
-export default function Header() {
+export default function MobileHeader() {
 	return (
-		<StyledHeader>
+		<Container>
 			<MobileNavLinks />
-		</StyledHeader>
+		</Container>
 	)
 }

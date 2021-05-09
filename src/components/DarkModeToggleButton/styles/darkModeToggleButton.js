@@ -15,6 +15,10 @@ export const StyledDarkModeToggleButton = styled.button`
 	&:focus {
 		outline: none;
 	}
+
+	&:hover {
+		box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
+	}
 	transition: all 0.5s ease;
 
   @media (max-width: 992px) {

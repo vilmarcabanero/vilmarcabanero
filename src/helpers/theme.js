@@ -5,7 +5,7 @@ export const LightTheme = {
 	titleColor: '173B6c',
 	fontColor: 'black',
 	tertiaryColor: '#149ddd',
-	boxShadowColor: 'steelblue',
+	boxShadowColor: 'rgba(255, 255, 255, 0.75)',
 	particleColor: 'rgba(70,130,180,1)',
 }
 
@@ -16,7 +16,7 @@ export const DarkTheme = {
 	titleColor: '#fff',
 	fontColor: '#fff',
 	tertiaryColor: 'rgba(0, 0, 0, 0.7)',
-	boxShadowColor: 'gray',
+	boxShadowColor: 'rgba(255, 255, 255, 0.75)',
 	particleColor: 'rgba(52, 52, 52, 1)'
 }
 

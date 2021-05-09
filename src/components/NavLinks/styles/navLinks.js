@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledNavLinks = styled.div`
+export const Container = styled.div`
 	padding-left: 2rem;
 	margin-top: 2rem;
 

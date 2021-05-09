@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledHeader = styled.div`
+export const Container = styled.div`
 	position: fixed;
 	width: 100%;
 	left: 0;
@@ -8,8 +8,8 @@ export const StyledHeader = styled.div`
 	color: white;
 	z-index: 9999;
 	background-color: rgba(0, 0, 0, 1);
-	box-shadow: 5px -5px 10px gray;
-	border-radius: 5px;
+	box-shadow: 5px -5px 10px ${props => props.theme.boxShadowColor};
+	border-radius: 7.5px;
 
 	
 
