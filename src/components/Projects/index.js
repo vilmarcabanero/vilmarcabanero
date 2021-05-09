@@ -22,7 +22,12 @@ export default function Projects() {
 			<div class='container'>
 				<Title1 class='text-center'> Projects </Title1>
 				<Row className='project-container'>
-					<Col xl={6} >
+					<Col xl={6}>
+						<ProjectContainer>
+							<Image src={niventa} alt='Niventa' />
+						</ProjectContainer>
+					</Col>
+					<Col xl={6}>
 						<ProjectContainer>
 							<Row className='text-row'>
 								<TextContainer>
@@ -53,13 +58,13 @@ export default function Projects() {
 							</Row>
 						</ProjectContainer>
 					</Col>
-					<Col xl={6}>
-						<ProjectContainer>
-							<Image src={niventa} alt='Niventa' />
-						</ProjectContainer>
-					</Col>
 				</Row>
 				<Row className='project-container'>
+					<Col xl={6}>
+						<ProjectContainer>
+							<Image src={entropiya} alt='Entropiya' />
+						</ProjectContainer>
+					</Col>
 					<Col xl={6}>
 						<ProjectContainer>
 							<Row className='text-row'>
@@ -69,8 +74,6 @@ export default function Projects() {
 										{entropiyaDescription}
 									</Description>
 								</TextContainer>
-								
-								
 							</Row>
 							<Row className='icon-row'>
 								<Col className='d-flex justify-content-end align-items-center'>
@@ -85,11 +88,6 @@ export default function Projects() {
 									</Link>
 								</Col>
 							</Row>
-						</ProjectContainer>
-					</Col>
-					<Col xl={6}>
-						<ProjectContainer>
-							<Image src={entropiya} alt='Entropiya' />
 						</ProjectContainer>
 					</Col>
 				</Row>
