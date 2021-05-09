@@ -1,4 +1,4 @@
-import { Container, Section, Name, Details, Link } from './styles/banner'
+import { Container, Section, Name, Details, Link } from './index.style'
 import { Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

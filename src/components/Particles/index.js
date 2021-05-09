@@ -1,7 +1,7 @@
 import React from 'react'
 import Particles from 'react-particles-js'
 import particleParams from './particleParams'
-import { StyledParticles } from './styles/particles'
+import { StyledParticles } from './index.style'
 
 export default function ParticleBackground() {
 	return (

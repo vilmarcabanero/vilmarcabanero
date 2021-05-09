@@ -10,7 +10,7 @@ import {
 	TextArea,
 	Button,
 	Alert,
-} from './styles/contact'
+} from './index.style'
 import 'bootstrap/dist/css/bootstrap.css'
 
 export default function Contact() {
@@ -45,7 +45,9 @@ export default function Contact() {
 					<Button type='submit'>Send</Button>
 
 					<Alert>
-					{alert ? 'Thank you for getting in touch with me! Kindly check your email for my response.' : ''} 
+						{alert
+							? 'Thank you for getting in touch with me! Kindly check your email for my response.'
+							: ''}
 					</Alert>
 				</Form>
 			</Row>

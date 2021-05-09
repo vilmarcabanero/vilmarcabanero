@@ -1,4 +1,4 @@
-import { StyledHeader } from './styles/header'
+import { Container } from './index.style'
 import ProfilePicture from '../../components/ProfilePicture'
 import SocialLinks from '../../components/SocialLinks'
 import NavLinks from '../../components/NavLinks'
@@ -6,11 +6,11 @@ import NavLinks from '../../components/NavLinks'
 export default function Header() {
 	
 	return (
-		<StyledHeader>
+		<Container>
 			<ProfilePicture />
 			<h1>Vilmar Cabañero</h1>
 			<SocialLinks />
 			<NavLinks />
-		</StyledHeader>
+		</Container>
 	)
 }

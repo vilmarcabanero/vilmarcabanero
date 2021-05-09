@@ -1,8 +1,5 @@
-import { useState } from 'react'
-import { ThemeProvider } from 'styled-components'
-import { themes } from '../../helpers/theme'
 import ParticleBackground from '../../components/Particles'
-import { Toggle } from './styles/background'
+import { Toggle } from './index.style'
 import { CgSun } from 'react-icons/cg'
 import { HiMoon } from 'react-icons/hi'
 

@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css'
-import { Container } from './styles/mobileNavLinks'
+import { Container } from './index.style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faHome,

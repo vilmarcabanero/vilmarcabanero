@@ -34,14 +34,15 @@ export const Form = styled.form`
 	padding: 3rem;
 
 	border-radius: 10px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: ${props => props.theme.containerColor};
 	color: white;
 	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
 
 	@media (max-width: 576px) {
 		padding: 1rem;
-		background-color: transparent;
+		margin-bottom: 3rem;
 	}
+
 `
 
 export const Title = styled.h1`
@@ -147,27 +148,32 @@ export const Button = styled.button`
 	@media (max-width: 576px) {
 		margin-bottom: 5rem;
 	}
+
+	@media (max-width: 360px) {
+		margin-bottom: 7rem;
+	}
 `
 
 export const Alert = styled.span`
 	width: 100%;
-	color: steelblue;
-	background-color: white;
+	color: white;
+	background-color: transparent;
 	font-size: 1.1rem;
-	border-radius: 0 0 5px 5px;
-	padding: 4px 8px;
+	border-radius: 10px;
+	padding: 10px;
 	position: absolute;
-	
+	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
 	bottom: 0;
 	left: 0;
 	text-align: center;
 	font-weight: 500;
 
+
 	@media (max-width: 576px) {
 		background-color: transparent;
 		color: white;
 		padding: 0;
-		box-shadow: 3px 3px 6px gray;
+		box-shadow: 3px 3px 6px ${props => props.theme.boxShadowColor};
 		border-radius: 10px;
 	}
 `

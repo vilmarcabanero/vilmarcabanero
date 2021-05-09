@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-export const StyledHeader = styled.div`
+export const Container = styled.div`
 	position: fixed;
 	width: 300px;
-	left: 7.5px;
+	left: 0;
 	top: 0;
 	bottom: 0;
 	color: white;
@@ -15,6 +15,10 @@ export const StyledHeader = styled.div`
 	transition: all ease-in-out 1s;
 	transition: all 1s;
 	/* padding: 5rem; */
+
+	&:hover {
+		box-shadow: 10px 10px 20px ${props => props.theme.boxShadowColor};
+	}
 
 	@media (max-width: 992px) {
 		//xl 1199px, 992 lg

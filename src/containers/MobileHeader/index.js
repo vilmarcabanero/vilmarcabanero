@@ -1,4 +1,4 @@
-import { Container } from './styles/mobileHeader'
+import { Container } from './index.style'
 import MobileNavLinks from '../../components/MobileNavLinks'
 
 export default function MobileHeader() {

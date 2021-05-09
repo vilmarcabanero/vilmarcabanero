@@ -13,39 +13,34 @@ import ResumePage from './pages/Resume'
 import ProjectsPage from './pages/Projects'
 import ContactPage from './pages/Contact'
 
-import Main from './containers/Main'
-import Banner from './components/Banner'
-
-import { Row, Col } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.css'
-
 const App = () => {
 	const [theme, setTheme] = useState('dark')
 	const location = useLocation()
 
 	return (
-		<div>
+		<main>
 			<ThemeProvider theme={themes[theme]}>
 				<Background theme={theme} setTheme={setTheme} />
 				<Header theme={theme} setTheme={setTheme} />
 				<MobileHeader theme={theme} setTheme={setTheme} />
-
-				{/* <Banner theme={theme} setTheme={setTheme} />
-
-				<Main theme={theme} setTheme={setTheme} /> */}
 			</ThemeProvider>
-			{/* <NightMode/> */}
 
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
-					<Route theme={theme} setTheme={setTheme} exact path='/' component={HomePage} />
+					<Route
+						theme={theme}
+						setTheme={setTheme}
+						exact
+						path='/'
+						component={HomePage}
+					/>
 					<Route exact path='/about' component={AboutPage} />
 					<Route exact path='/resume' component={ResumePage} />
 					<Route exact path='/projects' component={ProjectsPage} />
 					<Route exact path='/contact' component={ContactPage} />
 				</Switch>
 			</AnimatePresence>
-		</div>
+		</main>
 	)
 }
 

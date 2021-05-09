@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-	background-color: ${props => props.theme.bannerBackground};
 	//Gumagana ang default, which is darkTheme, pero di na lumilipat to light theme kung hindi ilagay sa app.
 	position: relative;
 	padding-top: 5rem;
@@ -20,20 +19,43 @@ export const Container = styled.div`
 			height: 35px;
 		}
 	}
+
+	.project-container {
+		background-color: ${props => props.theme.containerColorParent};
+		padding: 0.5rem;
+		padding-bottom: 1rem;
+		margin-top: 1rem;
+		border-radius: 10px;
+		box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
+
+	}
 `
 export const ProjectContainer = styled.div`
-	box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
+	/* background-color: ${props => props.theme.containerColor}; */
+	/* box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor}; */
 	padding: 1rem;
 	margin-top: 0.5rem;
 	border-radius: 5px;
+`
+
+export const TextContainer = styled.div`
+	/* height: 13.8rem; */
+	height:100%;
+
+	@media (max-width: 768px) {
+		height:100%;
+	}
 `
 
 export const Title1 = styled.h1`
 	font-size: 45px;
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
-	font-family: 'DM Sans', sans-serif;
 	text-align: center;
+
+	padding-bottom: 0.5rem;
+
+	box-shadow: 3px 3px 6px ${props => props.theme.boxShadowColor};
 
 	@media (max-width: 1200px) {
 		font-size: 35px;
@@ -44,7 +66,6 @@ export const Title = styled.h2`
 	font-size: 30px;
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
-	font-family: 'DM Sans', sans-serif;
 
 	@media (max-width: 1200px) {
 		font-size: 25px;
@@ -55,11 +76,20 @@ export const Description = styled.p`
 	font-size: 20px;
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
-	font-family: 'DM Sans', sans-serif;
 
 	@media (max-width: 1200px) {
 		font-size: 15px;
 	}
+`
+
+export const Image = styled.img`
+	/* height: 17rem; */
+	height:100%;
+	width: 100%;
+	@media (max-width: 768px) {
+		height:100%;
+	}
+
 `
 export const Link = styled.a`
 	display: flex;

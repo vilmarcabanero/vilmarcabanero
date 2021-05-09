@@ -1,4 +1,4 @@
-import { Container } from './styles/main'
+import { Container } from './index.style'
 import Banner from '../../components/Banner'
 
 export default function Main() {

@@ -35,8 +35,6 @@ export const Container = styled.div`
 		padding-right: 1rem;
 	}
 
-	background-color: ${props => props.theme.bannerBackground};
-	
 `
 
 export const Section = styled.section`

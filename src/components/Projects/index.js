@@ -3,19 +3,17 @@ import {
 	Container,
 	ProjectContainer,
 	Description,
-	ProjectImage,
 	Title,
 	Title1,
-	Link
-	// Image
-} from './styles/projects'
+	Link,
+	TextContainer,
+	Image
+} from './index.style'
 import 'bootstrap/dist/css/bootstrap.css'
 import entropiya from '../../assets/images/entropiya.JPG'
 import niventa from '../../assets/images/niventa.png'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 export default function Projects() {
@@ -23,25 +21,31 @@ export default function Projects() {
 		<Container>
 			<div class='container'>
 				<Title1 class='text-center'>Projects</Title1>
-				<Row class='mt-3 mb-4'>
-					<Col xl={6}>
+				<Row className='project-container'>
+					<Col xl={6} xs={{ order: 2 }}>
 						<ProjectContainer>
-							<Row>
+							<TextContainer>
 								<Title class='text-center pt-3'>Niventa</Title>
 								<Description class='text-justify'>
 									Niventa is an e-commerce website written in React.js for the
 									front end, and Node.js/Express.js for the back end.
 								</Description>
-							</Row>
+							</TextContainer>
+
 							<Row>
 								<Col className='d-flex justify-content-end align-items-center'>
-									<Link href='https://niventa.vilmarcabanero.com' target='_blank' rel='noreferrer'>
+									<Link href={niventaWeb} target='_blank' rel='noreferrer'>
 										<FontAwesomeIcon className='icon' icon={faGlobe} />
 									</Link>
 								</Col>
 
 								<Col className='d-flex justify-content-start align-items-center '>
-									<Link href='https://github.com/vilmarcabanero/niventa-server' target='_blank' rel='noreferrer' className='text-center'>
+									<Link
+										href={niventaGithub}
+										target='_blank'
+										rel='noreferrer'
+										className='text-center'
+									>
 										<FontAwesomeIcon className='icon' icon={faGithub} />
 									</Link>
 								</Col>
@@ -51,31 +55,31 @@ export default function Projects() {
 					<Col xl={6}>
 						<ProjectContainer>
 							<div class='text-center'>
-								<img class='img-fluid' src={niventa} alt='Niventa' />
+								<Image src={niventa} alt='Niventa' />
 							</div>
 						</ProjectContainer>
 					</Col>
 				</Row>
-				<Row class='mb-4'>
+				<Row className='project-container'>
 					<Col xl={6}>
 						<ProjectContainer>
-							<Row >
+							<TextContainer>
 								<Title class='text-center pt-3'>Entropiya</Title>
 								<Description class='text-justify'>
 									Entropiya envisions itself to be the premier online review
 									center for licensure examinations.
 								</Description>
-							</Row>
+							</TextContainer>
 
-							<Row >
+							<Row>
 								<Col className='d-flex justify-content-end align-items-center'>
-									<Link href='https://www.entropiya.ph/' target='_blank' rel='noreferrer'>
+									<Link href={entropiyaWeb} target='_blank' rel='noreferrer'>
 										<FontAwesomeIcon className='icon' icon={faGlobe} />
 									</Link>
 								</Col>
 
 								<Col className='d-flex justify-content-start align-items-center '>
-									<Link href='https://github.com/vilmarcabanero/entropiya-client' target='_blank' rel='noreferrer'>
+									<Link href={entropiyaGithub} target='_blank' rel='noreferrer'>
 										<FontAwesomeIcon className='icon' icon={faGithub} />
 									</Link>
 								</Col>
@@ -85,7 +89,7 @@ export default function Projects() {
 					<Col xl={6}>
 						<ProjectContainer>
 							<div class='text-center'>
-								<img class='img-fluid' src={entropiya} alt='Entropiya' />
+								<Image src={entropiya} alt='Entropiya' />
 							</div>
 						</ProjectContainer>
 					</Col>
@@ -94,3 +98,8 @@ export default function Projects() {
 		</Container>
 	)
 }
+
+const niventaWeb = 'https://niventa.vilmarcabanero.com'
+const niventaGithub = 'https://github.com/vilmarcabanero/niventa-client'
+const entropiyaWeb = 'https://www.entropiya.ph/'
+const entropiyaGithub = 'https://github.com/vilmarcabanero/entropiya-client'

@@ -1,4 +1,4 @@
-import { Container, Link } from './styles/socialLinks'
+import { Container, Link } from './index.style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {

@@ -1,4 +1,4 @@
-import {StyledDarkModeToggleButton} from './styles/darkModeToggleButton'
+import {StyledDarkModeToggleButton} from './index.style'
 import { CgSun } from 'react-icons/cg'
 import { HiMoon } from 'react-icons/hi'
 

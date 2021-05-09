@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { Container } from './styles/navLinks'
+import { Container } from './index.style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faHome,
