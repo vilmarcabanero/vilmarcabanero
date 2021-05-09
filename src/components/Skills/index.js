@@ -22,6 +22,7 @@ export default function About() {
 						apps or websites. My current skill set is as follows:
 					</Details>
 
+				{/* Note need to gamitan ng map, since repetitive naman. */}
 					<Row>
 						<Col md={6}>
 							<Progress>
@@ -52,7 +53,7 @@ export default function About() {
 							</Progress>
 						</Col>
 
-						<Col lmd={6}>
+						<Col md={6}>
 							<Progress>
 								<Skill>
 									Node <Value>{node}</Value>

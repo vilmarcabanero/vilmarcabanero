@@ -20,22 +20,21 @@ export default function Projects() {
 	return (
 		<Container>
 			<div class='container'>
-				<Title1 class='text-center'>Projects</Title1>
+				<Title1 class='text-center'> Projects </Title1>
 				<Row className='project-container'>
-					<Col xl={6} xs={{ order: 2 }}>
+					<Col xl={6} >
 						<ProjectContainer>
-							<Row className='project-row'>
+							<Row className='text-row'>
 								<TextContainer>
-									<Title class='text-center pt-3'>Niventa</Title>
+									<Title class='text-center pt-3'> Niventa </Title>
 									<Description class='text-justify'>
-										Niventa is an e-commerce website written in React.js for the
-										front end, and Node.js/Express.js for the back end.
+										{niventaDescription}
 									</Description>
 								</TextContainer>
 							</Row>
-
-							<Row className='project-row'>
-								<Col className='d-flex justify-content-end align-items-center'>
+							{/* d-flex justify-content-end align-items-center */}
+							<Row className='icon-row'>
+								<Col className='d-flex justify-content-end align-items-center '>
 									<Link href={niventaWeb} target='_blank' rel='noreferrer'>
 										<FontAwesomeIcon className='icon' icon={faGlobe} />
 									</Link>
@@ -56,25 +55,24 @@ export default function Projects() {
 					</Col>
 					<Col xl={6}>
 						<ProjectContainer>
-							<div class='text-center'>
-								<Image src={niventa} alt='Niventa' />
-							</div>
+							<Image src={niventa} alt='Niventa' />
 						</ProjectContainer>
 					</Col>
 				</Row>
 				<Row className='project-container'>
 					<Col xl={6}>
 						<ProjectContainer>
-						<Row className='project-row'>
-							<TextContainer>
-								<Title class='text-center pt-3'>Entropiya</Title>
-								<Description class='text-justify'>
-									Entropiya envisions itself to be the premier online review
-									center for licensure examinations.
-								</Description>
-							</TextContainer>
+							<Row className='text-row'>
+								<TextContainer>
+									<Title class='text-center pt-3'> Entropiya </Title>
+									<Description class='text-justify'>
+										{entropiyaDescription}
+									</Description>
+								</TextContainer>
+								
+								
 							</Row>
-							<Row className='project-row'>
+							<Row className='icon-row'>
 								<Col className='d-flex justify-content-end align-items-center'>
 									<Link href={entropiyaWeb} target='_blank' rel='noreferrer'>
 										<FontAwesomeIcon className='icon' icon={faGlobe} />
@@ -91,9 +89,7 @@ export default function Projects() {
 					</Col>
 					<Col xl={6}>
 						<ProjectContainer>
-							<div class='text-center'>
-								<Image src={entropiya} alt='Entropiya' />
-							</div>
+							<Image src={entropiya} alt='Entropiya' />
 						</ProjectContainer>
 					</Col>
 				</Row>
@@ -106,3 +102,6 @@ const niventaWeb = 'https://niventa.vilmarcabanero.com'
 const niventaGithub = 'https://github.com/vilmarcabanero/niventa-client'
 const entropiyaWeb = 'https://www.entropiya.ph/'
 const entropiyaGithub = 'https://github.com/vilmarcabanero/entropiya-client'
+
+const niventaDescription = `Niventa is an e-commerce website written in React for the front end, and Node / Express for the back end.`
+const entropiyaDescription = `Entropiya is an educational website which provides online review for licensure exam takers. This is written in React and Node /  Express.  `
