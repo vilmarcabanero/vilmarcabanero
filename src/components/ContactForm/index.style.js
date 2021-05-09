@@ -32,7 +32,6 @@ export const Form = styled.form`
 
 	z-index: 20;
 	padding: 3rem;
-
 	border-radius: 10px;
 	background-color: ${props => props.theme.containerColor};
 	color: white;

@@ -10,6 +10,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Mono', monospace;
+}
+
+p, span, a {
+  font-family: 'DM Sans', sans-serif;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
 }

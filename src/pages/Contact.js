@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import Contact from '../components/Contact'
+import ContactForm from '../components/ContactForm'
 import { ThemeProvider } from 'styled-components'
 import { themes } from '../helpers/theme'
 
@@ -14,7 +14,7 @@ const ContactPage = () => {
 			transition={{ duration: 0.5 }}
 		>
 			<ThemeProvider theme={themes[theme]}>
-				<Contact theme={theme} setTheme={setTheme}  />
+				<ContactForm theme={theme} setTheme={setTheme}  />
 			</ThemeProvider>
 		</motion.div>
 	)

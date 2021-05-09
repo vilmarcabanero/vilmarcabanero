@@ -3,8 +3,9 @@ import { Container } from './index.style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faHome,
-	faUser,
-	faFile,
+	// faUser,
+	faCode,
+	// faFile,
 	faFileCode,
 	faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
@@ -17,15 +18,15 @@ export default function NavLinks() {
 				<span> Home </span>
 			</NavLink>
 
-			<NavLink to='/about' exact activeClassName='active'>
-				<FontAwesomeIcon className='icon' icon={faUser} />
-				<span> About </span>
+			<NavLink to='/skills' exact activeClassName='active'>
+				<FontAwesomeIcon className='icon' icon={faCode} />
+				<span> Skills </span>
 			</NavLink>
 
-			<NavLink to='/resume' exact activeClassName='active'>
+			{/* <NavLink to='/resume' exact activeClassName='active'>
 				<FontAwesomeIcon className='icon' icon={faFile} />
 				<span> Resume </span>
-			</NavLink>
+			</NavLink> */}
 
 			<NavLink to='/projects' exact activeClassName='active'>
 				<FontAwesomeIcon className='icon' icon={faFileCode} />

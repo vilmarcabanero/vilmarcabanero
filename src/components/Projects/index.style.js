@@ -27,7 +27,10 @@ export const Container = styled.div`
 		margin-top: 1rem;
 		border-radius: 10px;
 		box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
+	}
 
+	.project-row {
+		height: 8.5rem;
 	}
 `
 export const ProjectContainer = styled.div`
@@ -40,10 +43,10 @@ export const ProjectContainer = styled.div`
 
 export const TextContainer = styled.div`
 	/* height: 13.8rem; */
-	height:100%;
+	height: 100%;
 
 	@media (max-width: 768px) {
-		height:100%;
+		height: 100%;
 	}
 `
 
@@ -52,8 +55,12 @@ export const Title1 = styled.h1`
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
 	text-align: center;
-
+	background-color: ${props => props.theme.titleBackground};
+	margin-left: -0.75rem;
+	margin-right: -0.75rem;
+	padding-top: 0.25rem;
 	padding-bottom: 0.5rem;
+	border-radius: 10px;
 
 	box-shadow: 3px 3px 6px ${props => props.theme.boxShadowColor};
 
@@ -63,40 +70,41 @@ export const Title1 = styled.h1`
 `
 
 export const Title = styled.h2`
-	font-size: 30px;
+	font-size: 35px;
 	color: ${props => props.theme.bannerForeground};
-	transition: all 1s ease;
 
+	transition: all 1s ease;
 	@media (max-width: 1200px) {
-		font-size: 25px;
+		font-size: 27px;
 	}
 `
 
 export const Description = styled.p`
-	font-size: 20px;
+	font-size: 1.5rem;
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
-
 	@media (max-width: 1200px) {
-		font-size: 15px;
+		font-size: 1.25rem;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 1.1rem;
 	}
 `
 
 export const Image = styled.img`
 	/* height: 17rem; */
-	height:100%;
+	height: 100%;
 	width: 100%;
 	@media (max-width: 768px) {
-		height:100%;
+		height: 100%;
 	}
-
 `
 export const Link = styled.a`
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	font-size: 2rem;
 	color: white;
 	background: #212431;
 	box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
@@ -117,5 +125,22 @@ export const Link = styled.a`
 
 	@media (min-width: 992px) {
 		margin-right: 2rem;
+		width: 45px;
+		height: 45px;
+		.icon {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	@media (max-width: 576px) {
+		width: 40px;
+		height: 40px;
+		margin-right: 0;
+
+		.icon {
+			width: 25px;
+			height: 25px;
+		}
 	}
 `

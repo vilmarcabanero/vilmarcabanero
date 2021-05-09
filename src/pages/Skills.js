@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { themes } from '../helpers/theme'
-import Banner from '../components/Banner'
+import Skills from '../components/Skills'
 
-const About = () => {
+const SkillsPage = () => {
 	const [theme, setTheme] = useState('dark')
 	return (
 		<motion.div
@@ -13,13 +13,11 @@ const About = () => {
 			exit={{ opacity: 0 }}
 			transition={{ duration: 0.5 }}
 		>
-			<ThemeProvider theme={themes[theme]}>
-				<Banner theme={theme} setTheme={setTheme}/>
-				I specialize in Full Stack
-						Development using the MERN technology.
+						<ThemeProvider theme={themes[theme]}>
+				<Skills theme={theme} setTheme={setTheme}  />
 			</ThemeProvider>
 		</motion.div>
 	)
 }
 
-export default About
+export default SkillsPage

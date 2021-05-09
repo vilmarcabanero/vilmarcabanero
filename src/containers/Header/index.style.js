@@ -24,9 +24,10 @@ export const Container = styled.div`
 		//xl 1199px, 992 lg
 		left: -330px;
 	}
+`
 
-	h1 {
-		text-align: center;
-		font-size: 24px;
-	}
+export const Name = styled.div`
+	text-align: center;
+	font-size: 24px;
+	font-family: 'DM Mono', monospace;
 `

@@ -5,6 +5,7 @@ export const Container = styled.div`
 	margin-left: 300px;
 	height: 100vh;
 
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -51,7 +52,6 @@ export const Name = styled.h1`
 	font-size: 3rem;
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
-	font-family: 'DM Mono', monospace;
 	text-align: center;
 
 	@media (max-width: 576px) {
@@ -63,7 +63,6 @@ export const Details = styled.h3`
 	font-size: 1.75rem;
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
-	font-family: 'DM Sans', sans-serif;
 	text-align: center;
 
 	@media (max-width: 576px) {
@@ -89,10 +88,11 @@ export const Link = styled.a`
 
 	transition: 1s;
 
-	@media (max-width: 992px) {
-		width: 36px;
-		height: 36px;
-		font-size: 1.1rem;
+	@media (max-width: 576px) {
+		width: 40px;
+		height: 40px;
+		font-size: 1.2rem;
+		margin-right: 1rem;
 	}
 
 	&:hover {

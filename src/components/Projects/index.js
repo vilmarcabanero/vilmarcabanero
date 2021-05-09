@@ -7,7 +7,7 @@ import {
 	Title1,
 	Link,
 	TextContainer,
-	Image
+	Image,
 } from './index.style'
 import 'bootstrap/dist/css/bootstrap.css'
 import entropiya from '../../assets/images/entropiya.JPG'
@@ -24,15 +24,17 @@ export default function Projects() {
 				<Row className='project-container'>
 					<Col xl={6} xs={{ order: 2 }}>
 						<ProjectContainer>
-							<TextContainer>
-								<Title class='text-center pt-3'>Niventa</Title>
-								<Description class='text-justify'>
-									Niventa is an e-commerce website written in React.js for the
-									front end, and Node.js/Express.js for the back end.
-								</Description>
-							</TextContainer>
+							<Row className='project-row'>
+								<TextContainer>
+									<Title class='text-center pt-3'>Niventa</Title>
+									<Description class='text-justify'>
+										Niventa is an e-commerce website written in React.js for the
+										front end, and Node.js/Express.js for the back end.
+									</Description>
+								</TextContainer>
+							</Row>
 
-							<Row>
+							<Row className='project-row'>
 								<Col className='d-flex justify-content-end align-items-center'>
 									<Link href={niventaWeb} target='_blank' rel='noreferrer'>
 										<FontAwesomeIcon className='icon' icon={faGlobe} />
@@ -63,6 +65,7 @@ export default function Projects() {
 				<Row className='project-container'>
 					<Col xl={6}>
 						<ProjectContainer>
+						<Row className='project-row'>
 							<TextContainer>
 								<Title class='text-center pt-3'>Entropiya</Title>
 								<Description class='text-justify'>
@@ -70,8 +73,8 @@ export default function Projects() {
 									center for licensure examinations.
 								</Description>
 							</TextContainer>
-
-							<Row>
+							</Row>
+							<Row className='project-row'>
 								<Col className='d-flex justify-content-end align-items-center'>
 									<Link href={entropiyaWeb} target='_blank' rel='noreferrer'>
 										<FontAwesomeIcon className='icon' icon={faGlobe} />

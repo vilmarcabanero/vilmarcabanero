@@ -8,7 +8,7 @@ import Background from './containers/Background'
 import Header from './containers/Header'
 import MobileHeader from './containers/MobileHeader'
 import HomePage from './pages/Home'
-import AboutPage from './pages/About'
+import SkillsPage from './pages/Skills'
 import ResumePage from './pages/Resume'
 import ProjectsPage from './pages/Projects'
 import ContactPage from './pages/Contact'
@@ -34,7 +34,7 @@ const App = () => {
 						path='/'
 						component={HomePage}
 					/>
-					<Route exact path='/about' component={AboutPage} />
+					<Route exact path='/skills' component={SkillsPage} />
 					<Route exact path='/resume' component={ResumePage} />
 					<Route exact path='/projects' component={ProjectsPage} />
 					<Route exact path='/contact' component={ContactPage} />
