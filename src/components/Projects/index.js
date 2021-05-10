@@ -1,14 +1,5 @@
-import { Row, Col } from 'react-bootstrap'
-import {
-	Container,
-	ProjectContainer,
-	Description,
-	Title,
-	Title1,
-	Link,
-	TextContainer,
-	Image,
-} from './index.style'
+import { Container, Row, Col, Card } from 'react-bootstrap'
+import { MyContainer, Link, Title } from './index.style'
 import 'bootstrap/dist/css/bootstrap.css'
 import entropiya from '../../assets/images/entropiya.JPG'
 import niventa from '../../assets/images/niventa.png'
@@ -19,79 +10,70 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 export default function Projects() {
 	return (
 		<Container>
-			<div class='container'>
-				<Title1 class='text-center'> Projects </Title1>
-				<Row className='project-container'>
-					<Col xl={6}>
-						<ProjectContainer>
-							<Image src={niventa} alt='Niventa' />
-						</ProjectContainer>
-					</Col>
-					<Col xl={6}>
-						<ProjectContainer>
-							<Row className='text-row'>
-								<TextContainer>
-									<Title class='text-center pt-3'> Niventa </Title>
-									<Description class='text-justify'>
-										{niventaDescription}
-									</Description>
-								</TextContainer>
-							</Row>
-							{/* d-flex justify-content-end align-items-center */}
-							<Row className='icon-row'>
-								<Col className='d-flex justify-content-end align-items-center '>
-									<Link href={niventaWeb} target='_blank' rel='noreferrer'>
-										<FontAwesomeIcon className='icon' icon={faGlobe} />
-									</Link>
-								</Col>
+			<MyContainer>
+				<Title class='text-center'> Projects </Title>
+				<Row>
+					<Col md={6} className='card-col'>
+						<Card className='card'>
+							<Card.Img variant='top' src={niventa} className='card-img' />
+							<Card.Body>
+								<Card.Title className='card-title'>Niventa </Card.Title>
+								<Card.Text className='card-text'>
+									{niventaDescription}
+								</Card.Text>
+								<Row className='icon-row'>
+									<Col className='d-flex justify-content-end align-items-center '>
+										<Link href={niventaWeb} target='_blank' rel='noreferrer'>
+											<FontAwesomeIcon className='icon' icon={faGlobe} />
+										</Link>
+									</Col>
 
-								<Col className='d-flex justify-content-start align-items-center '>
-									<Link
-										href={niventaGithub}
-										target='_blank'
-										rel='noreferrer'
-										className='text-center'
-									>
-										<FontAwesomeIcon className='icon' icon={faGithub} />
-									</Link>
-								</Col>
-							</Row>
-						</ProjectContainer>
+									<Col className='d-flex justify-content-start align-items-center '>
+										<Link
+											href={niventaGithub}
+											target='_blank'
+											rel='noreferrer'
+											className='text-center'
+										>
+											<FontAwesomeIcon className='icon' icon={faGithub} />
+										</Link>
+									</Col>
+								</Row>
+							</Card.Body>
+						</Card>
+					</Col>
+
+					<Col md={6} className='card-col'>
+						<Card className='card'>
+							<Card.Img variant='top' src={entropiya} className='card-img' />
+							<Card.Body>
+								<Card.Title className='card-title'>Entropiya </Card.Title>
+								<Card.Text className='card-text'>
+									{entropiyaDescription}
+								</Card.Text>
+								<Row className='icon-row'>
+									<Col className='d-flex justify-content-end align-items-center '>
+										<Link href={entropiyaWeb} target='_blank' rel='noreferrer'>
+											<FontAwesomeIcon className='icon' icon={faGlobe} />
+										</Link>
+									</Col>
+
+									<Col className='d-flex justify-content-start align-items-center '>
+										<Link
+											href={entropiyaGithub}
+											target='_blank'
+											rel='noreferrer'
+											className='text-center'
+										>
+											<FontAwesomeIcon className='icon' icon={faGithub} />
+										</Link>
+									</Col>
+								</Row>
+							</Card.Body>
+						</Card>
 					</Col>
 				</Row>
-				<Row className='project-container'>
-					<Col xl={6}>
-						<ProjectContainer>
-							<Image src={entropiya} alt='Entropiya' />
-						</ProjectContainer>
-					</Col>
-					<Col xl={6}>
-						<ProjectContainer>
-							<Row className='text-row'>
-								<TextContainer>
-									<Title class='text-center pt-3'> Entropiya </Title>
-									<Description class='text-justify'>
-										{entropiyaDescription}
-									</Description>
-								</TextContainer>
-							</Row>
-							<Row className='icon-row'>
-								<Col className='d-flex justify-content-end align-items-center'>
-									<Link href={entropiyaWeb} target='_blank' rel='noreferrer'>
-										<FontAwesomeIcon className='icon' icon={faGlobe} />
-									</Link>
-								</Col>
-
-								<Col className='d-flex justify-content-start align-items-center '>
-									<Link href={entropiyaGithub} target='_blank' rel='noreferrer'>
-										<FontAwesomeIcon className='icon' icon={faGithub} />
-									</Link>
-								</Col>
-							</Row>
-						</ProjectContainer>
-					</Col>
-				</Row>
-			</div>
+			</MyContainer>
 		</Container>
 	)
 }

@@ -3,9 +3,8 @@ import styled from 'styled-components'
 export const Container = styled.div`
 	position: relative;
 	margin-left: 300px;
-	margin-top: 7rem;
-	margin-bottom: 15rem;
-	height: 100vh;
+	margin-top: 5rem;
+	margin-bottom: 10rem;
 	color: ${props => props.theme.bannerForeground};
 
 	display: flex;
@@ -36,6 +35,7 @@ export const Container = styled.div`
 		margin-left: 0;
 		padding-left: 1rem;
 		padding-right: 1rem;
+		
 	}
 
 	#html-css {

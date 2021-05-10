@@ -1,18 +1,15 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const MyContainer = styled.div`
 	//Gumagana ang default, which is darkTheme, pero di na lumilipat to light theme kung hindi ilagay sa app.
 	position: relative;
-	padding-top: 5rem;
 	margin-left: 300px;
-
-	padding: 5rem;
+	margin-top: 5rem;
+	/* max-width: 1000px; */
 
 	@media (max-width: 992px) {
 		//xl 1200px, 992 lg
 		margin-left: 0;
-		padding: 1rem;
-		padding-bottom: 5rem;
 
 		.icon {
 			width: 35px;
@@ -20,49 +17,80 @@ export const Container = styled.div`
 		}
 	}
 
-	.project-container {
-		position: relative;
-		background-color: ${props => props.theme.containerColorParent};
-		padding: 0.5rem;
-		padding-bottom: 2rem;
-		margin-top: 1rem;
-		border-radius: 10px;
+	@media (max-width: 768px) {
+		//xl 1200px, 992 lg
+		margin-bottom: 10rem;
+	}
+
+	@media (max-width: 768px) {
+		//xl 1200px, 992 lg
+		padding: 1rem;
+	}
+
+	.card-col {
+		margin-bottom: 1rem;
+	}
+
+	.card {
+		height: 100%;
+		padding: 1rem;
+		padding-bottom: 1.5rem;
+		margin-top: 0.5rem;
+
+		border-radius: 5px;
+		background-color: ${props => props.theme.containerColor};
+		color: ${props => props.theme.bannerForeground};
 		box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
+
+		@media (max-width: 1200px) {
+			padding-bottom: 3rem;
+		}
+
+		@media (max-width: 992px) {
+			padding-bottom: 3.5rem;
+		}
+
+		@media (max-width: 768px) {
+			padding-bottom: 4.5rem;
+		}
+
+		@media (max-width: 576px) {
+			padding-bottom: 3.75rem;
+		}
+
+		.card-img {
+			border-radius: 5px;
+		}
+
+		.card-title {
+			font-size: 35px;
+			font-family: 'DM Mono', monospace;
+
+			transition: all 1s ease;
+			@media (max-width: 1200px) {
+				font-size: 27px;
+			}
+		}
+
+		.card-text {
+			font-size: 1.5rem;
+			font-family: 'DM Sans', sans-serif;
+			height: 70%;
+
+			transition: all 1s ease;
+			@media (max-width: 1200px) {
+				font-size: 1.25rem;
+				height: 80%;
+			}
+
+			@media (max-width: 576px) {
+				font-size: 1.1rem;
+			}
+		}
 	}
-
-	.text-row {
-		height: 16rem; //heto hinahanap ko to target the 2 icons. 
-		position: relative;
-		/* border: 1px white solid; */
-	}
-
-	.icon-row {
-		height: 4rem; //heto hinahanap ko to target the 2 icons. 
-		/* border: 1px white solid; */
-		position: relative;
-	}
-
-	
-`
-export const ProjectContainer = styled.div`
-	/* background-color: ${props => props.theme.containerColor}; */
-	/* box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor}; */
-	padding: 1rem;
-	margin-top: 0.5rem;
-	border-radius: 20px;
-	background-color: ${props => props.theme.containerColor}; 
-	box-shadow: 1px 2px 3px ${props => props.theme.boxShadowColor};
-	height: 100%;
-
 `
 
-export const TextContainer = styled.div`
-	/* height: 13.8rem; */
-	/* height: 100%; */
-	
-`
-
-export const Title1 = styled.h1`
+export const Title = styled.h1`
 	font-size: 45px;
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
@@ -72,7 +100,7 @@ export const Title1 = styled.h1`
 	margin-right: -0.75rem;
 	padding-top: 0.25rem;
 	padding-bottom: 0.5rem;
-	border-radius: 10px;
+	border-radius: 5px;
 
 	box-shadow: 3px 3px 6px ${props => props.theme.boxShadowColor};
 
@@ -81,40 +109,6 @@ export const Title1 = styled.h1`
 	}
 `
 
-export const Title = styled.h2`
-	font-size: 35px;
-	color: ${props => props.theme.bannerForeground};
-
-	transition: all 1s ease;
-	@media (max-width: 1200px) {
-		font-size: 27px;
-	}
-`
-
-export const Description = styled.p`
-	font-size: 1.5rem;
-	color: ${props => props.theme.bannerForeground};
-	transition: all 1s ease;
-	@media (max-width: 1200px) {
-		font-size: 1.25rem;
-	}
-
-	@media (max-width: 576px) {
-		font-size: 1.1rem;
-	}
-`
-
-export const Image = styled.img`
-	/* height: 17rem; */
-	height: 100%;
-	width: 100%;
-	
-	border-radius: 20px;
-	box-shadow: 1px 2px 3px ${props => props.theme.boxShadowColor};
-	@media (max-width: 768px) {
-		height: 100%;
-	}
-`
 export const Link = styled.a`
 	display: flex;
 	justify-content: center;
@@ -129,10 +123,6 @@ export const Link = styled.a`
 	height: 50px;
 	transition: 1s;
 
-	position: absolute;
-	bottom: 0;
-	float: bottom;
-
 	&:hover {
 		background: #149ddd;
 		color: #fff;
@@ -145,6 +135,7 @@ export const Link = styled.a`
 		margin-right: 2rem;
 		width: 45px;
 		height: 45px;
+
 		.icon {
 			width: 30px;
 			height: 30px;
@@ -155,6 +146,7 @@ export const Link = styled.a`
 		width: 40px;
 		height: 40px;
 		margin-right: 0;
+		bottom: 0rem;
 
 		.icon {
 			width: 25px;

@@ -3,8 +3,10 @@ import styled from 'styled-components'
 export const Container = styled.div`
 	position: relative;
 	margin-left: 300px;
-	height: 100vh;
-
+	/* height: 100vh; */
+	margin-top: 20rem;
+	
+	/* transform: translateY(130%); */
 
 	display: flex;
 	justify-content: center;
@@ -21,6 +23,14 @@ export const Container = styled.div`
 		//xl 1200px, 992 lg
 		padding-left: 7rem;
 		padding-right: 7rem;
+		/* transform: translateY(125%); */
+	}
+
+	@media (max-width: 1020px) {
+		//xl 1200px, 992 lg
+		padding-left: 7rem;
+		padding-right: 7rem;
+		/* transform: translateY(90%); */
 	}
 
 	@media (max-width: 992px) {
@@ -28,12 +38,16 @@ export const Container = styled.div`
 		margin-left: 0;
 		padding-left: 5rem;
 		padding-right: 5rem;
+		/* transform: translateY(75%); */
+		margin-top: 15rem;
 	}
 
 	@media (max-width: 576px) {
 		margin-left: 0;
 		padding-left: 1rem;
 		padding-right: 1rem;
+		margin-top: 10rem;
+		/* transform: translateY(50%); */
 	}
 
 `

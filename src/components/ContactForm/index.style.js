@@ -4,7 +4,9 @@ export const Container = styled.div`
 	position: relative;
 	margin-left: 300px;
 	width: inherit;
-	height: 100vh;
+	/* height: 100vh; */
+	/* margin-top: 5rem; */
+	margin-top: 5rem;
 
 	display: flex;
 	justify-content: center;
@@ -13,8 +15,6 @@ export const Container = styled.div`
 
 	transition: all ease-in-out 0.5s;
 	transition: all 1s;
-
-	
 
 	@media (max-width: 992px) {
 		//xl 1200px, 992 lg
@@ -39,9 +39,7 @@ export const Form = styled.form`
 
 	@media (max-width: 576px) {
 		padding: 1rem;
-		margin-bottom: 3rem;
 	}
-
 `
 
 export const Title = styled.h1`
@@ -167,7 +165,6 @@ export const Alert = styled.span`
 	text-align: center;
 	font-weight: 500;
 
-
 	@media (max-width: 576px) {
 		background-color: transparent;
 		color: white;
@@ -186,11 +183,7 @@ export const SocialLinksContainer = styled.form`
 	color: white;
 	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
 	margin-top: 1rem;
-	@media (max-width: 576px) {
-		padding: 1rem;
-		margin-bottom: 3rem;
-	}
-
+	margin-bottom: 7.5rem;
 `
 
 export const Name = styled.div`
@@ -199,5 +192,3 @@ export const Name = styled.div`
 	font-size: 24px;
 	font-family: 'DM Mono', monospace;
 `
-
-
