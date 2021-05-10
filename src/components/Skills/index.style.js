@@ -5,6 +5,7 @@ export const MyContainer = styled.div`
 	position: relative;
 	margin-left: 300px;
 	margin-top: 5rem;
+	margin-bottom: 5rem;
 	/* max-width: 1000px; */
 
 	@media (max-width: 992px) {
@@ -68,13 +69,21 @@ export const SkillContainer = styled.div`
 	width: 180px;
 	height: 180px;
 
+	#sublime-text {
+		font-size: 1.2rem;
+	}
+
 	@media (max-width: 1200px) {
 		width: 160px;
 		height: 160px;
 
 		#gitlab-ci-cd{
-			font-size: 1rem;
+			font-size: 1.1rem;
 		}
+
+		#sublime-text {
+		font-size: 1.1rem;
+	}
 	}
 
 	@media (max-width: 576px) {
@@ -84,6 +93,10 @@ export const SkillContainer = styled.div`
 		#gitlab-ci-cd{
 			font-size: 0.7rem;
 		}
+
+		#sublime-text {
+		font-size: 0.7rem;
+	}
 	}
 
 `
@@ -111,6 +124,10 @@ export const ImageContainer = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+
+	#node-js, #react, #gitlab-ci-cd-img  {
+		background-color: rgba(255, 255, 255, 1);
+	}
 `
 
 export const Image = styled.img`
@@ -120,12 +137,6 @@ export const Image = styled.img`
 	width: 110px;
 	height: 110px;
 	margin: 5px;
-
-	&:nth-child(4),
-	&:nth-child(6),
-	&:nth-child(9) {
-		background-color: rgba(255, 255, 255, 1);
-	}
 
 	@media (max-width: 1200px) {
 		width: 90px;
