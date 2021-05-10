@@ -62,11 +62,6 @@ export default function Contact() {
 									: ''}
 							</Alert>
 						</Form>
-{/* 
-						<SocialLinksContainer>
-							<Name>Vilmar Cabañero</Name>
-							<SocialLinks />
-						</SocialLinksContainer> */}
 					</Col>
 				</Row>
 			</MyContainer>

@@ -27,51 +27,6 @@ export const MyContainer = styled.div`
 
 `
 
-
-// export const Container = styled.div`
-
-
-// 	position: relative;
-// 	margin-left: 300px;
-// 	margin-top: 20rem;
-	
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	flex-direction: column;
-
-// 	padding-left: 10rem;
-// 	padding-right: 10rem;
-
-// 	transition: all ease-in-out 0.5s;
-// 	transition: all 1s;
-
-// 	@media (max-width: 1200px) {
-// 		padding-left: 7rem;
-// 		padding-right: 7rem;
-// 	}
-
-// 	@media (max-width: 1020px) {
-// 		padding-left: 7rem;
-// 		padding-right: 7rem;
-// 	}
-
-// 	@media (max-width: 992px) {
-// 		margin-left: 0;
-// 		padding-left: 5rem;
-// 		padding-right: 5rem;
-// 		margin-top: 15rem;
-// 	}
-
-// 	@media (max-width: 576px) {
-// 		margin-left: 0;
-// 		padding-left: 1rem;
-// 		padding-right: 1rem;
-// 		margin-top: 10rem;
-// 	} 
-
-// `
-
 export const Section = styled.section`
 	display: flex;
 	justify-content: center;
