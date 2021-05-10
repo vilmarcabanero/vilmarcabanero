@@ -4,12 +4,13 @@ export const MyContainer = styled.div`
 	//Gumagana ang default, which is darkTheme, pero di na lumilipat to light theme kung hindi ilagay sa app.
 	position: relative;
 	margin-left: 300px;
-	margin-top: 5rem;
+	margin-top: 20rem;
 	/* max-width: 1000px; */
 
 	@media (max-width: 992px) {
 		//xl 1200px, 992 lg
 		margin-left: 0;
+		margin-top: 10rem;
 	}
 
 	@media (max-width: 768px) {
@@ -17,7 +18,7 @@ export const MyContainer = styled.div`
 		margin-bottom: 10rem;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 576px) {
 		//xl 1200px, 992 lg
 		padding: 1rem;
 	}
