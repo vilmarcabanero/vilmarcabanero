@@ -34,7 +34,7 @@ export default function Contact() {
 				<Row className='container-row'>
 					<Col xl={6} lg={8} md={8}>
 						<Form onSubmit={submit}>
-							<Title>Contact </Title>
+							<Title>Contact me </Title>
 
 							<InputGroup>
 								<Input type='text' required />
