@@ -95,7 +95,7 @@ export const Title = styled.h1`
 	color: ${props => props.theme.bannerForeground};
 	transition: all 1s ease;
 	text-align: center;
-	background-color: ${props => props.theme.titleBackground};
+	/* background-color: ${props => props.theme.titleBackground}; */
 	margin-left: -0.75rem;
 	margin-right: -0.75rem;
 	padding-top: 0.25rem;

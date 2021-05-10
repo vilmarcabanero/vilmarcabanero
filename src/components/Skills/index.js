@@ -2,95 +2,127 @@ import {
 	MyContainer,
 	Title,
 	Details,
-	ProgressBarWrap,
+	ImageContainer,
+	Image,
+	SkillContainer,
 	Skill,
-	Value,
-	Progress,
-	ProgressBar,
 } from './index.style'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+import css3 from '../../assets/images/logo-css3.png'
+import javascript from '../../assets/images/logo-javascript.png'
+import mongodb from '../../assets/images/logo-mongodb.png'
+import nodejs from '../../assets/images/logo-nodejs.png'
+import expressjs from '../../assets/images/logo-expressjs.png'
+import react from '../../assets/images/logo-react.png'
+import heroku from '../../assets/images/logo-heroku.png'
+import git from '../../assets/images/logo-git.png'
+import gitlabcicd from '../../assets/images/logo-gitlab-ci-cd.png'
+import rest from '../../assets/images/logo-rest.png'
+import postman from '../../assets/images/logo-postman.png'
+import bootstrap from '../../assets/images/logo-bootstrap.png'
 
 export default function About() {
 	return (
 		<Container>
 			<MyContainer>
-				<Row>
-					<Title>Skills</Title>
-					<Details>
-						I'm a full stack developer who uses the MERN Stack to develop my web
-						apps or websites. My current skill set is as follows:
-					</Details>
+				<Title>Skills</Title>
+				<Details>
+					I'm a full stack developer who uses the MERN Stack to develop my web
+					apps or websites. My current skill set is as follows:
+				</Details>
 
-					{/* Note need to gamitan ng map, since repetitive naman. */}
-					<Row>
-						<Col md={6}>
-							<Progress>
-								<Skill>
-									HTML / CSS <Value>{htmlCss}</Value>
-								</Skill>
-								<ProgressBarWrap>
-									<ProgressBar id='html-css'></ProgressBar>
-								</ProgressBarWrap>
-							</Progress>
-
-							<Progress>
-								<Skill>
-									Javascript <Value>{javascript}</Value>
-								</Skill>
-								<ProgressBarWrap>
-									<ProgressBar id='javascript'></ProgressBar>
-								</ProgressBarWrap>
-							</Progress>
-
-							<Progress>
-								<Skill>
-									React <Value>{react}</Value>
-								</Skill>
-								<ProgressBarWrap>
-									<ProgressBar id='react'></ProgressBar>
-								</ProgressBarWrap>
-							</Progress>
-						</Col>
-
-						<Col md={6}>
-							<Progress>
-								<Skill>
-									Node <Value>{node}</Value>
-								</Skill>
-								<ProgressBarWrap>
-									<ProgressBar id='node'></ProgressBar>
-								</ProgressBarWrap>
-							</Progress>
-
-							<Progress>
-								<Skill>
-									Express<Value>{express}</Value>
-								</Skill>
-								<ProgressBarWrap>
-									<ProgressBar id='express'></ProgressBar>
-								</ProgressBarWrap>
-							</Progress>
-
-							<Progress>
-								<Skill>
-									MongoDB <Value>{mongodb}</Value>
-								</Skill>
-								<ProgressBarWrap>
-									<ProgressBar id='mongodb'></ProgressBar>
-								</ProgressBarWrap>
-							</Progress>
-						</Col>
-					</Row>
-				</Row>
+				<ImageContainer>
+					{skills.map(items => {
+						return (
+							<SkillContainer>
+								<Skill>{items.skill}</Skill>
+								<Image src={items.src} id={items.id} alt={items.alt} />
+							</SkillContainer>
+						)
+					})}
+					<SkillContainer>
+						<Skill>Gitlab CI/CD</Skill>
+						<Image src={gitlabcicd} id='gitlab-ci-cd' alt='gitlab-ci-cd' />
+					</SkillContainer>
+				</ImageContainer>
 			</MyContainer>
 		</Container>
 	)
 }
 
-const htmlCss = '60%'
-const javascript = '30%'
-const react = '15%'
-const node = '5%'
-const express = '5%'
-const mongodb = '5%'
+const skills = [
+	{
+		skill: 'css3',
+		src: css3,
+		alt: 'css3',
+		id: '',
+	},
+	{
+		skill: 'javascript',
+		src: javascript,
+		alt: 'javascript',
+		id: '',
+	},
+
+	{
+		skill: 'mongodb',
+		src: mongodb,
+		alt: 'mongodb',
+		id: '',
+	},
+	{
+		skill: 'nodejs',
+		src: nodejs,
+		alt: 'nodejs',
+		id: '',
+	},
+	{
+		skill: 'expressjs',
+		src: expressjs,
+		alt: 'expressjs',
+		id: '',
+	},
+	{
+		skill: 'react',
+		src: react,
+		alt: 'react',
+		id: '',
+	},
+	{
+		skill: 'heroku',
+		src: heroku,
+		alt: 'heroku',
+		id: '',
+	},
+	{
+		skill: 'git',
+		src: git,
+		alt: 'git',
+		id: '',
+	},
+	// {
+	// 	skill: 'Gitlab CI/CD',
+	// 	src: gitlabcicd,
+	// 	alt: 'Gitlab CI/CD',
+	// 	id: 'gitlab-ci-cd'
+	// },
+	{
+		skill: 'rest',
+		src: rest,
+		alt: 'rest',
+		id: '',
+	},
+	{
+		skill: 'postman',
+		src: postman,
+		alt: 'postman',
+		id: '',
+	},
+	{
+		skill: 'bootstrap',
+		src: bootstrap,
+		alt: 'bootstrap',
+		id: '',
+	},
+]
