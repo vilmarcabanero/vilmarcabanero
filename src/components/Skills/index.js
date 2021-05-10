@@ -1,5 +1,5 @@
 import {
-	Container,
+	MyContainer,
 	Title,
 	Details,
 	ProgressBarWrap,
@@ -8,21 +8,21 @@ import {
 	Progress,
 	ProgressBar,
 } from './index.style'
-import { Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
 export default function About() {
 	return (
 		<Container>
-			<Row>
-				<div class='container'>
+			<MyContainer>
+				<Row>
 					<Title>Skills</Title>
 					<Details>
 						I'm a full stack developer who uses the MERN Stack to develop my web
 						apps or websites. My current skill set is as follows:
 					</Details>
 
-				{/* Note need to gamitan ng map, since repetitive naman. */}
+					{/* Note need to gamitan ng map, since repetitive naman. */}
 					<Row>
 						<Col md={6}>
 							<Progress>
@@ -82,8 +82,8 @@ export default function About() {
 							</Progress>
 						</Col>
 					</Row>
-				</div>
-			</Row>
+				</Row>
+			</MyContainer>
 		</Container>
 	)
 }

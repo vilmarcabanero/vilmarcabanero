@@ -1,5 +1,5 @@
-import { Container, Section, Name, Details, Link } from './index.style'
-import { Row } from 'react-bootstrap'
+import { MyContainer, Section, Name, Details, Link } from './index.style'
+import { Container, Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -16,23 +16,25 @@ const github = 'https://github.com/vilmarcabanero'
 export default function Banner() {
 	return (
 		<Container>
-			<Section className='text-center'>
-				<Row>
-					<Name>Hi. I'm Vilmar.</Name>
-					<Details>I'm an engineer turned developer.</Details>
-				</Row>
-				<Row>
-					<Link href={facebook} target='_blank' rel='noreferrer'>
-						<FontAwesomeIcon className='icon' icon={faFacebookF} />
-					</Link>
-					<Link href={linkedin} target='_blank' rel='noreferrer'>
-						<FontAwesomeIcon className='icon' icon={faLinkedin} />
-					</Link>
-					<Link href={github} target='_blank' rel='noreferrer'>
-						<FontAwesomeIcon className='icon' icon={faGithub} />
-					</Link>
-				</Row>
-			</Section>
+			<MyContainer>
+				<Section className='text-center'>
+					<Row>
+						<Name>Hi. I'm Vilmar.</Name>
+						<Details>I'm an engineer turned developer.</Details>
+					</Row>
+					<Row>
+						<Link href={facebook} target='_blank' rel='noreferrer'>
+							<FontAwesomeIcon className='icon' icon={faFacebookF} />
+						</Link>
+						<Link href={linkedin} target='_blank' rel='noreferrer'>
+							<FontAwesomeIcon className='icon' icon={faLinkedin} />
+						</Link>
+						<Link href={github} target='_blank' rel='noreferrer'>
+							<FontAwesomeIcon className='icon' icon={faGithub} />
+						</Link>
+					</Row>
+				</Section>
+			</MyContainer>
 		</Container>
 	)
 }

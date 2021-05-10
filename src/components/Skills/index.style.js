@@ -1,10 +1,37 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const MyContainer = styled.div`
+	//Gumagana ang default, which is darkTheme, pero di na lumilipat to light theme kung hindi ilagay sa app.
 	position: relative;
 	margin-left: 300px;
 	margin-top: 5rem;
+	/* max-width: 1000px; */
+
+	@media (max-width: 992px) {
+		//xl 1200px, 992 lg
+		margin-left: 0;
+
+		.icon {
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		//xl 1200px, 992 lg
+		margin-bottom: 10rem;
+	}
+
+	@media (max-width: 768px) {
+		//xl 1200px, 992 lg
+		padding: 1rem;
+	}
+
+	/* position: relative;
+	margin-left: 300px;
+	margin-top: 5rem;
 	margin-bottom: 10rem;
+	max-width: 1000px;
 	color: ${props => props.theme.bannerForeground};
 
 	display: flex;
@@ -14,7 +41,7 @@ export const Container = styled.div`
 
 	padding-left: 10rem;
 	padding-right: 10rem;
-
+  
 	transition: all ease-in-out 0.5s;
 	transition: all 1s;
 
@@ -36,7 +63,7 @@ export const Container = styled.div`
 		padding-left: 1rem;
 		padding-right: 1rem;
 		
-	}
+	} */
 
 	#html-css {
 		width: 60%;

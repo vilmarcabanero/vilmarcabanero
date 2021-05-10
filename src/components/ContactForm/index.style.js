@@ -4,8 +4,6 @@ export const Container = styled.div`
 	position: relative;
 	margin-left: 300px;
 	width: inherit;
-	/* height: 100vh; */
-	/* margin-top: 5rem; */
 	margin-top: 5rem;
 
 	display: flex;
@@ -20,8 +18,31 @@ export const Container = styled.div`
 		//xl 1200px, 992 lg
 		margin-left: 0;
 	}
+`
 
-	.container {
+export const MyContainer = styled.div`
+	//Gumagana ang default, which is darkTheme, pero di na lumilipat to light theme kung hindi ilagay sa app.
+	position: relative;
+	margin-left: 300px;
+	margin-top: 5rem;
+	/* max-width: 1000px; */
+
+	@media (max-width: 992px) {
+		//xl 1200px, 992 lg
+		margin-left: 0;
+	}
+
+	@media (max-width: 768px) {
+		//xl 1200px, 992 lg
+		margin-bottom: 10rem;
+	}
+
+	@media (max-width: 768px) {
+		//xl 1200px, 992 lg
+		padding: 1rem;
+	}
+
+	.container-row {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -29,7 +50,7 @@ export const Container = styled.div`
 `
 export const Form = styled.form`
 	position: relative;
-
+	max-width: 40rem;
 	z-index: 20;
 	padding: 3rem;
 	border-radius: 10px;
@@ -39,6 +60,7 @@ export const Form = styled.form`
 
 	@media (max-width: 576px) {
 		padding: 1rem;
+		max-width: 100%;
 	}
 `
 
@@ -178,12 +200,17 @@ export const SocialLinksContainer = styled.form`
 	position: relative;
 	z-index: 20;
 	padding: 1rem;
+	max-width: 40rem;
 	border-radius: 10px;
 	background-color: ${props => props.theme.containerColor};
 	color: white;
 	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
 	margin-top: 1rem;
 	margin-bottom: 7.5rem;
+
+	@media (max-width: 576px) {
+		max-width: 100%;
+	}
 `
 
 export const Name = styled.div`
