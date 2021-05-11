@@ -31,7 +31,7 @@ export default function Contact() {
 			<Main>
 				<Styled>
 					<Row className='container-row'>
-						<Col xl={6} lg={8} md={8}>
+						<Col xl={6} lg={8} md={8} className='container-col'>
 							<Form onSubmit={submit}>
 								<Title>Contact me </Title>
 

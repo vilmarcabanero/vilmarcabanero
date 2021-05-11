@@ -6,19 +6,35 @@ export const Styled = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
+
 `
 export const Form = styled.form`
 	position: relative;
+	margin-top: 10rem;
 	max-width: 40rem;
 	z-index: 20;
+	padding: 2rem;
 	border-radius: 10px;
 	background-color: ${props => props.theme.containerColor};
 	color: white;
 	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
 
+	@media (max-width: 992px) {
+		margin-top: 6rem;
+	}
+
+	@media (max-width: 768px) {
+		padding: 1rem;
+		max-width: 100%;
+		padding-bottom: 0;
+		margin-top: 3;
+	}
+
 	@media (max-width: 576px) {
 		padding: 1rem;
 		max-width: 100%;
+		padding-bottom: 0;
+		margin-top: 1rem;
 	}
 `
 
