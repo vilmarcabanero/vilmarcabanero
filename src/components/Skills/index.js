@@ -22,8 +22,9 @@ import gitlabcicd from '../../assets/images/logo-gitlab-ci-cd.png'
 import rest from '../../assets/images/logo-rest.png'
 import postman from '../../assets/images/logo-postman.png'
 import bootstrap from '../../assets/images/logo-bootstrap.png'
+import materialui from '../../assets/images/logo-material-ui.png'
 import vscode from '../../assets/images/logo-vscode.png'
-import sublimetext from '../../assets/images/logo-sublime-text-3.png'
+// import sublimetext from '../../assets/images/logo-sublime-text-3.png'
 
 
 export default function About() {
@@ -135,17 +136,23 @@ const skills = [
 		id: '',
 	},
 	{
+		skill: 'material ui',
+		src: materialui,
+		alt: 'materialui',
+		id: '',
+	},
+	{
 		skill: 'VS Code',
 		src: vscode,
 		alt: 'vscode',
 		id: '',
 	},
-	{
-		skill: 'Sublime Text',
-		src: sublimetext,
-		alt: 'sublimetext',
-		id: 'sublime-text',
-	},
+	// {
+	// 	skill: 'Sublime Text',
+	// 	src: sublimetext,
+	// 	alt: 'sublimetext',
+	// 	id: 'sublime-text',
+	// },
 
 	
 ]
