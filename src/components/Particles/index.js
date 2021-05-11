@@ -3,10 +3,12 @@ import Particles from 'react-particles-js'
 import particleParams from './particleParams'
 import { StyledParticles } from './index.style'
 
-export default function ParticleBackground() {
+const ParticleBackground = () => {
 	return (
 		<StyledParticles>
 			<Particles className='particles' params={particleParams}></Particles>
 		</StyledParticles>
 	)
 }
+
+export default ParticleBackground

@@ -27,7 +27,7 @@ import vscode from '../../assets/images/logo-vscode.png'
 // import sublimetext from '../../assets/images/logo-sublime-text-3.png'
 
 
-export default function About() {
+const Skills = () => {
 	return (
 		<Container>
 			<Main>
@@ -156,3 +156,5 @@ const skills = [
 
 	
 ]
+
+export default Skills
