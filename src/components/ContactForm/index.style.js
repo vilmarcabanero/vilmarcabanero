@@ -149,23 +149,20 @@ export const Button = styled.button`
 
 export const Alert = styled.span`
 	width: 100%;
-	color: white;
-	background-color: transparent;
+	color:  #06f;
+	background-color: #fff;
 	font-size: 1.1rem;
 	border-radius: 10px;
-	padding: 10px;
 	position: absolute;
-	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
 	bottom: 0;
 	left: 0;
 	text-align: center;
 	font-weight: 500;
 
 	@media (max-width: 576px) {
-		background-color: transparent;
-		color: white;
+		background-color: #fff;
+		color:  #06f;
 		padding: 0;
-		box-shadow: 3px 3px 6px ${props => props.theme.boxShadowColor};
 		border-radius: 10px;
 	}
 `

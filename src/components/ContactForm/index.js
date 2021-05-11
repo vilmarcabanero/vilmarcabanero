@@ -57,7 +57,7 @@ export default function Contact() {
 
 								<Alert>
 									{alert
-										? 'Thank you for getting in touch with me! Kindly check your email for my response.'
+										? 'Thank you for getting in touch with me!'
 										: ''}
 								</Alert>
 							</Form>
