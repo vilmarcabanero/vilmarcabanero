@@ -139,7 +139,7 @@ const skills = [
 		skill: 'material ui',
 		src: materialui,
 		alt: 'materialui',
-		id: '',
+		id: 'material-ui',
 	},
 	{
 		skill: 'VS Code',

@@ -69,36 +69,39 @@ export const SkillContainer = styled.div`
 	width: 180px;
 	height: 180px;
 
-	#sublime-text {
-		font-size: 1.2rem;
-	}
-
 	@media (max-width: 1200px) {
 		width: 160px;
 		height: 160px;
 
-		#gitlab-ci-cd{
+		#gitlab-ci-cd {
 			font-size: 1.1rem;
 		}
 
 		#sublime-text {
-		font-size: 1.1rem;
-	}
+			font-size: 1.1rem;
+		}
+
+		#material-ui {
+			font-size: 1.1rem;
+		}
 	}
 
 	@media (max-width: 576px) {
 		width: 120px;
 		height: 120px;
 
-		#gitlab-ci-cd{
+		#gitlab-ci-cd {
 			font-size: 0.7rem;
 		}
 
 		#sublime-text {
-		font-size: 0.7rem;
-	}
-	}
+			font-size: 0.7rem;
+		}
 
+		#material-ui {
+			font-size: 0.7rem;
+		}
+	}
 `
 
 export const Skill = styled.span`
@@ -125,7 +128,9 @@ export const ImageContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	#node-js, #react, #gitlab-ci-cd-img  {
+	#node-js,
+	#react,
+	#gitlab-ci-cd-img {
 		background-color: rgba(255, 255, 255, 1);
 	}
 `
