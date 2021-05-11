@@ -12,45 +12,46 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Row, Col } from 'react-bootstrap'
 
-export default function NavLinks() {
+const MobileNavLinks = () => {
 	return (
 		<Container>
 			<Row>
-				<Col>
-					<Link to='/' exact activeClassName='active'>
-						<FontAwesomeIcon className='icon' icon={faHome} />
-						<span> Home </span>
-					</Link>
-				</Col>
-
-				<Col>
-					<Link to='/skills' exact activeClassName='active'>
-						<FontAwesomeIcon className='icon' icon={faCode} />
-						<span> Skills </span>
-					</Link>
-				</Col>
-
-				{/* <Col>
-					<NavLink to='/resume' exact activeClassName='active' >
-						<FontAwesomeIcon className='icon' icon={faFile} />
-						<span> Resume </span>
-					</NavLink>
-				</Col> */}
-
-				<Col>
-					<Link to='/projects' exact activeClassName='active'>
-						<FontAwesomeIcon className='icon' icon={faFileCode} />
-						<span> Projects </span>
-					</Link>
-				</Col>
-
-				<Col>
-					<Link to='/contact' exact activeClassName='active'>
-						<FontAwesomeIcon className='icon' icon={faEnvelope} />
-						<span> Contact </span>
-					</Link>
-				</Col>
+				{links.map(items => {
+					return (
+						<Col>
+							<Link to={items.to} exact activeClassName='active'>
+								<FontAwesomeIcon className='icon' icon={items.icon} />
+								<span> {items.title} </span>
+							</Link>
+						</Col>
+					)
+				})}
 			</Row>
 		</Container>
 	)
 }
+
+const links = [
+	{
+		to: '/',
+		icon: faHome,
+		title: 'Home',
+	},
+	{
+		to: '/skills',
+		icon: faCode,
+		title: 'Skills',
+	},
+	{
+		to: '/projects',
+		icon: faFileCode,
+		title: 'Projects',
+	},
+	{
+		to: '/contact',
+		icon: faEnvelope,
+		title: 'Contact',
+	},
+]
+
+export default MobileNavLinks

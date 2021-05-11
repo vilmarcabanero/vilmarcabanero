@@ -3,8 +3,7 @@ import ProfilePicture from '../../components/ProfilePicture'
 import SocialLinks from '../../components/SocialLinks'
 import NavLinks from '../../components/NavLinks'
 
-export default function Header() {
-	
+const Header = () => {
 	return (
 		<Container>
 			<ProfilePicture />
@@ -14,3 +13,5 @@ export default function Header() {
 		</Container>
 	)
 }
+
+export default Header

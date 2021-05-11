@@ -1,9 +1,9 @@
-import {StyledDarkModeToggleButton} from './index.style'
+import { StyledDarkModeToggleButton } from './index.style'
 import { CgSun } from 'react-icons/cg'
 import { HiMoon } from 'react-icons/hi'
 
-const DarkModeToggleButton = (props) => {
-  function changeTheme() {
+const DarkModeToggleButton = props => {
+	const changeTheme = () => {
 		if (props.theme === 'light') {
 			props.setTheme('dark')
 		} else {
@@ -11,14 +11,13 @@ const DarkModeToggleButton = (props) => {
 		}
 	}
 
-  const icon =
-  props.theme === 'light' ? <CgSun /> : <HiMoon />
+	const icon = props.theme === 'light' ? <CgSun /> : <HiMoon />
 
-  return (
-    <StyledDarkModeToggleButton onClick={changeTheme}>
-      {icon}
-    </StyledDarkModeToggleButton>
-  )
+	return (
+		<StyledDarkModeToggleButton onClick={changeTheme}>
+			{icon}
+		</StyledDarkModeToggleButton>
+	)
 }
 
 export default DarkModeToggleButton

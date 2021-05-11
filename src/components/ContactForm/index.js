@@ -14,7 +14,7 @@ import {
 import Main from '../../containers/Main'
 import 'bootstrap/dist/css/bootstrap.css'
 
-export default function Contact() {
+const ContactForm = () => {
 	const [alert, setAlert] = useState(false)
 
 	const submit = e => {
@@ -56,9 +56,7 @@ export default function Contact() {
 								<Button type='submit'>Send</Button>
 
 								<Alert>
-									{alert
-										? 'Thank you for getting in touch with me!'
-										: ''}
+									{alert ? 'Thank you for getting in touch with me!' : ''}
 								</Alert>
 							</Form>
 						</Col>
@@ -68,3 +66,5 @@ export default function Contact() {
 		</Container>
 	)
 }
+
+export default ContactForm

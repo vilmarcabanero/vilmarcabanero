@@ -3,7 +3,7 @@ import { Toggle } from './index.style'
 import { CgSun } from 'react-icons/cg'
 import { HiMoon } from 'react-icons/hi'
 
-export default function Background(props) {
+const Background = props => {
 	function changeTheme() {
 		if (props.theme === 'light') {
 			props.setTheme('dark')
@@ -12,7 +12,11 @@ export default function Background(props) {
 		}
 	}
 	const icon =
-		props.theme === 'light' ? <CgSun className='toggle' /> : <HiMoon className='toggle' />
+		props.theme === 'light' ? (
+			<CgSun className='toggle' />
+		) : (
+			<HiMoon className='toggle' />
+		)
 
 	return (
 		<div>
@@ -21,3 +25,5 @@ export default function Background(props) {
 		</div>
 	)
 }
+
+export default Background
