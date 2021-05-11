@@ -1,8 +1,5 @@
-import { Container } from './index.style'
-// import Banner from '../../components/Banner'
+import { MainContainer } from './index.style'
 
-export default function Main() {
-	return (<Container>
-		<h1 id='main'>Hello from Main.</h1>
-	</Container>)
+export default function Main(props) {
+	return <MainContainer>{props.children}</MainContainer>
 }

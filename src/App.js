@@ -1,9 +1,10 @@
 import './App.css'
 import { useState } from 'react'
-import { ThemeProvider } from 'styled-components'
-import { themes } from './helpers/theme'
 import { Switch, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
+import { ThemeProvider } from 'styled-components'
+import { themes } from './helpers/theme'
+import ScrollToTop from './helpers/ScrollToTop'
 import Background from './containers/Background'
 import Header from './containers/Header'
 import MobileHeader from './containers/MobileHeader'
@@ -19,27 +20,29 @@ const App = () => {
 
 	return (
 		<main>
-			<ThemeProvider theme={themes[theme]}>
-				<Background theme={theme} setTheme={setTheme} />
-				<Header theme={theme} setTheme={setTheme} />
-				<MobileHeader theme={theme} setTheme={setTheme} />
-			</ThemeProvider>
+			<ScrollToTop>
+				<ThemeProvider theme={themes[theme]}>
+					<Background theme={theme} setTheme={setTheme} />
+					<Header theme={theme} setTheme={setTheme} />
+					<MobileHeader theme={theme} setTheme={setTheme} />
 
-			<AnimatePresence exitBeforeEnter>
-				<Switch location={location} key={location.pathname}>
-					<Route
-						theme={theme}
-						setTheme={setTheme}
-						exact
-						path='/'
-						component={HomePage}
-					/>
-					<Route exact path='/skills' component={SkillsPage} />
-					<Route exact path='/resume' component={ResumePage} />
-					<Route exact path='/projects' component={ProjectsPage} />
-					<Route exact path='/contact' component={ContactPage} />
-				</Switch>
-			</AnimatePresence>
+					<AnimatePresence exitBeforeEnter>
+						<Switch location={location} key={location.pathname}>
+							<Route
+								theme={theme}
+								setTheme={setTheme}
+								exact
+								path='/'
+								component={HomePage}
+							/>
+							<Route exact path='/skills' component={SkillsPage} />
+							<Route exact path='/resume' component={ResumePage} />
+							<Route exact path='/projects' component={ProjectsPage} />
+							<Route exact path='/contact' component={ContactPage} />
+						</Switch>
+					</AnimatePresence>
+				</ThemeProvider>
+			</ScrollToTop>
 		</main>
 	)
 }

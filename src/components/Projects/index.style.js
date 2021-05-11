@@ -1,32 +1,6 @@
 import styled from 'styled-components'
 
-export const MyContainer = styled.div`
-	//Gumagana ang default, which is darkTheme, pero di na lumilipat to light theme kung hindi ilagay sa app.
-	position: relative;
-	margin-left: 300px;
-	margin-top: 5rem;
-	/* max-width: 1000px; */
-
-	@media (max-width: 992px) {
-		//xl 1200px, 992 lg
-		margin-left: 0;
-
-		.icon {
-			width: 35px;
-			height: 35px;
-		}
-	}
-
-	@media (max-width: 768px) {
-		//xl 1200px, 992 lg
-		margin-bottom: 10rem;
-	}
-
-	@media (max-width: 768px) {
-		//xl 1200px, 992 lg
-		padding: 1rem;
-	}
-
+export const Styled = styled.div`
 	.card-col {
 		margin-bottom: 1rem;
 	}

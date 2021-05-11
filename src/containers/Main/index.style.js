@@ -1,26 +1,23 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const MainContainer = styled.div`
 	position: relative;
 	margin-left: 300px;
-	height: 100vh;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	transition: all ease-in-out 0.5s;
-	transition: all 1s;
-
-	@media (max-width: 991px) {
-		//xl 1199px, 991 lg
+	@media (max-width: 992px) {
 		margin-left: 0;
+		margin-top: 3rem;
+	} 
+
+	@media (max-width: 768px) {
+		margin-bottom: 10rem;
+		margin-top: 2rem;
+		padding: 1rem;
 	}
 
-	/* background-color: ${props => props.theme.pageBackground}; */
-	transition: all 1s ease;
-
-	h1 {
-		color: ${props => props.theme.bannerForeground};	
+	@media (max-width: 576px) {
+		margin-top: 1rem;
 	}
 `

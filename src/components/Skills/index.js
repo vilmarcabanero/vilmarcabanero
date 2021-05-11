@@ -1,5 +1,4 @@
 import {
-	MyContainer,
 	Title,
 	Details,
 	ImageContainer,
@@ -9,6 +8,7 @@ import {
 } from './index.style'
 import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+import Main from '../../containers/Main'
 import html5 from '../../assets/images/logo-html5.png'
 import css3 from '../../assets/images/logo-css3.png'
 import javascript from '../../assets/images/logo-javascript.png'
@@ -29,7 +29,7 @@ import sublimetext from '../../assets/images/logo-sublime-text-3.png'
 export default function About() {
 	return (
 		<Container>
-			<MyContainer>
+			<Main>
 				<Title>Skills</Title>
 				<Details>
 					I'm a full stack developer who uses the MERN Stack to develop my web
@@ -46,7 +46,7 @@ export default function About() {
 						)
 					})}
 				</ImageContainer>
-			</MyContainer>
+			</Main>
 		</Container>
 	)
 }

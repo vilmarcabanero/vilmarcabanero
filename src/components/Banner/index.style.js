@@ -1,32 +1,5 @@
 import styled from 'styled-components'
 
-export const MyContainer = styled.div`
-	//Gumagana ang default, which is darkTheme, pero di na lumilipat to light theme kung hindi ilagay sa app.
-	position: relative;
-	margin-left: 300px;
-	margin-top: 20rem;
-	/* max-width: 1000px; */
-
-	@media (max-width: 992px) {
-		//xl 1200px, 992 lg
-		margin-left: 0;
-		margin-top: 10rem;
-	}
-
-	@media (max-width: 768px) {
-		//xl 1200px, 992 lg
-		margin-bottom: 10rem;
-	}
-
-	@media (max-width: 576px) {
-		//xl 1200px, 992 lg
-		padding: 1rem;
-	}
-
-
-
-`
-
 export const Section = styled.section`
 	display: flex;
 	justify-content: center;
@@ -35,6 +8,20 @@ export const Section = styled.section`
 	box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
 	padding: 2rem;
 	border-radius: 10px;
+
+	margin-top: 20rem;
+
+	@media (max-width: 992px) {
+		margin-top: 15rem;
+	}
+
+	@media (max-width: 768px) {
+		margin-top: 12rem;
+	}
+
+	@media (max-width: 576px) {
+		margin-top: 7.5rem;
+	}
 `
 
 export const Name = styled.h1`

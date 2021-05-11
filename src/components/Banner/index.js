@@ -1,4 +1,5 @@
-import { MyContainer, Section, Name, Details, Link } from './index.style'
+import { Section, Name, Details, Link } from './index.style'
+import Main from '../../containers/Main'
 import { Container, Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,7 +17,7 @@ const github = 'https://github.com/vilmarcabanero'
 export default function Banner() {
 	return (
 		<Container>
-			<MyContainer>
+			<Main>
 				<Section className='text-center'>
 					<Row>
 						<Name>Hi. I'm Vilmar.</Name>
@@ -34,7 +35,7 @@ export default function Banner() {
 						</Link>
 					</Row>
 				</Section>
-			</MyContainer>
+			</Main>
 		</Container>
 	)
 }
