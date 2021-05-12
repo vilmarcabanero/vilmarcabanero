@@ -155,8 +155,9 @@ export const Button = styled.button`
 
 export const Alert = styled.span`
 	width: 100%;
-	color:  #06f;
-	background-color: #fff;
+	color:  #fff;
+	padding: 1rem;
+	background-color: transparent;
 	transition: all 1s ease;
 	font-size: 1.1rem;
 	border-radius: 10px;
@@ -167,9 +168,6 @@ export const Alert = styled.span`
 	font-weight: 500;
 
 	@media (max-width: 576px) {
-		background-color: #fff;
-		color:  #06f;
-		padding: 0;
 		border-radius: 10px;
 	}
 `
