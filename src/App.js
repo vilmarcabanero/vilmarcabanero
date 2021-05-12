@@ -4,6 +4,9 @@ import { Switch, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import { ThemeProvider } from 'styled-components'
 import { themes } from './helpers/theme'
+import { useDarkMode } from './components/DarkMode/useDarkMode'
+import { GlobalStyles } from './components/DarkMode/Globalstyle'
+import { lightTheme, darkTheme } from './components/DarkMode/Themes'
 import ScrollToTop from './helpers/ScrollToTop'
 import Background from './containers/Background'
 import Header from './containers/Header'
@@ -13,20 +16,24 @@ import SkillsPage from './pages/Skills'
 import ResumePage from './pages/Resume'
 import ProjectsPage from './pages/Projects'
 import ContactPage from './pages/Contact'
-import DarkModePage from './pages/DarkMode'
+import DarkModeProjectsPage from './pages/DarkModeProjects'
 import DarkModeHomePage from './pages/DarkModeHome'
 
 const App = () => {
-	const [theme, setTheme] = useState('dark')
 	const location = useLocation()
+	const [theme, mountedComponent] = useDarkMode()
+
+	const themeMode = theme === 'light' ? lightTheme : darkTheme
+
+	if (!mountedComponent) return <div />
 
 	return (
 		<main>
 			<ScrollToTop>
-				<ThemeProvider theme={themes[theme]}>
-					<Background theme={theme} setTheme={setTheme} />
-					<Header theme={theme} setTheme={setTheme} />
-					<MobileHeader theme={theme} setTheme={setTheme} />
+				<ThemeProvider theme={themeMode}>
+					<Background theme={theme} />
+					<Header theme={theme} />
+					<MobileHeader theme={theme} />
 
 					<AnimatePresence exitBeforeEnter>
 						<Switch location={location} key={location.pathname}>
@@ -42,7 +49,7 @@ const App = () => {
 							<Route exact path='/projects' component={ProjectsPage} />
 							<Route exact path='/contact' component={ContactPage} /> */}
 							<Route exact path='/' component={DarkModeHomePage} />
-							<Route exact path='/darkmode' component={DarkModePage} />
+							<Route exact path='/projects' component={DarkModeProjectsPage} />
 						</Switch>
 					</AnimatePresence>
 				</ThemeProvider>

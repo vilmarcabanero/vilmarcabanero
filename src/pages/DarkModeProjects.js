@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import Banner from '../components/Banner'
+import Projects from '../components/Projects'
 
-const Home = () => {
+const ProjectPage = () => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -9,9 +9,9 @@ const Home = () => {
 			exit={{ opacity: 0 }}
 			transition={{ duration: 0.5 }}
 		>
-			<Banner />
+			<Projects />
 		</motion.div>
 	)
 }
 
-export default Home
+export default ProjectPage

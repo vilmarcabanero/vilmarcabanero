@@ -5,6 +5,8 @@ export const Section = styled.section`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
 	box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
 	padding: 2rem;
 	border-radius: 10px;

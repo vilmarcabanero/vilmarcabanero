@@ -8,8 +8,9 @@ export const Container = styled.div`
 	bottom: 0;
 	color: white;
 	/* background-color: rgba(0, 0, 0, 0.7); */
-	background-color: ${props => props.theme.headerBackground};
-	box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
+	/* background-color: ${props => props.theme.headerBackground}; */
+	background-color: ${({theme}) => theme.headerBackground};
+	box-shadow: 5px 5px 10px ${({theme}) => theme.boxShadowColor};
 	border-radius: 15px;
 
 	transition: all ease-in-out 1s;
