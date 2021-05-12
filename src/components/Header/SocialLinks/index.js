@@ -7,30 +7,33 @@ import {
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 
-export default function SocialLinks() {
+const SocialLinks = () => {
 	return (
 		<Container>
-			<Link
-				href='https://www.facebook.com/io.cabanero'
-				target='_blank'
-				rel='noreferrer'
-			>
-				<FontAwesomeIcon className='icon' icon={faFacebookF} />
-			</Link>
-			<Link
-				href='https://www.linkedin.com/in/vilmar-caba%C3%B1ero-b189a9184/'
-				target='_blank'
-				rel='noreferrer'
-			>
-				<FontAwesomeIcon className='icon' icon={faLinkedin} />
-			</Link>
-			<Link
-				href='https://github.com/vilmarcabanero'
-				target='_blank'
-				rel='noreferrer'
-			>
-				<FontAwesomeIcon className='icon' icon={faGithub} />
-			</Link>
+			{links.map(items => {
+				return (
+					<Link href={items.href} target='_blank' rel='noreferrer'>
+						<FontAwesomeIcon className='icon' icon={items.icon} />
+					</Link>
+				)
+			})}
 		</Container>
 	)
 }
+
+const links = [
+	{
+		href: 'https://www.facebook.com/io.cabanero',
+		icon: faFacebookF,
+	},
+	{
+		href: 'https://www.linkedin.com/in/vilmar-caba%C3%B1ero-b189a9184/',
+		icon: faLinkedin,
+	},
+	{
+		href: 'https://github.com/vilmarcabanero',
+		icon: faGithub,
+	},
+]
+
+export default SocialLinks
