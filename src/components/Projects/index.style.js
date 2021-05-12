@@ -14,7 +14,7 @@ export const Styled = styled.div`
 		border-radius: 5px;
 		background-color: ${props => props.theme.containerColor};
 		color: #fff;
-		box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
+		box-shadow: 2px 2px 4px ${props => props.theme.boxShadowColor};
 
 		@media (max-width: 1200px) {
 			padding-bottom: 3rem;
@@ -76,7 +76,7 @@ export const Title = styled.h1`
 	padding-bottom: 0.5rem;
 	border-radius: 5px;
 
-	box-shadow: 3px 3px 6px ${props => props.theme.boxShadowColor};
+	box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
 
 	@media (max-width: 1200px) {
 		font-size: 35px;

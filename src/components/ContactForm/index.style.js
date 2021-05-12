@@ -17,7 +17,7 @@ export const Form = styled.form`
 	background-color: ${props => props.theme.containerColor};
 	transition: all 1s ease;
 	color: white;
-	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
+	box-shadow: 2px 2px 4px ${props => props.theme.boxShadowColor};
 
 	@media (max-width: 992px) {
 		margin-top: 6rem;

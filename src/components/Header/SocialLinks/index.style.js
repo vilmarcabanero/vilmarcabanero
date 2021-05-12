@@ -20,7 +20,7 @@ export const Link = styled.a`
 	color: white;
 	display: inline-block;
 	background: #212431;
-	box-shadow: 3px 3px 6px ${props => props.theme.boxShadowColor};
+	box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
 	margin-right: 4px;
 	border-radius: 50%;
 	text-align: center;
@@ -33,6 +33,6 @@ export const Link = styled.a`
 		color: #fff;
 		text-decoration: none;
 		transition: 0.5s;
-		box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
+		box-shadow: 0px 0px 1px ${props => props.theme.boxShadowColor};
 	}
 `

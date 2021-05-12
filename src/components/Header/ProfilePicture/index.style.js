@@ -7,7 +7,7 @@ export const StyledProfile = styled.img`
 	margin-top: 3rem;
 	display: block;
 	border-radius: 50%;
-	box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
+	box-shadow: 2px 2px 4px ${props => props.theme.boxShadowColor};
 	transition: 1s;
 
 	&:hover {
