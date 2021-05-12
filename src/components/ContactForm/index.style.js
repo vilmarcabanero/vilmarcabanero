@@ -6,7 +6,6 @@ export const Styled = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
-
 `
 export const Form = styled.form`
 	position: relative;

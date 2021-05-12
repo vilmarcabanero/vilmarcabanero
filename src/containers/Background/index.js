@@ -7,7 +7,7 @@ const Background = props => {
 	function changeTheme() {
 		if (props.theme === 'light') {
 			props.setTheme('dark')
-		} else {
+		} else if(props.theme === 'dark') {
 			props.setTheme('light')
 		}
 	}

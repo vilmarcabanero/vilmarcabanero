@@ -13,6 +13,8 @@ import SkillsPage from './pages/Skills'
 import ResumePage from './pages/Resume'
 import ProjectsPage from './pages/Projects'
 import ContactPage from './pages/Contact'
+import DarkModePage from './pages/DarkMode'
+import DarkModeHomePage from './pages/DarkModeHome'
 
 const App = () => {
 	const [theme, setTheme] = useState('dark')
@@ -28,7 +30,7 @@ const App = () => {
 
 					<AnimatePresence exitBeforeEnter>
 						<Switch location={location} key={location.pathname}>
-							<Route
+							{/* <Route
 								theme={theme}
 								setTheme={setTheme}
 								exact
@@ -38,7 +40,9 @@ const App = () => {
 							<Route exact path='/skills' component={SkillsPage} />
 							<Route exact path='/resume' component={ResumePage} />
 							<Route exact path='/projects' component={ProjectsPage} />
-							<Route exact path='/contact' component={ContactPage} />
+							<Route exact path='/contact' component={ContactPage} /> */}
+							<Route exact path='/' component={DarkModeHomePage} />
+							<Route exact path='/darkmode' component={DarkModePage} />
 						</Switch>
 					</AnimatePresence>
 				</ThemeProvider>
