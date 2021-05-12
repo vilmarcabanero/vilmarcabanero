@@ -1,4 +1,5 @@
 import {
+	Styled,
 	Title,
 	Details,
 	ImageContainer,
@@ -26,27 +27,43 @@ import materialui from '../../assets/images/logo-material-ui.png'
 import vscode from '../../assets/images/logo-vscode.png'
 // import sublimetext from '../../assets/images/logo-sublime-text-3.png'
 
-
 const Skills = () => {
 	return (
 		<Container>
 			<Main>
-				<Title>Skills</Title>
-				<Details>
-					I'm a full stack developer who uses the MERN Stack to develop my web
-					apps or websites. My current skill set is as follows:
-				</Details>
+				<Styled>
+					<Title>Skills</Title>
+					<Details>
+						I'm a full stack developer who uses the MERN Stack to develop my web
+						apps or websites. My current skill set is as follows:
+					</Details>
 
-				<ImageContainer>
-					{skills.map(items => {
-						return (
-							<SkillContainer>
-								<Skill id={items.id}>{items.skill}</Skill>
-								<Image src={items.src} id={items.imgId} alt={items.alt} />
-							</SkillContainer>
-						)
-					})}
-				</ImageContainer>
+					<ImageContainer>
+						{skills.map(items => {
+							return (
+								<SkillContainer>
+									<Skill id={items.id}>{items.skill}</Skill>
+									<Image src={items.src} id={items.imgId} alt={items.alt} />
+								</SkillContainer>
+							)
+						})}
+					</ImageContainer>
+
+					<Title id='tools'>Tools</Title>
+					<Details>
+						These are the tools I've been using for my development.
+					</Details>
+					<ImageContainer>
+						{tools.map(items => {
+							return (
+								<SkillContainer>
+									<Skill id={items.id}>{items.tool}</Skill>
+									<Image src={items.src} id={items.imgId} alt={items.alt} />
+								</SkillContainer>
+							)
+						})}
+					</ImageContainer>
+				</Styled>
 			</Main>
 		</Container>
 	)
@@ -99,36 +116,12 @@ const skills = [
 		imgId: 'react',
 	},
 	{
-		skill: 'heroku',
-		src: heroku,
-		alt: 'heroku',
-		id: '',
-	},
-	{
-		skill: 'git',
-		src: git,
-		alt: 'git',
-		id: '',
-	},
-	{
-		skill: 'Gitlab CI/CD',
-		src: gitlabcicd,
-		alt: 'Gitlab CI/CD',
-		id: 'gitlab-ci-cd',
-		imgId: 'gitlab-ci-cd-img',
-	},
-	{
 		skill: 'rest',
 		src: rest,
 		alt: 'rest',
 		id: '',
 	},
-	{
-		skill: 'postman',
-		src: postman,
-		alt: 'postman',
-		id: '',
-	},
+
 	{
 		skill: 'bootstrap',
 		src: bootstrap,
@@ -141,20 +134,40 @@ const skills = [
 		alt: 'materialui',
 		id: 'material-ui',
 	},
+]
+
+const tools = [
 	{
-		skill: 'VS Code',
+		tool: 'VS Code',
 		src: vscode,
 		alt: 'vscode',
 		id: '',
 	},
-	// {
-	// 	skill: 'Sublime Text',
-	// 	src: sublimetext,
-	// 	alt: 'sublimetext',
-	// 	id: 'sublime-text',
-	// },
-
-	
+	{
+		tool: 'postman',
+		src: postman,
+		alt: 'postman',
+		id: '',
+	},
+	{
+		tool: 'Gitlab CI/CD',
+		src: gitlabcicd,
+		alt: 'Gitlab CI/CD',
+		id: 'gitlab-ci-cd',
+		imgId: 'gitlab-ci-cd-img',
+	},
+	{
+		tool: 'heroku',
+		src: heroku,
+		alt: 'heroku',
+		id: '',
+	},
+	{
+		tool: 'git',
+		src: git,
+		alt: 'git',
+		id: '',
+	},
 ]
 
 export default Skills

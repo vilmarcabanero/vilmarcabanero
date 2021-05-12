@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+export const Styled = styled.div`
+	#tools {
+		margin-top: 2rem;
+	}
+`
+
 export const Title = styled.h1`
 	font-size: 45px;
 	color: ${props => props.theme.titleColor};
