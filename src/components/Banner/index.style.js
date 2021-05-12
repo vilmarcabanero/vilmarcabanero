@@ -11,18 +11,18 @@ export const Section = styled.section`
 	padding: 2rem;
 	border-radius: 10px;
 
-	margin-top: 20rem;
+	margin-top: 30vh;
 
 	@media (max-width: 992px) {
-		margin-top: 15rem;
+		margin-top: 26vh;
 	}
 
 	@media (max-width: 768px) {
-		margin-top: 12rem;
+		margin-top: 24vh;
 	}
 
 	@media (max-width: 576px) {
-		margin-top: 7.5rem;
+		margin-top: 22vh;
 	}
 `
 
