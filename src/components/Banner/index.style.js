@@ -18,11 +18,11 @@ export const Section = styled.section`
 	}
 
 	@media (max-width: 768px) {
-		margin-top: 24vh;
+		margin-top: 23vh;
 	}
 
 	@media (max-width: 576px) {
-		margin-top: 22vh;
+		margin-top: 20vh;
 	}
 `
 

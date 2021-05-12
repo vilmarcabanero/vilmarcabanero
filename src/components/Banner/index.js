@@ -42,11 +42,11 @@ const links = [
 		icon: faFacebookF,
 	},
 	{
-		href: github,
+		href: linkedin,
 		icon: faLinkedin,
 	},
 	{
-		href: linkedin,
+		href: github,
 		icon: faGithub,
 	},
 ]
