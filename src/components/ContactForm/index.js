@@ -35,23 +35,16 @@ const ContactForm = () => {
 							<Form onSubmit={submit}>
 								<Title>Contact me </Title>
 
-								<InputGroup>
-									<Input type='text' required />
-									<Placeholder className='placeholder'> Full Name</Placeholder>
-								</InputGroup>
-
-								<InputGroup>
-									<Input type='text' required />
-									<Placeholder className='placeholder'>
-										{' '}
-										Email Address
-									</Placeholder>
-								</InputGroup>
-
-								<InputGroup>
-									<TextArea required />
-									<Placeholder className='placeholder'>Message</Placeholder>
-								</InputGroup>
+								{inputs.map(items => {
+									return (
+										<InputGroup>
+											<items.component type={items.type} required />
+											<Placeholder className='placeholder'>
+												{items.placeholder}
+											</Placeholder>
+										</InputGroup>
+									)
+								})}
 
 								<Button type='submit'>Send</Button>
 
@@ -66,5 +59,23 @@ const ContactForm = () => {
 		</Container>
 	)
 }
+
+const inputs = [
+	{
+		component: Input,
+		type: 'text',
+		placeholder: 'Full Name',
+	},
+	{
+		component: Input,
+		type: 'text',
+		placeholder: 'Email Address',
+	},
+	{
+		component: TextArea,
+		type: '',
+		placeholder: 'Email Address',
+	},
+]
 
 export default ContactForm
