@@ -5,8 +5,8 @@ export const Section = styled.section`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.5);
+	color: ${props => props.theme.titleColor};
+	background-color: transparent;
 	box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
 	padding: 2rem;
 	border-radius: 10px;
@@ -28,7 +28,7 @@ export const Section = styled.section`
 
 export const Name = styled.h1`
 	font-size: 3rem;
-	color: ${props => props.theme.bannerForeground};
+	color: ${props => props.theme.titleColor};
 	transition: all 1s ease;
 	text-align: center;
 

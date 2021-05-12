@@ -2,12 +2,13 @@ import './App.css'
 import { useState } from 'react'
 import { Switch, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
-import { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import { themes } from './helpers/theme'
 import { useDarkMode } from './components/DarkMode/useDarkMode'
 import { GlobalStyles } from './components/DarkMode/Globalstyle'
 import { lightTheme, darkTheme } from './components/DarkMode/Themes'
 import ScrollToTop from './helpers/ScrollToTop'
+import Toggle from './components/DarkMode/Toggler'
 import Background from './containers/Background'
 import Header from './containers/Header'
 import MobileHeader from './containers/MobileHeader'
@@ -21,7 +22,7 @@ import DarkModeHomePage from './pages/DarkModeHome'
 
 const App = () => {
 	const location = useLocation()
-	const [theme, mountedComponent] = useDarkMode()
+	const [theme, themeToggler, mountedComponent] = useDarkMode()
 
 	const themeMode = theme === 'light' ? lightTheme : darkTheme
 
@@ -31,6 +32,10 @@ const App = () => {
 		<main>
 			<ScrollToTop>
 				<ThemeProvider theme={themeMode}>
+					<Div>
+						<Toggle theme={theme} toggleTheme={themeToggler} />
+					</Div>
+
 					<Background theme={theme} />
 					<Header theme={theme} />
 					<MobileHeader theme={theme} />
@@ -57,5 +62,10 @@ const App = () => {
 		</main>
 	)
 }
+
+const Div = styled.div`
+	position: relative;
+	z-index: 9999;
+`
 
 export default App

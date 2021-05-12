@@ -3,9 +3,11 @@ export const lightTheme = {
   text: '#363537',
   toggleBorder: '#FFF',
   background: 'linear-gradient(#39598A, #79D7ED)',
+  titleColor: '#173B6c',
   headerBackground: 'rgba(4, 11, 20, 1)',
-  particleColor: '#4398ff',
+  particleColor: 'rgba(245, 248, 253, 1)',
   boxShadowColor: 'rgba(255, 255, 255, 0.75)',
+  
 }
 
 export const darkTheme = {
@@ -13,6 +15,7 @@ export const darkTheme = {
   text: '#FAFAFA',
   toggleBorder: '#6B8096',
   background: '#999',
+  titleColor: '#fff',
   headerBackground: 'rgba(0, 0, 0, 1)',
   particleColor: 'rgba(52, 52, 52, 1)',
   boxShadowColor: 'rgba(255, 255, 255, 0.75)',
