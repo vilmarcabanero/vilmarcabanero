@@ -13,7 +13,7 @@ export const Styled = styled.div`
 
 		border-radius: 5px;
 		background-color: ${props => props.theme.containerColor};
-		color: ${props => props.theme.bannerForeground};
+		color: #fff;
 		box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
 
 		@media (max-width: 1200px) {
@@ -66,7 +66,7 @@ export const Styled = styled.div`
 
 export const Title = styled.h1`
 	font-size: 45px;
-	color: ${props => props.theme.bannerForeground};
+	color: ${props => props.theme.titleColor};
 	transition: all 1s ease;
 	text-align: center;
 	/* background-color: ${props => props.theme.titleBackground}; */
@@ -90,7 +90,7 @@ export const Link = styled.a`
 
 	color: white;
 	background: #212431;
-	box-shadow: 5px 5px 10px ${props => props.theme.boxShadowColor};
+	box-shadow: 3px 3px 6px #fff;
 	margin-right: 4px;
 	border-radius: 50%;
 	width: 50px;
@@ -102,7 +102,7 @@ export const Link = styled.a`
 		color: #fff;
 		text-decoration: none;
 		transition: 0.5s;
-		box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
+		box-shadow: 1px 1px 2px #fff;
 	}
 
 	@media (min-width: 992px) {

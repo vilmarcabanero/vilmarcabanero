@@ -31,7 +31,7 @@ export const MyContainer = styled.div`
 
 export const Title = styled.h1`
 	font-size: 45px;
-	color: ${props => props.theme.bannerForeground};
+	color: ${props => props.theme.titleColor};
 	transition: all 1s ease;
 	text-align: center;
 	/* background-color: ${props => props.theme.titleBackground}; */
@@ -46,10 +46,11 @@ export const Title = styled.h1`
 `
 export const Details = styled.p`
 	font-size: 1.25rem;
-	color: ${props => props.theme.bannerForeground};
-	transition: all 1s ease;
+	color: ${props => props.theme.titleColor};
+	
 	text-align: center;
 	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
+	transition: all 1s ease;
 	border-radius: 10px;
 	padding: 1rem;
 
@@ -110,8 +111,9 @@ export const Skill = styled.span`
 	border-radius: 10px;
 	text-transform: uppercase;
 	font-weight: 500;
-	color: white;
+	color: ${props => props.theme.titleColor};
 	font-size: 1.3rem;
+	transition: all 1s ease;
 
 	@media (max-width: 1200px) {
 		font-size: 1.15;

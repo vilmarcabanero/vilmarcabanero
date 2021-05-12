@@ -39,7 +39,7 @@ export const Name = styled.h1`
 
 export const Details = styled.h3`
 	font-size: 1.75rem;
-	color: ${props => props.theme.bannerForeground};
+	color: ${props => props.theme.titleColor};
 	transition: all 1s ease;
 	text-align: center;
 
