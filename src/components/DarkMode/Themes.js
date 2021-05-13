@@ -10,9 +10,8 @@ export const lightTheme = {
 	tertiaryColor: '#149ddd',
 	bannerForeground: 'black',
 	titleBackground: 'rgba(0, 0, 0, 0.5)',
-	containerColor: 'rgba(4, 11, 20, 0.9)',
-	containerColorParent: 'rgba(0, 0, 0, 0.7)',
-	skillImageColor: 'rgba(255, 255, 255, 0.8',
+	containerColorLighter: 'rgba(255, 255, 255, 0.4)',
+	containerColorDarker: 'rgba(255, 255, 255, 0.4)',
 }
 
 export const darkTheme = {
@@ -27,7 +26,6 @@ export const darkTheme = {
 	tertiaryColor: 'rgba(0, 0, 0, 0.7)',
 	bannerForeground: '#fff',
 	titleBackground: 'rgba(0, 0, 0, 0.5)',
-	containerColor: 'rgba(0, 0, 0, 0.9)',
-	containerColorParent: 'rgba(0, 0, 0, 0.7)',
-	skillImageColor: 'rgba(0, 0, 0, 0.4)',
+	containerColorLighter: 'rgba(0, 0, 0, 0.4)',
+	containerColorDarker: 'rgba(0, 0, 0, 0.7)'
 }

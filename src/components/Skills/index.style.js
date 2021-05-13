@@ -11,7 +11,7 @@ export const Title = styled.h1`
 	color: ${props => props.theme.titleColor};
 	transition: all 1s ease;
 	text-align: center;
-	/* background-color: ${props => props.theme.titleBackground}; */
+
 	border-radius: 10px;
 	margin-bottom: 1rem;
 
@@ -27,6 +27,7 @@ export const Details = styled.p`
 	margin-left: 4rem;
 	margin-right: 4rem;
 	text-align: center;
+	background-color: ${props => props.theme.containerColorLighter};
 	box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
 	transition: all 1s ease;
 	border-radius: 10px;
@@ -54,6 +55,7 @@ export const SkillContainer = styled.div`
 	margin: 0.5rem;
 	/* border-radius: 50%; */
 	border-radius: 10px;
+	background-color: ${props => props.theme.containerColorLighter};
 	box-shadow: 1.5px 1.5px 3px ${props => props.theme.boxShadowColor};
 	width: 160px;
 	height: 160px;

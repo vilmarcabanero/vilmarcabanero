@@ -19,10 +19,12 @@ export const Section = styled.section`
 
 	@media (max-width: 768px) {
 		margin-top: 23vh;
+		padding: 1rem;
 	}
 
 	@media (max-width: 576px) {
 		margin-top: 20vh;
+		padding: 1rem;
 	}
 `
 
@@ -33,7 +35,7 @@ export const Name = styled.h1`
 	text-align: center;
 
 	@media (max-width: 576px) {
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 `
 
@@ -44,7 +46,7 @@ export const Details = styled.h3`
 	text-align: center;
 
 	@media (max-width: 576px) {
-		font-size: 1.25rem;
+		font-size: 1.2rem;
 	}
 `
 

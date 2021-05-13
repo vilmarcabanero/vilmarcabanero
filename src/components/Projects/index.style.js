@@ -12,7 +12,7 @@ export const Styled = styled.div`
 		margin-top: 0.5rem;
 
 		border-radius: 5px;
-		background-color: ${props => props.theme.containerColor};
+		background-color: ${props => props.theme.headerBackground};
 		color: #fff;
 		box-shadow: 2px 2px 4px ${props => props.theme.boxShadowColor};
 

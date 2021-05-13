@@ -74,7 +74,7 @@ const inputs = [
 	{
 		component: TextArea,
 		type: '',
-		placeholder: 'Email Address',
+		placeholder: 'Message',
 	},
 ]
 

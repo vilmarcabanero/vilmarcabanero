@@ -13,14 +13,24 @@ export const Form = styled.form`
 	max-width: 40rem;
 	z-index: 20;
 	padding: 2rem;
+	margin-left: 2.25rem;
+	margin-right: 2.25rem;
 	border-radius: 10px;
-	background-color: ${props => props.theme.containerColor};
+	background-color: ${props => props.theme.headerBackground};
 	transition: all 1s ease;
 	color: white;
 	box-shadow: 2px 2px 4px ${props => props.theme.boxShadowColor};
 
+	@media (max-width: 1400px) {
+		margin-top: 6rem;
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+
 	@media (max-width: 992px) {
 		margin-top: 6rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
 	}
 
 	@media (max-width: 768px) {
@@ -28,6 +38,8 @@ export const Form = styled.form`
 		max-width: 100%;
 		padding-bottom: 0;
 		margin-top: 3;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 
 	@media (max-width: 576px) {
@@ -35,6 +47,8 @@ export const Form = styled.form`
 		max-width: 100%;
 		padding-bottom: 0;
 		margin-top: 1rem;
+		margin-left: 0rem;
+		margin-right: 0rem;
 	}
 `
 
@@ -155,7 +169,7 @@ export const Button = styled.button`
 
 export const Alert = styled.span`
 	width: 100%;
-	color:  #fff;
+	color: #fff;
 	padding: 1rem;
 	background-color: transparent;
 	transition: all 1s ease;
