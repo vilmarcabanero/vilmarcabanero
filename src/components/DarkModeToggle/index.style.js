@@ -15,7 +15,7 @@ export const Button = styled.button`
 	background-color: ${props => props.theme.tertiaryColor};
 	transition: all 1s ease;
 	color: white;
-	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
+	box-shadow: 2px 2px 3px ${props => props.theme.boxShadowColor};
 	&:focus {
 		outline: none;
 	}

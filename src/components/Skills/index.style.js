@@ -43,7 +43,7 @@ export const SkillContainer = styled.div`
 	padding-top: 1.5rem;
 	margin: 0.5rem;
 	border-radius: 50%;
-	box-shadow: 3px 3px 6px ${props => props.theme.boxShadowColor};
+	box-shadow: 1.5px 1.5px 3px ${props => props.theme.boxShadowColor};
 	width: 180px;
 	height: 180px;
 
