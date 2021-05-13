@@ -18,8 +18,8 @@ const Banner = () => {
 			<Main>
 				<Section className='text-center'>
 					<Row>
-						<Name>Hi. I'm Vilmar.</Name>
-						<Details>I'm an engineer turned developer.</Details>
+						<Name>Hi, I'm Vilmar.</Name>
+						<Details>I'm an Engineer and Full Stack Developer.</Details>
 					</Row>
 					<Row>
 						{links.map(items => {

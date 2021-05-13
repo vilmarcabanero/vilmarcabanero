@@ -88,12 +88,12 @@ const skills = [
 		alt: 'javascript',
 		id: '',
 	},
-
 	{
-		skill: 'mongodb',
-		src: mongodb,
-		alt: 'mongodb',
+		skill: 'react',
+		src: react,
+		alt: 'react',
 		id: '',
+		imgId: 'react',
 	},
 	{
 		skill: 'nodejs',
@@ -109,13 +109,6 @@ const skills = [
 		id: '',
 	},
 	{
-		skill: 'react',
-		src: react,
-		alt: 'react',
-		id: '',
-		imgId: 'react',
-	},
-	{
 		skill: 'rest',
 		src: rest,
 		alt: 'rest',
@@ -123,9 +116,9 @@ const skills = [
 	},
 
 	{
-		skill: 'bootstrap',
-		src: bootstrap,
-		alt: 'bootstrap',
+		skill: 'mongodb',
+		src: mongodb,
+		alt: 'mongodb',
 		id: '',
 	},
 	{
@@ -133,6 +126,13 @@ const skills = [
 		src: materialui,
 		alt: 'materialui',
 		id: 'material-ui',
+	},
+
+	{
+		skill: 'bootstrap',
+		src: bootstrap,
+		alt: 'bootstrap',
+		id: '',
 	},
 ]
 

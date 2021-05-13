@@ -15,7 +15,7 @@ export const Title = styled.h1`
 	border-radius: 10px;
 	margin-bottom: 1rem;
 
-	box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
+	/* box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor}; */
 
 	@media (max-width: 1200px) {
 		font-size: 35px;
@@ -24,12 +24,23 @@ export const Title = styled.h1`
 export const Details = styled.p`
 	font-size: 1.25rem;
 	color: ${props => props.theme.titleColor};
-	
+	margin-left: 4rem;
+	margin-right: 4rem;
 	text-align: center;
 	box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
 	transition: all 1s ease;
 	border-radius: 10px;
 	padding: 1rem;
+
+	@media (max-width: 1200px) {
+		margin-left: 4.5rem;
+		margin-right: 4.5rem;
+	}
+
+	@media (max-width: 992px) {
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
 
 	@media (max-width: 576px) {
 		font-size: 1rem;
@@ -40,16 +51,23 @@ export const SkillContainer = styled.div`
 	transition: all 1s ease;
 	text-align: center;
 	padding: 1rem;
-	padding-top: 1.5rem;
 	margin: 0.5rem;
-	border-radius: 50%;
+	/* border-radius: 50%; */
+	border-radius: 10px;
 	box-shadow: 1.5px 1.5px 3px ${props => props.theme.boxShadowColor};
-	width: 180px;
-	height: 180px;
+	width: 160px;
+	height: 160px;
+
+	#gitlab-ci-cd {
+		font-size: 1.1rem;
+	}
+	#material-ui {
+		font-size: 1.2rem;
+	}
 
 	@media (max-width: 1200px) {
-		width: 160px;
-		height: 160px;
+		width: 150px;
+		height: 150px;
 
 		#gitlab-ci-cd {
 			font-size: 1.1rem;
@@ -61,6 +79,22 @@ export const SkillContainer = styled.div`
 
 		#material-ui {
 			font-size: 1.1rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		width: 130px;
+		height: 130px;
+		#gitlab-ci-cd {
+			font-size: 0.7rem;
+		}
+
+		#sublime-text {
+			font-size: 0.7rem;
+		}
+
+		#material-ui {
+			font-size: 0.7rem;
 		}
 	}
 
@@ -93,7 +127,11 @@ export const Skill = styled.span`
 	transition: all 1s ease;
 
 	@media (max-width: 1200px) {
-		font-size: 1.15;
+		font-size: 1.15rem;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 1rem;
 	}
 
 	@media (max-width: 576px) {
@@ -115,20 +153,27 @@ export const ImageContainer = styled.div`
 `
 
 export const Image = styled.img`
-	background-color: ${props => props.theme.containerColor};
+	/* background-color: ${props => props.theme.skillImageColor}; */
+	background-color: rgba(255, 255, 255, 1);
 	box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
 	border-radius: 50%;
-	width: 110px;
-	height: 110px;
+	width: 80px;
+	height: 80px;
 	margin: 5px;
+	margin-top: 15px;
 
 	@media (max-width: 1200px) {
-		width: 90px;
-		height: 90px;
+		width: 70px;
+		height: 70px;
+	}
+
+	@media (max-width: 768px) {
+		width: 60px;
+		height: 60px;
 	}
 
 	@media (max-width: 576px) {
-		width: 60px;
-		height: 60px;
+		width: 55px;
+		height: 55px;
 	}
 `

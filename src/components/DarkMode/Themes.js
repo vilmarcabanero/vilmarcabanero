@@ -12,6 +12,7 @@ export const lightTheme = {
 	titleBackground: 'rgba(0, 0, 0, 0.5)',
 	containerColor: 'rgba(4, 11, 20, 0.9)',
 	containerColorParent: 'rgba(0, 0, 0, 0.7)',
+	skillImageColor: 'rgba(255, 255, 255, 0.8',
 }
 
 export const darkTheme = {
@@ -28,4 +29,5 @@ export const darkTheme = {
 	titleBackground: 'rgba(0, 0, 0, 0.5)',
 	containerColor: 'rgba(0, 0, 0, 0.9)',
 	containerColorParent: 'rgba(0, 0, 0, 0.7)',
+	skillImageColor: 'rgba(0, 0, 0, 0.4)',
 }
