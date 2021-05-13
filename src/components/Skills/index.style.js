@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Styled = styled.div`
 	#tools {
-		margin-top: 2rem;
+		margin-top: 5rem;
 	}
 `
 
