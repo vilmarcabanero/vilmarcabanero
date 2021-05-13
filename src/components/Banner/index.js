@@ -22,13 +22,11 @@ const Banner = () => {
 						<Details>I'm an Engineer and Full Stack Developer.</Details>
 					</Row>
 					<Row>
-						{links.map(items => {
-							return (
-								<Link href={items.href} target='_blank' rel='noreferrer'>
-									<FontAwesomeIcon className='icon' icon={items.icon} />
-								</Link>
-							)
-						})}
+						{links.map(items => (
+							<Link href={items.href} target='_blank' rel='noreferrer'>
+								<FontAwesomeIcon className='icon' icon={items.icon} />
+							</Link>
+						))}
 					</Row>
 				</Section>
 			</Main>

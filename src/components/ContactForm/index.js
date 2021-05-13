@@ -35,16 +35,14 @@ const ContactForm = () => {
 							<Form onSubmit={submit}>
 								<Title>Contact me </Title>
 
-								{inputs.map(items => {
-									return (
-										<InputGroup>
-											<items.component type={items.type} required />
-											<Placeholder className='placeholder'>
-												{items.placeholder}
-											</Placeholder>
-										</InputGroup>
-									)
-								})}
+								{inputs.map(items => (
+									<InputGroup>
+										<items.component type={items.type} required />
+										<Placeholder className='placeholder'>
+											{items.placeholder}
+										</Placeholder>
+									</InputGroup>
+								))}
 
 								<Button type='submit'>Send</Button>
 

@@ -13,14 +13,12 @@ import {
 const NavLinks = () => {
 	return (
 		<Container>
-			{navLinks.map(items => {
-				return (
-					<NavLink to={items.to} exact activeClassName='active'>
-						<FontAwesomeIcon className='icon' icon={items.icon} />
-						<span> {items.title} </span>
-					</NavLink>
-				)
-			})}
+			{navLinks.map(items => (
+				<NavLink to={items.to} exact activeClassName='active'>
+					<FontAwesomeIcon className='icon' icon={items.icon} />
+					<span> {items.title} </span>
+				</NavLink>
+			))}
 		</Container>
 	)
 }

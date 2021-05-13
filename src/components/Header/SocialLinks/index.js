@@ -10,13 +10,11 @@ import {
 const SocialLinks = () => {
 	return (
 		<Container>
-			{links.map(items => {
-				return (
-					<Link href={items.href} target='_blank' rel='noreferrer'>
-						<FontAwesomeIcon className='icon' icon={items.icon} />
-					</Link>
-				)
-			})}
+			{links.map(items => (
+				<Link href={items.href} target='_blank' rel='noreferrer'>
+					<FontAwesomeIcon className='icon' icon={items.icon} />
+				</Link>
+			))}
 		</Container>
 	)
 }

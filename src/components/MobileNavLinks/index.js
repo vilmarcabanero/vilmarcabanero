@@ -16,16 +16,14 @@ const MobileNavLinks = () => {
 	return (
 		<Container>
 			<Row>
-				{links.map(items => {
-					return (
-						<Col>
-							<Link to={items.to} exact activeClassName='active'>
-								<FontAwesomeIcon className='icon' icon={items.icon} />
-								<span> {items.title} </span>
-							</Link>
-						</Col>
-					)
-				})}
+				{links.map(items => (
+					<Col>
+						<Link to={items.to} exact activeClassName='active'>
+							<FontAwesomeIcon className='icon' icon={items.icon} />
+							<span> {items.title} </span>
+						</Link>
+					</Col>
+				))}
 			</Row>
 		</Container>
 	)

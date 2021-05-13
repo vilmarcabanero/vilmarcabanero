@@ -15,55 +15,53 @@ const Projects = () => {
 				<Styled>
 					<Title class='text-center'> Projects </Title>
 					<Row>
-						{cards.map(items => {
-							return (
-								<Col md={6} className='card-col'>
-									<Card className='card'>
-										<Card.Img
-											variant='top'
-											src={items.src}
-											className='card-img'
-										/>
-										<Card.Body>
-											<Card.Title className='card-title'>
-												{items.title}{' '}
-											</Card.Title>
-											<Card.Text className='card-text'>
-												{items.description}
-											</Card.Text>
-											<Row className='icon-row'>
-												<Col className='d-flex justify-content-end align-items-center '>
-													<Link
-														href={items.hrefWeb}
-														target='_blank'
-														rel='noreferrer'
-													>
-														<FontAwesomeIcon
-															className='icon'
-															icon={items.iconWeb}
-														/>
-													</Link>
-												</Col>
+						{cards.map(items => (
+							<Col md={6} className='card-col'>
+								<Card className='card'>
+									<Card.Img
+										variant='top'
+										src={items.src}
+										className='card-img'
+									/>
+									<Card.Body>
+										<Card.Title className='card-title'>
+											{items.title}{' '}
+										</Card.Title>
+										<Card.Text className='card-text'>
+											{items.description}
+										</Card.Text>
+										<Row className='icon-row'>
+											<Col className='d-flex justify-content-end align-items-center '>
+												<Link
+													href={items.hrefWeb}
+													target='_blank'
+													rel='noreferrer'
+												>
+													<FontAwesomeIcon
+														className='icon'
+														icon={items.iconWeb}
+													/>
+												</Link>
+											</Col>
 
-												<Col className='d-flex justify-content-start align-items-center '>
-													<Link
-														href={items.hrefGitHub}
-														target='_blank'
-														rel='noreferrer'
-														className='text-center'
-													>
-														<FontAwesomeIcon
-															className='icon'
-															icon={items.iconGithub}
-														/>
-													</Link>
-												</Col>
-											</Row>
-										</Card.Body>
-									</Card>
-								</Col>
-							)
-						})}
+											<Col className='d-flex justify-content-start align-items-center '>
+												<Link
+													href={items.hrefGitHub}
+													target='_blank'
+													rel='noreferrer'
+													className='text-center'
+												>
+													<FontAwesomeIcon
+														className='icon'
+														icon={items.iconGithub}
+													/>
+												</Link>
+											</Col>
+										</Row>
+									</Card.Body>
+								</Card>
+							</Col>
+						))}
 					</Row>
 				</Styled>
 			</Main>

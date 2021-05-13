@@ -39,14 +39,12 @@ const Skills = () => {
 					</Details>
 
 					<ImageContainer>
-						{skills.map(items => {
-							return (
-								<SkillContainer>
-									<Skill id={items.id}>{items.skill}</Skill>
-									<Image src={items.src} id={items.imgId} alt={items.alt} />
-								</SkillContainer>
-							)
-						})}
+						{skills.map(items => (
+							<SkillContainer>
+								<Skill id={items.id}>{items.skill}</Skill>
+								<Image src={items.src} id={items.imgId} alt={items.alt} />
+							</SkillContainer>
+						))}
 					</ImageContainer>
 
 					<Title id='tools'>Tools</Title>
@@ -54,14 +52,12 @@ const Skills = () => {
 						These are the tools I've been using for my development.
 					</Details>
 					<ImageContainer>
-						{tools.map(items => {
-							return (
-								<SkillContainer>
-									<Skill id={items.id}>{items.tool}</Skill>
-									<Image src={items.src} id={items.imgId} alt={items.alt} />
-								</SkillContainer>
-							)
-						})}
+						{tools.map(items => (
+							<SkillContainer>
+								<Skill id={items.id}>{items.tool}</Skill>
+								<Image src={items.src} id={items.imgId} alt={items.alt} />
+							</SkillContainer>
+						))}
 					</ImageContainer>
 				</Styled>
 			</Main>
