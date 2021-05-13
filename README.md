@@ -24,6 +24,12 @@
 
 <h2><samp>📈 GITHUB STATISTICS</samp></h2>
 
+<!-- 
+<p align="center">
+
+<img width="49%" height="100%" style="display:inline" align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=vilmarcabanero&theme=dark" alt="vilmarcabanero" />
+</p> -->
+
 <p align="center">
 <img width="49%" heigth="100%" style="display:inline" align="center" src="https://github-readme-stats.vercel.app/api?username=vilmarcabanero&show_icons=true&line_height=27&count_private=true&theme=gotham&card_width=300&include_all_commits=true" />
 
