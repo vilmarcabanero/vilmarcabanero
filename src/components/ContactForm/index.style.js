@@ -9,7 +9,8 @@ export const Styled = styled.div`
 `
 export const Form = styled.form`
 	position: relative;
-	margin-top: 10rem;
+	/* margin-top: 10rem; */
+	margin-top: 15vh;
 	max-width: 40rem;
 	z-index: 20;
 	padding: 2rem;
@@ -22,13 +23,15 @@ export const Form = styled.form`
 	box-shadow: 2px 2px 4px ${props => props.theme.boxShadowColor};
 
 	@media (max-width: 1400px) {
-		margin-top: 6rem;
+		/* margin-top: 6rem; */
+		margin-top: 15vh;
 		margin-left: 0rem;
 		margin-right: 0rem;
 	}
 
 	@media (max-width: 992px) {
-		margin-top: 6rem;
+		/* margin-top: 6rem; */
+		margin-top: 15vh;
 		margin-left: 2rem;
 		margin-right: 2rem;
 	}
@@ -37,7 +40,8 @@ export const Form = styled.form`
 		padding: 1rem;
 		max-width: 100%;
 		padding-bottom: 0;
-		margin-top: 3;
+		/* margin-top: 3; */
+		margin-top: 15vh;
 		margin-left: 1rem;
 		margin-right: 1rem;
 	}
@@ -46,7 +50,8 @@ export const Form = styled.form`
 		padding: 1rem;
 		max-width: 100%;
 		padding-bottom: 0;
-		margin-top: 1rem;
+		/* margin-top: 1rem; */
+		margin-top: 4vh;
 		margin-left: 0rem;
 		margin-right: 0rem;
 	}
