@@ -18,7 +18,7 @@ export const Form = styled.form`
 	margin-right: 2.25rem;
 	border-radius: 10px;
 	background-color: ${props => props.theme.headerBackground};
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	color: white;
 	box-shadow: 2px 2px 4px ${props => props.theme.boxShadowColor};
 
@@ -63,7 +63,7 @@ export const Title = styled.h1`
 	margin-top: 1rem;
 	text-align: center;
 	cursor: text;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	@media (max-width: 30rem) {
 		font-size: 1.75rem;
 	}
@@ -74,7 +74,7 @@ export const InputGroup = styled.label`
 	width: 100%;
 	margin-bottom: 0.5rem;
 	padding-top: 1rem;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	&:hover {
 		cursor: text;
 	}
@@ -89,7 +89,7 @@ export const Input = styled.input`
 	height: 2rem;
 	padding-left: 0.5rem;
 	background-color: transparent;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	outline: none;
 	border-top: none;
 	border-left: none;
@@ -114,7 +114,7 @@ export const Placeholder = styled.span`
 	left: 0.5rem;
 	top: 1.3rem;
 	color: #aaa;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 	cursor: text;
 `
@@ -128,7 +128,7 @@ export const TextArea = styled.textarea`
 	height: 5rem;
 	padding-left: 0.5rem;
 	background-color: transparent;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	outline: none;
 	border-top: none;
 	border-left: none;
@@ -155,7 +155,7 @@ export const Button = styled.button`
 	margin-bottom: 3rem;
 	font-size: 1.2rem;
 	background-color: #06f;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	border: 1px solid #06f;
 	border-radius: 0.2rem;
 	&:hover {
@@ -177,7 +177,7 @@ export const Alert = styled.span`
 	color: #fff;
 	padding: 1rem;
 	background-color: transparent;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	font-size: 1.1rem;
 	border-radius: 10px;
 	position: absolute;

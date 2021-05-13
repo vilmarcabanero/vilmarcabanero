@@ -26,13 +26,13 @@ export const Link = styled.a`
 	text-align: center;
 	width: 36px;
 	height: 36px;
-	transition: 1s;
+	transition: all 0.5s ease;
 
 	&:hover {
 		background: #149ddd;
 		color: #fff;
 		text-decoration: none;
-		transition: 0.5s;
+		transition: all 0.5s ease;
 		box-shadow: 0px 0px 1px ${props => props.theme.boxShadowColor};
 	}
 `

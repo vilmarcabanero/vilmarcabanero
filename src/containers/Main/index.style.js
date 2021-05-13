@@ -6,6 +6,7 @@ export const MainContainer = styled.div`
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 
+
 	@media (max-width: 992px) {
 		margin-left: 0;
 		margin-top: 2rem;

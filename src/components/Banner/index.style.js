@@ -7,7 +7,7 @@ export const Section = styled.section`
 	flex-direction: column;
 	color: ${props => props.theme.titleColor};
 	background-color: transparent;
-	box-shadow: 4px 4px 8px ${props => props.theme.boxShadowColor};
+	box-shadow: 2px 2px 4px ${props => props.theme.boxShadowColor};
 	padding: 2rem;
 	border-radius: 10px;
 
@@ -31,7 +31,7 @@ export const Section = styled.section`
 export const Name = styled.h1`
 	font-size: 3rem;
 	color: ${props => props.theme.titleColor};
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	text-align: center;
 
 	@media (max-width: 576px) {
@@ -42,7 +42,7 @@ export const Name = styled.h1`
 export const Details = styled.h3`
 	font-size: 1.75rem;
 	color: ${props => props.theme.titleColor};
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	text-align: center;
 
 	@media (max-width: 576px) {
@@ -66,7 +66,7 @@ export const Link = styled.a`
 	width: 50px;
 	height: 50px;
 
-	transition: 1s;
+	transition: 0.5s;
 
 	@media (max-width: 576px) {
 		width: 40px;

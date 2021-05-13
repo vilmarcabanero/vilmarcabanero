@@ -40,7 +40,7 @@ export const Styled = styled.div`
 			font-size: 35px;
 			font-family: 'DM Mono', monospace;
 
-			transition: all 1s ease;
+			transition: all 0.5s ease;
 			@media (max-width: 1200px) {
 				font-size: 27px;
 			}
@@ -51,7 +51,7 @@ export const Styled = styled.div`
 			font-family: 'DM Sans', sans-serif;
 			height: 70%;
 
-			transition: all 1s ease;
+			transition: all 0.5s ease;
 			@media (max-width: 1200px) {
 				font-size: 1.25rem;
 				height: 80%;
@@ -67,7 +67,7 @@ export const Styled = styled.div`
 export const Title = styled.h1`
 	font-size: 45px;
 	color: ${props => props.theme.titleColor};
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	text-align: center;
 	/* background-color: ${props => props.theme.titleBackground}; */
 	margin-left: -0.75rem;
@@ -95,7 +95,7 @@ export const Link = styled.a`
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	transition: 1s;
+	transition: 0.5s;
 
 	&:hover {
 		background: #149ddd;

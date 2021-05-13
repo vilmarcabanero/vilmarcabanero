@@ -13,8 +13,8 @@ export const Container = styled.div`
 	box-shadow: 2px 2px 4px ${({theme}) => theme.boxShadowColor};
 	border-radius: 15px;
 
-	transition: all ease-in-out 1s;
-	transition: all 1s;
+	transition: all ease-in-out 0.5s;
+	transition: all 0.5s;
 	/* padding: 5rem; */
 
 	&:hover {

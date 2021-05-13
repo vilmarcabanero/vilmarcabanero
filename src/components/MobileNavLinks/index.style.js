@@ -12,7 +12,7 @@ export const Container = styled.div`
 	}
 	a {
 		text-decoration: none;
-		transition: 1s;
+		transition: all 0.5s ease;
 		padding: 0.75rem 1.5rem 0.45rem 1rem;
 
 		display: flex;
@@ -31,11 +31,11 @@ export const Container = styled.div`
 		&:hover {
 			span {
 				color: white;
-				transition: 0.5s;
+				transition: all 0.5s ease;
 			}
 			.icon {
 				color: #149ddd;
-				transition: 0.5s;
+				transition:  all 0.5s ease;
 			}
 		}
 

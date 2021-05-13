@@ -11,7 +11,7 @@ export const Container = styled.div`
 		align-items: center;
 		justify-content: flex-start;
 		padding: 1rem;
-		transition: 1s;
+		transition: 0.5s;
 
 		&:hover {
 			span {

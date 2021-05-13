@@ -13,7 +13,7 @@ export const Button = styled.button`
 	border: none; 
 	z-index: 9999;
 	background-color: ${props => props.theme.tertiaryColor};
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	color: white;
 	box-shadow: 2px 2px 3px ${props => props.theme.boxShadowColor};
 	&:focus {

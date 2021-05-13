@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Styled = styled.div`
+	scrollbar-width: none;
 	#tools {
 		margin-top: 5rem;
 	}
@@ -9,7 +10,7 @@ export const Styled = styled.div`
 export const Title = styled.h1`
 	font-size: 45px;
 	color: ${props => props.theme.titleColor};
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	text-align: center;
 
 	border-radius: 10px;
@@ -30,7 +31,7 @@ export const Details = styled.p`
 	/* background-color: ${props => props.theme.containerColorLighter}; */
 	background-color: ${props => props.theme.transparentContainer};
 	box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	border-radius: 10px;
 	padding: 1rem;
 
@@ -50,7 +51,7 @@ export const Details = styled.p`
 `
 
 export const SkillContainer = styled.div`
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 	text-align: center;
 	padding: 1rem;
 	margin: 0.5rem;
@@ -128,7 +129,7 @@ export const Skill = styled.span`
 	font-weight: 500;
 	color: ${props => props.theme.titleColor};
 	font-size: 1.3rem;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 
 	@media (max-width: 1200px) {
 		font-size: 1.15rem;
