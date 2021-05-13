@@ -7,7 +7,8 @@ import { GlobalStyles } from './components/DarkMode/Globalstyle'
 import { lightTheme, darkTheme } from './components/DarkMode/Themes'
 import ScrollToTop from './helpers/ScrollToTop'
 import DarkModeToggle from './components/DarkModeToggle'
-import Background from './containers/Background'
+import Particles from './components/Particles'
+// import Background from './containers/Background'
 import Header from './containers/Header'
 import MobileHeader from './containers/MobileHeader'
 import HomePage from './pages/Home'
@@ -30,7 +31,9 @@ const App = () => {
 					<GlobalStyles />
 					<DarkModeToggle theme={theme} toggleTheme={themeToggler} />
 
-					<Background theme={theme} />
+					{/* <Background theme={theme} /> */}
+					<Particles theme={theme}/>
+
 					<Header theme={theme} />
 					<MobileHeader theme={theme} />
 
