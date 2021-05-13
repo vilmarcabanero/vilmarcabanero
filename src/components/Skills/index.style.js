@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Styled = styled.div`
-	scrollbar-width: none;
 	#tools {
 		margin-top: 5rem;
 	}
@@ -75,7 +74,7 @@ export const SkillContainer = styled.div`
 		height: 150px;
 
 		#gitlab-ci-cd {
-			font-size: 1.1rem;
+			font-size: 1rem;
 		}
 
 		#sublime-text {
