@@ -19,6 +19,7 @@ import expressjs from '../../assets/images/logo-expressjs.png'
 import react from '../../assets/images/logo-react.png'
 import heroku from '../../assets/images/logo-heroku.png'
 import git from '../../assets/images/logo-git.png'
+import github from '../../assets/images/logo-github.png'
 import gitlabcicd from '../../assets/images/logo-gitlab-ci-cd.png'
 import rest from '../../assets/images/logo-rest.png'
 import postman from '../../assets/images/logo-postman.png'
@@ -146,6 +147,18 @@ const tools = [
 		id: '',
 	},
 	{
+		tool: 'git',
+		src: git,
+		alt: 'git',
+		id: '',
+	},
+	{
+		tool: 'github',
+		src: github,
+		alt: 'github',
+		id: '',
+	},
+	{
 		tool: 'Gitlab CI/CD',
 		src: gitlabcicd,
 		alt: 'Gitlab CI/CD',
@@ -158,12 +171,7 @@ const tools = [
 		alt: 'heroku',
 		id: '',
 	},
-	{
-		tool: 'git',
-		src: git,
-		alt: 'git',
-		id: '',
-	},
+
 ]
 
 export default Skills
