@@ -25,13 +25,13 @@ const Projects = () => {
 									/>
 									<Card.Body>
 										<Card.Title className='card-title'>
-											{items.title}{' '}
+											{items.title}
 										</Card.Title>
 										<Card.Text className='card-text'>
 											{items.description}
 										</Card.Text>
 										<Row className='icon-row'>
-											<Col className={forLink}>
+											<Col className='d-flex justify-content-end align-items-center'>
 												<Link
 													href={items.hrefWeb}
 													target='_blank'
@@ -44,7 +44,7 @@ const Projects = () => {
 												</Link>
 											</Col>
 
-											<Col className={forLink}>
+											<Col className='d-flex justify-content-start align-items-center'>
 												<Link
 													href={items.hrefGitHub}
 													target='_blank'
@@ -69,7 +69,6 @@ const Projects = () => {
 	)
 }
 
-const forLink = 'd-flex justify-content-start align-items-center'
 
 const niventaWeb = 'https://niventa.vilmarcabanero.com'
 const niventaGithub = 'https://github.com/vilmarcabanero/niventa-client'

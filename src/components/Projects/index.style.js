@@ -75,7 +75,7 @@ export const Title = styled.h1`
 	padding-top: 0.25rem;
 	padding-bottom: 0.5rem;
 	border-radius: 5px;
-/* 
+	/* 
 	box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor}; */
 
 	@media (max-width: 1200px) {
@@ -93,9 +93,14 @@ export const Link = styled.a`
 	box-shadow: 3px 3px 6px #fff;
 	margin-right: 4px;
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 45px;
+	height: 45px;
 	transition: 0.5s;
+
+	.icon {
+		width: 30px;
+		height: 30px;
+	}
 
 	&:hover {
 		background: #149ddd;
@@ -105,7 +110,7 @@ export const Link = styled.a`
 		box-shadow: 1px 1px 2px #fff;
 	}
 
-	@media (min-width: 992px) {
+	@media (max-width: 992px) {
 		margin-right: 2rem;
 		width: 45px;
 		height: 45px;
