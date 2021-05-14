@@ -10,7 +10,7 @@ export const Container = styled.div`
 	/* background-color: rgba(0, 0, 0, 0.7); */
 	/* background-color: ${props => props.theme.headerBackground}; */
 	background-color: ${({theme}) => theme.headerBackground};
-	box-shadow: 2px 2px 4px ${({theme}) => theme.boxShadowColor};
+	box-shadow: 1px 1px 2px ${({theme}) => theme.boxShadowColor};
 	border-radius: 15px;
 
 	transition: all ease-in-out 0.5s;
@@ -18,7 +18,7 @@ export const Container = styled.div`
 	/* padding: 5rem; */
 
 	&:hover {
-		box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
+		box-shadow: 0px 0px 1px ${props => props.theme.boxShadowColor};
 	}
 
 	@media (max-width: 992px) {

@@ -7,7 +7,7 @@ export const Section = styled.section`
 	flex-direction: column;
 	color: ${props => props.theme.titleColor};
 	background-color: transparent;
-	box-shadow: 2px 2px 4px ${props => props.theme.boxShadowColor};
+	box-shadow: 1px 1px 2px ${props => props.theme.boxShadowColor};
 	padding: 2rem;
 	border-radius: 10px;
 
