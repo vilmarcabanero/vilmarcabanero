@@ -5,6 +5,7 @@ export const MainContainer = styled.div`
 	margin-left: 300px;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
+	overflow-y: auto;
 
 
 	@media (max-width: 992px) {

@@ -8,13 +8,13 @@
     <ul>
         <li><strong>What I'm currently building?</strong>
             <ul>
-                <li> <i>Entropiya<a href="https://github.com/vilmarcabanero/entropiya-client">📦</a> </i>
+                <li> <i>Entropiya <a href="https://github.com/vilmarcabanero/entropiya-client">📦</a> </i>
                     <ul>
                         <li>Entropiya is an educational website which provides online review for licensure exam takers. </li>
                         <li>This is written in React and Node / Express.</li>
                     </ul>
                 </li>
-                <li> <i> Niventa<a href="https://github.com/vilmarcabanero/niventa-client">📦</a> </i>
+                <li> <i> Niventa <a href="https://github.com/vilmarcabanero/niventa-client">📦</a> </i>
                     <ul>
                         <li>Niventa is an e-commerce website, which envisions to be a full fledged production ready website that will be used by online sellers of Burauen, Leyte. </li>
                         <li>This is also written in React and Node / Express.</li>

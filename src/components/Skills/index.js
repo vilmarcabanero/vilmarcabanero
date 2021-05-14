@@ -25,6 +25,7 @@ import rest from '../../assets/images/logo-rest.png'
 import postman from '../../assets/images/logo-postman.png'
 import bootstrap from '../../assets/images/logo-bootstrap.png'
 import materialui from '../../assets/images/logo-material-ui.png'
+import tailwind from '../../assets/images/logo-tailwind.svg'
 import vscode from '../../assets/images/logo-vscode.png'
 // import sublimetext from '../../assets/images/logo-sublime-text-3.png'
 
@@ -118,6 +119,13 @@ const skills = [
 		alt: 'mongodb',
 		id: '',
 	},
+	{
+		skill: 'tailwind css',
+		src: tailwind,
+		alt: 'tailwind css',
+		id: 'tailwind-css',
+	},
+
 	{
 		skill: 'material ui',
 		src: materialui,

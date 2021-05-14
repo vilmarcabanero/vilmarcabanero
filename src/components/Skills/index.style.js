@@ -62,7 +62,8 @@ export const SkillContainer = styled.div`
 	width: 160px;
 	height: 160px;
 
-	#gitlab-ci-cd {
+	#gitlab-ci-cd,
+	#tailwind-css {
 		font-size: 1.1rem;
 	}
 	#material-ui {
@@ -73,7 +74,8 @@ export const SkillContainer = styled.div`
 		width: 150px;
 		height: 150px;
 
-		#gitlab-ci-cd {
+		#gitlab-ci-cd,
+		#tailwind-css {
 			font-size: 1rem;
 		}
 
@@ -89,7 +91,8 @@ export const SkillContainer = styled.div`
 	@media (max-width: 768px) {
 		width: 130px;
 		height: 130px;
-		#gitlab-ci-cd {
+		#gitlab-ci-cd,
+		#tailwind-css {
 			font-size: 0.7rem;
 		}
 
@@ -106,7 +109,8 @@ export const SkillContainer = styled.div`
 		width: 120px;
 		height: 120px;
 
-		#gitlab-ci-cd {
+		#gitlab-ci-cd,
+		#tailwind-css {
 			font-size: 0.7rem;
 		}
 
