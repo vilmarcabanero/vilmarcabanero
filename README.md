@@ -8,9 +8,24 @@
     <ul>
         <li><strong>What I'm currently building?</strong>
             <ul>
-                <li>Entropiya<a href="https://github.com/vilmarcabanero/entropiya-client">📦</a></li>
-                <li>Niventa<a href="https://github.com/vilmarcabanero/niventa-client">📦</a></li>
-                <li>Portfolio <a href="https://github.com/vilmarcabanero/vilmarcabanero">📦</a></li>
+                <li> <i>Entropiya<a href="https://github.com/vilmarcabanero/entropiya-client">📦</a> </i>
+                    <ul>
+                        <li>Entropiya is an educational website which provides online review for licensure exam takers. </li>
+                        <li>This is written in React and Node / Express.</li>
+                    </ul>
+                </li>
+                <li> <i> Niventa<a href="https://github.com/vilmarcabanero/niventa-client">📦</a> </i>
+                    <ul>
+                        <li>Niventa is an e-commerce website, which envisions to be a full fledged production ready website that will be used by online sellers of Burauen, Leyte. </li>
+                        <li>This is also written in React and Node / Express.</li>
+                    </ul>
+                </li>
+                <li> <i> Portfolio <a href="https://github.com/vilmarcabanero/vilmarcabanero">📦</a> </i>
+                    <ul>
+                        <li>This is my official portfolio website.</li>
+                        <li>This is also written in React and for the design, I just used Vanilla CSS.</li>
+                    </ul>
+                </li>
             </ul>
         </li><br/>
         <li><strong>What I'm planning to study?</strong>
@@ -25,10 +40,8 @@
 <h2><samp>📈 GITHUB STATISTICS</samp></h2>
 
 
-<!-- <p align="center">
+<img width='100%' src="https://github-profile-trophy.vercel.app/?username=vilmarcabanero&theme=oldie&title=Commit,Issues,Stars,PullRequest,Repositories,Followers">
 
-
-</p> -->
 
 <p align="center">
 <img width="49%" heigth="100%" style="display:inline" align="center" src="https://github-readme-stats.vercel.app/api?username=vilmarcabanero&show_icons=true&line_height=25&count_private=true&theme=gotham&card_width=300&include_all_commits=true" />
