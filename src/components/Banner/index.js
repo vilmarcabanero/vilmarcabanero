@@ -8,7 +8,7 @@ import {
 	faGithub,
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
-const facebook = 'https://www.facebook.com/io.cabanero'
+const facebook = 'https://www.facebook.com/vilmarcabanero'
 const linkedin = 'https://www.linkedin.com/in/vilmar-caba%C3%B1ero-b189a9184/'
 const github = 'https://github.com/vilmarcabanero'
 

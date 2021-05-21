@@ -10,6 +10,16 @@ import {
 import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import Main from 'containers/Main'
+import html5 from 'assets/images/logo-html5.png'
+import css3 from 'assets/images/logo-css3.png'
+import javascript from 'assets/images/logo-javascript.png'
+import react from 'assets/images/logo-react.png'
+import nodejs from 'assets/images/logo-nodejs.png'
+import expressjs from 'assets/images/logo-heroku.png'
+import rest from 'assets/images/logo-rest.png'
+import mongodb from 'assets/images/logo-mongodb.png'
+import tailwind from 'assets/images/logo-tailwind.svg'
+import material from 'assets/images/logo-material-ui.png'
 
 const Skills = () => {
 	return (
@@ -30,19 +40,6 @@ const Skills = () => {
 							</SkillContainer>
 						))}
 					</ImageContainer>
-
-					<Title id='tools'>Tools</Title>
-					<Details>
-						These are the tools I've been using for my development.
-					</Details>
-					<ImageContainer>
-						{tools.map(items => (
-							<SkillContainer>
-								<Skill id={items.id}>{items.tool}</Skill>
-								<Image src={items.src} id={items.imgId} alt={items.alt} />
-							</SkillContainer>
-						))}
-					</ImageContainer>
 				</Styled>
 			</Main>
 		</Container>
@@ -52,116 +49,68 @@ const Skills = () => {
 const skills = [
 	{
 		skill: 'html5',
-		src: 'assets/images/logo-html5.png',
+		src: html5,
 		alt: 'html5',
 		id: '',
 	},
 	{
 		skill: 'css3',
-		src: 'assets/images/logo-css3.png',
+		src: css3,
 		alt: 'css3',
 		id: '',
 	},
 	{
 		skill: 'javascript',
-		src: 'assets/images/logo-javascript.png',
+		src: javascript,
 		alt: 'javascript',
 		id: '',
 	},
 	{
 		skill: 'react',
-		src: 'assets/images/logo-react.png',
+		src: react,
 		alt: 'react',
 		id: '',
 		imgId: 'react',
 	},
 	{
 		skill: 'nodejs',
-		src: 'assets/images/logo-nodejs.png',
+		src: nodejs,
 		alt: 'nodejs',
 		id: '',
 		imgId: 'node-js',
 	},
 	{
 		skill: 'expressjs',
-		src: 'assets/images/logo-heroku.png',
+		src: expressjs,
 		alt: 'expressjs',
 		id: '',
 	},
 	{
 		skill: 'rest',
-		src: 'assets/images/logo-rest.png',
+		src: rest,
 		alt: 'rest',
 		id: '',
 	},
 
 	{
 		skill: 'mongodb',
-		src: 'assets/images/logo-mongodb.png',
+		src: mongodb,
 		alt: 'mongodb',
 		id: '',
 	},
 	{
 		skill: 'tailwind css',
-		src: 'assets/images/logo-tailwind.svg',
+		src: tailwind,
 		alt: 'tailwind css',
 		id: 'tailwind-css',
 	},
 
 	{
 		skill: 'material ui',
-		src: 'assets/images/logo-material-ui.png',
+		src: material,
 		alt: 'materialui',
 		id: 'material-ui',
 	},
-
-	{
-		skill: 'bootstrap',
-		src: 'assets/images/logo-bootstrap.png',
-		alt: 'bootstrap',
-		id: '',
-	},
-]
-
-const tools = [
-	{
-		tool: 'VS Code',
-		src: 'assets/images/logo-vscode.png',
-		alt: 'vscode',
-		id: '',
-	},
-	{
-		tool: 'postman',
-		src: 'assets/images/logo-postman.png',
-		alt: 'postman',
-		id: '',
-	},
-	{
-		tool: 'git',
-		src: 'assets/images/logo-git.png',
-		alt: 'git',
-		id: '',
-	},
-	{
-		tool: 'github',
-		src: 'assets/images/logo-github.png',
-		alt: 'github',
-		id: '',
-	},
-	{
-		tool: 'Gitlab CI/CD',
-		src: 'assets/images/logo-gitlab-ci-cd.png',
-		alt: 'Gitlab CI/CD',
-		id: 'gitlab-ci-cd',
-		imgId: 'gitlab-ci-cd-img',
-	},
-	{
-		tool: 'heroku',
-		src: 'assets/images/logo-heroku.png',
-		alt: 'heroku',
-		id: '',
-	},
-
 ]
 
 export default Skills

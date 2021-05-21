@@ -21,7 +21,7 @@ const SocialLinks = () => {
 
 const links = [
 	{
-		href: 'https://www.facebook.com/io.cabanero',
+		href: 'https://www.facebook.com/vilmarcabanero',
 		icon: faFacebookF,
 	},
 	{
