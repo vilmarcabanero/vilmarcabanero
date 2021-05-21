@@ -1,13 +1,13 @@
-import Routes from './Routes'
+import Routes from 'Routes'
 import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from './components/DarkMode/useDarkMode'
-import { GlobalStyles } from './components/DarkMode/Globalstyle'
-import { lightTheme, darkTheme } from './components/DarkMode/Themes'
-import ScrollToTop from './helpers/ScrollToTop'
-import DarkModeToggle from './components/DarkModeToggle'
-import Particles from './components/Particles'
-import Header from './containers/Header'
-import MobileHeader from './containers/MobileHeader'
+import { useDarkMode } from 'components/DarkMode/useDarkMode'
+import { GlobalStyles } from 'components/DarkMode/Globalstyle'
+import { lightTheme, darkTheme } from 'components/DarkMode/Themes'
+import ScrollToTop from 'helpers/ScrollToTop'
+import DarkModeToggle from 'components/DarkModeToggle'
+import Particles from 'components/Particles'
+import Header from 'containers/Header'
+import MobileHeader from 'containers/MobileHeader'
 
 const App = () => {
 	const [theme, themeToggler, mountedComponent] = useDarkMode()

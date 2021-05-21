@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import Skills from '../components/Skills'
+import Skills from 'components/Skills'
 
 const SkillsPage = () => {
 	return (

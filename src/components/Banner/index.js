@@ -1,5 +1,5 @@
 import { Section, Name, Details, Link } from './index.style'
-import Main from '../../containers/Main'
+import Main from 'containers/Main'
 import { Container, Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

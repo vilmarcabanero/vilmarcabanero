@@ -1,5 +1,5 @@
 import { Container } from './index.style'
-import MobileNavLinks from '../../components/MobileNavLinks'
+import MobileNavLinks from 'components/MobileNavLinks'
 
 const MobileHeader = () => {
 	return (

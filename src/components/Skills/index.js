@@ -9,25 +9,7 @@ import {
 } from './index.style'
 import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
-import Main from '../../containers/Main'
-import html5 from '../../assets/images/logo-html5.png'
-import css3 from '../../assets/images/logo-css3.png'
-import javascript from '../../assets/images/logo-javascript.png'
-import mongodb from '../../assets/images/logo-mongodb.png'
-import nodejs from '../../assets/images/logo-nodejs.png'
-import expressjs from '../../assets/images/logo-expressjs.png'
-import react from '../../assets/images/logo-react.png'
-import heroku from '../../assets/images/logo-heroku.png'
-import git from '../../assets/images/logo-git.png'
-import github from '../../assets/images/logo-github.png'
-import gitlabcicd from '../../assets/images/logo-gitlab-ci-cd.png'
-import rest from '../../assets/images/logo-rest.png'
-import postman from '../../assets/images/logo-postman.png'
-import bootstrap from '../../assets/images/logo-bootstrap.png'
-import materialui from '../../assets/images/logo-material-ui.png'
-import tailwind from '../../assets/images/logo-tailwind.svg'
-import vscode from '../../assets/images/logo-vscode.png'
-// import sublimetext from '../../assets/images/logo-sublime-text-3.png'
+import Main from 'containers/Main'
 
 const Skills = () => {
 	return (
@@ -70,72 +52,72 @@ const Skills = () => {
 const skills = [
 	{
 		skill: 'html5',
-		src: html5,
+		src: 'assets/images/logo-html5.png',
 		alt: 'html5',
 		id: '',
 	},
 	{
 		skill: 'css3',
-		src: css3,
+		src: 'assets/images/logo-css3.png',
 		alt: 'css3',
 		id: '',
 	},
 	{
 		skill: 'javascript',
-		src: javascript,
+		src: 'assets/images/logo-javascript.png',
 		alt: 'javascript',
 		id: '',
 	},
 	{
 		skill: 'react',
-		src: react,
+		src: 'assets/images/logo-react.png',
 		alt: 'react',
 		id: '',
 		imgId: 'react',
 	},
 	{
 		skill: 'nodejs',
-		src: nodejs,
+		src: 'assets/images/logo-nodejs.png',
 		alt: 'nodejs',
 		id: '',
 		imgId: 'node-js',
 	},
 	{
 		skill: 'expressjs',
-		src: expressjs,
+		src: 'assets/images/logo-heroku.png',
 		alt: 'expressjs',
 		id: '',
 	},
 	{
 		skill: 'rest',
-		src: rest,
+		src: 'assets/images/logo-rest.png',
 		alt: 'rest',
 		id: '',
 	},
 
 	{
 		skill: 'mongodb',
-		src: mongodb,
+		src: 'assets/images/logo-mongodb.png',
 		alt: 'mongodb',
 		id: '',
 	},
 	{
 		skill: 'tailwind css',
-		src: tailwind,
+		src: 'assets/images/logo-tailwind.svg',
 		alt: 'tailwind css',
 		id: 'tailwind-css',
 	},
 
 	{
 		skill: 'material ui',
-		src: materialui,
+		src: 'assets/images/logo-material-ui.png',
 		alt: 'materialui',
 		id: 'material-ui',
 	},
 
 	{
 		skill: 'bootstrap',
-		src: bootstrap,
+		src: 'assets/images/logo-bootstrap.png',
 		alt: 'bootstrap',
 		id: '',
 	},
@@ -144,38 +126,38 @@ const skills = [
 const tools = [
 	{
 		tool: 'VS Code',
-		src: vscode,
+		src: 'assets/images/logo-vscode.png',
 		alt: 'vscode',
 		id: '',
 	},
 	{
 		tool: 'postman',
-		src: postman,
+		src: 'assets/images/logo-postman.png',
 		alt: 'postman',
 		id: '',
 	},
 	{
 		tool: 'git',
-		src: git,
+		src: 'assets/images/logo-git.png',
 		alt: 'git',
 		id: '',
 	},
 	{
 		tool: 'github',
-		src: github,
+		src: 'assets/images/logo-github.png',
 		alt: 'github',
 		id: '',
 	},
 	{
 		tool: 'Gitlab CI/CD',
-		src: gitlabcicd,
+		src: 'assets/images/logo-gitlab-ci-cd.png',
 		alt: 'Gitlab CI/CD',
 		id: 'gitlab-ci-cd',
 		imgId: 'gitlab-ci-cd-img',
 	},
 	{
 		tool: 'heroku',
-		src: heroku,
+		src: 'assets/images/logo-heroku.png',
 		alt: 'heroku',
 		id: '',
 	},
