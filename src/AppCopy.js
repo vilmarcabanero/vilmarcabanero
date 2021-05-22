@@ -1,4 +1,5 @@
 import './App.scss';
+import MaintainancePage from './PagesCopy/HomePageCopy'
 import NavBar from './ComponentsCopy/NavBar';
 import HomePage from './PagesCopy/HomePage';
 import {Switch, Route} from 'react-router-dom';
@@ -17,19 +18,22 @@ function App() {
 
   return (
     <div className="App">
-      <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
+      {/* <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
         <NavBar />
       </div>
       <div className="nav-btn" onClick={navClick}>
         <div className="lines-1"></div>
         <div className="lines-2"></div>
         <div className="lines-3"></div>
-      </div>
+      </div> */}
       <div className="main-content">
           <div className="content">
             <Switch>
-              <Route path="/" exact>
+              {/* <Route path="/" exact>
                 <HomePage />
+              </Route> */}
+              <Route path="/" exact>
+                <MaintainancePage />
               </Route>
               <Route path="/about" exact>
                 <AboutPage />
