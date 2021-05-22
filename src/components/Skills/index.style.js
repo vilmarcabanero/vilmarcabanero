@@ -4,6 +4,15 @@ export const Styled = styled.div`
 	#tools {
 		margin-top: 5rem;
 	}
+
+	#typescript {
+		padding: 0.75rem;
+	}
+
+	#react-native {
+		padding: 0.65rem;
+	}
+
 `
 
 export const Title = styled.h1`
@@ -70,13 +79,21 @@ export const SkillContainer = styled.div`
 		font-size: 1.2rem;
 	}
 
+	#react-native-skill {
+		font-size: 1.09rem;
+	}
+
 	@media (max-width: 1200px) {
 		width: 150px;
 		height: 150px;
 
 		#gitlab-ci-cd,
-		#tailwind-css {
+		#tailwind-css, #react-native-skill {
 			font-size: 1rem;
+		}
+
+		#react-native-skill {
+			font-size: 0.99rem;
 		}
 
 		#sublime-text {
@@ -92,7 +109,7 @@ export const SkillContainer = styled.div`
 		width: 130px;
 		height: 130px;
 		#gitlab-ci-cd,
-		#tailwind-css {
+		#tailwind-css, #react-native-skill {
 			font-size: 0.7rem;
 		}
 
@@ -110,7 +127,7 @@ export const SkillContainer = styled.div`
 		height: 120px;
 
 		#gitlab-ci-cd,
-		#tailwind-css {
+		#tailwind-css, #react-native-skill {
 			font-size: 0.7rem;
 		}
 
@@ -169,6 +186,8 @@ export const Image = styled.img`
 	height: 80px;
 	margin: 5px;
 	margin-top: 15px;
+
+
 
 	@media (max-width: 1200px) {
 		width: 70px;

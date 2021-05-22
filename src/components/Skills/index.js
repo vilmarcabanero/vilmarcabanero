@@ -5,12 +5,12 @@ import Main from 'containers/Main'
 import html5 from 'assets/images/logo-html5.png'
 import css3 from 'assets/images/logo-css3.png'
 import javascript from 'assets/images/logo-javascript.png'
+import typescript from 'assets/images/logo-ts.png'
 import react from 'assets/images/logo-react.png'
 import nodejs from 'assets/images/logo-nodejs.png'
 import expressjs from 'assets/images/logo-heroku.png'
-import rest from 'assets/images/logo-rest.png'
 import mongodb from 'assets/images/logo-mongodb.png'
-import tailwind from 'assets/images/logo-tailwind.svg'
+import reactnative from 'assets/images/logo-react-native.png'
 import material from 'assets/images/logo-material-ui.png'
 
 const Index = () => {
@@ -58,11 +58,24 @@ const skills = [
 		id: '',
 	},
 	{
+		skill: 'typescript',
+		src: typescript,
+		alt: 'typescript',
+		imgId: 'typescript',
+	},
+	{
 		skill: 'react',
 		src: react,
 		alt: 'react',
 		id: '',
 		imgId: 'react',
+	},
+	{
+		skill: 'React Native',
+		src: reactnative,
+		alt: 'reactnative',
+		id: 'react-native-skill',
+		imgId: 'react-native',
 	},
 	{
 		skill: 'nodejs',
@@ -77,12 +90,6 @@ const skills = [
 		alt: 'expressjs',
 		id: '',
 	},
-	{
-		skill: 'rest',
-		src: rest,
-		alt: 'rest',
-		id: '',
-	},
 
 	{
 		skill: 'mongodb',
@@ -90,13 +97,6 @@ const skills = [
 		alt: 'mongodb',
 		id: '',
 	},
-	{
-		skill: 'tailwind css',
-		src: tailwind,
-		alt: 'tailwind css',
-		id: 'tailwind-css',
-	},
-
 	{
 		skill: 'material ui',
 		src: material,
