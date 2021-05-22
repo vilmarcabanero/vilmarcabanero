@@ -1,16 +1,6 @@
 import { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import {
-	Styled,
-	Form,
-	Title,
-	InputGroup,
-	Input,
-	Placeholder,
-	TextArea,
-	Button,
-	Alert,
-} from './index.style'
+import * as S from './index.style'
 import Main from 'containers/Main'
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -29,30 +19,30 @@ const ContactForm = () => {
 	return (
 		<Container>
 			<Main>
-				<Styled>
+				<S.Styled>
 					<Row className='container-row'>
 						<Col xl={6} lg={8} md={8} className='container-col'>
-							<Form onSubmit={submit}>
-								<Title>Contact me </Title>
+							<S.Form onSubmit={submit}>
+								<S.Title>Contact me </S.Title>
 
 								{inputs.map(items => (
-									<InputGroup>
+									<S.InputGroup>
 										<items.component type={items.type} required />
-										<Placeholder className='placeholder'>
+										<S.Placeholder className='placeholder'>
 											{items.placeholder}
-										</Placeholder>
-									</InputGroup>
+										</S.Placeholder>
+									</S.InputGroup>
 								))}
 
-								<Button type='submit'>Send</Button>
+								<S.Button type='submit'>Send</S.Button>
 
-								<Alert>
+								<S.Alert className={alert ? 'alert' : ''}>
 									{alert ? 'Thank you for getting in touch with me!' : ''}
-								</Alert>
-							</Form>
+								</S.Alert>
+							</S.Form>
 						</Col>
 					</Row>
-				</Styled>
+				</S.Styled>
 			</Main>
 		</Container>
 	)
@@ -60,17 +50,17 @@ const ContactForm = () => {
 
 const inputs = [
 	{
-		component: Input,
+		component: S.Input,
 		type: 'text',
 		placeholder: 'Full Name',
 	},
 	{
-		component: Input,
+		component: S.Input,
 		type: 'text',
 		placeholder: 'Email Address',
 	},
 	{
-		component: TextArea,
+		component: S.TextArea,
 		type: '',
 		placeholder: 'Message',
 	},

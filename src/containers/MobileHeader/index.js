@@ -1,7 +1,7 @@
 import { Container } from './index.style'
 import MobileNavLinks from 'components/MobileNavLinks'
 
-const MobileHeader = () => {
+const Index = () => {
 	return (
 		<Container>
 			<MobileNavLinks />
@@ -9,4 +9,4 @@ const MobileHeader = () => {
 	)
 }
 
-export default MobileHeader
+export default Index

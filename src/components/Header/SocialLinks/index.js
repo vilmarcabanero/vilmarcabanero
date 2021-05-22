@@ -1,4 +1,4 @@
-import { Container, Link } from './index.style'
+import * as S from './index.style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {
@@ -7,15 +7,15 @@ import {
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 
-const SocialLinks = () => {
+const Index = () => {
 	return (
-		<Container>
+		<S.Container>
 			{links.map(items => (
-				<Link href={items.href} target='_blank' rel='noreferrer'>
+				<S.Link href={items.href} target='_blank' rel='noreferrer'>
 					<FontAwesomeIcon className='icon' icon={items.icon} />
-				</Link>
+				</S.Link>
 			))}
-		</Container>
+		</S.Container>
 	)
 }
 
@@ -34,4 +34,4 @@ const links = [
 	},
 ]
 
-export default SocialLinks
+export default Index

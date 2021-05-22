@@ -6,6 +6,29 @@ export const Styled = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
+
+	.alert {
+		color: #173b6c;
+		padding: 0.5rem;
+		background-color: #fff;
+
+		margin-bottom: 0;
+		border-radius: 0 0 10px 10px;
+		width: 100%;
+		font-size: 1.1rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		font-weight: 500;
+
+		transition: all 0.5s ease;
+
+		@media (max-width: 576px) {
+			border-radius: 10px;
+			transition: all 0.5s ease;
+		}
+	}
 `
 export const Form = styled.form`
 	position: relative;
@@ -172,21 +195,4 @@ export const Button = styled.button`
 	}
 `
 
-export const Alert = styled.span`
-	width: 100%;
-	color: #fff;
-	padding: 1rem;
-	background-color: transparent;
-	transition: all 0.5s ease;
-	font-size: 1.1rem;
-	border-radius: 10px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	text-align: center;
-	font-weight: 500;
-
-	@media (max-width: 576px) {
-		border-radius: 10px;
-	}
-`
+export const Alert = styled.span``

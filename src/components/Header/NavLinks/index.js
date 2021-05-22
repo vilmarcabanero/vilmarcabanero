@@ -10,7 +10,7 @@ import {
 	faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
 
-const NavLinks = () => {
+const Index = () => {
 	return (
 		<Container>
 			{navLinks.map(items => (
@@ -46,4 +46,4 @@ const navLinks = [
 	},
 ]
 
-export default NavLinks
+export default Index

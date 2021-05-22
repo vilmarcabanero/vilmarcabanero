@@ -1,12 +1,4 @@
-import {
-	Styled,
-	Title,
-	Details,
-	ImageContainer,
-	Image,
-	SkillContainer,
-	Skill,
-} from './index.style'
+import * as S from './index.style'
 import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import Main from 'containers/Main'
@@ -21,26 +13,26 @@ import mongodb from 'assets/images/logo-mongodb.png'
 import tailwind from 'assets/images/logo-tailwind.svg'
 import material from 'assets/images/logo-material-ui.png'
 
-const Skills = () => {
+const Index = () => {
 	return (
 		<Container>
 			<Main>
-				<Styled>
-					<Title>Skills</Title>
-					<Details>
+				<S.Styled>
+					<S.Title>Skills</S.Title>
+					<S.Details>
 						I'm a full stack developer who uses the MERN Stack to develop my web
 						apps or websites. My current skill set is as follows:
-					</Details>
+					</S.Details>
 
-					<ImageContainer>
+					<S.ImageContainer>
 						{skills.map(items => (
-							<SkillContainer>
-								<Skill id={items.id}>{items.skill}</Skill>
-								<Image src={items.src} id={items.imgId} alt={items.alt} />
-							</SkillContainer>
+							<S.SkillContainer>
+								<S.Skill id={items.id}>{items.skill}</S.Skill>
+								<S.Image src={items.src} id={items.imgId} alt={items.alt} />
+							</S.SkillContainer>
 						))}
-					</ImageContainer>
-				</Styled>
+					</S.ImageContainer>
+				</S.Styled>
 			</Main>
 		</Container>
 	)
@@ -113,4 +105,4 @@ const skills = [
 	},
 ]
 
-export default Skills
+export default Index

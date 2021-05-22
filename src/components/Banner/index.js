@@ -1,4 +1,4 @@
-import { Section, Name, Details, Link } from './index.style'
+import * as S from './index.style'
 import Main from 'containers/Main'
 import { Container, Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -12,23 +12,23 @@ const facebook = 'https://www.facebook.com/vilmarcabanero'
 const linkedin = 'https://www.linkedin.com/in/vilmar-caba%C3%B1ero-b189a9184/'
 const github = 'https://github.com/vilmarcabanero'
 
-const Banner = () => {
+const Index = () => {
 	return (
 		<Container>
 			<Main>
-				<Section className='text-center'>
+				<S.Section className='text-center'>
 					<Row>
-						<Name>Hi, I'm Vilmar.</Name>
-						<Details>I'm an Engineer and Full Stack Developer.</Details>
+						<S.Name>Hi, I'm Vilmar.</S.Name>
+						<S.Details>I'm a Mechanical and Software Engineer</S.Details>
 					</Row>
 					<Row>
 						{links.map(items => (
-							<Link href={items.href} target='_blank' rel='noreferrer'>
+							<S.Link href={items.href} target='_blank' rel='noreferrer'>
 								<FontAwesomeIcon className='icon' icon={items.icon} />
-							</Link>
+							</S.Link>
 						))}
 					</Row>
-				</Section>
+				</S.Section>
 			</Main>
 		</Container>
 	)
@@ -48,4 +48,4 @@ const links = [
 		icon: faGithub,
 	},
 ]
-export default Banner
+export default Index

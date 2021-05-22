@@ -3,7 +3,7 @@ import ProfilePicture from 'components/Header/ProfilePicture'
 import SocialLinks from 'components/Header/SocialLinks'
 import NavLinks from 'components/Header/NavLinks'
 
-const Header = () => {
+const Index = () => {
 	return (
 		<Container>
 			<ProfilePicture />
@@ -14,4 +14,4 @@ const Header = () => {
 	)
 }
 
-export default Header
+export default Index

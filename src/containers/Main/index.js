@@ -1,7 +1,7 @@
 import { MainContainer } from './index.style'
 
-const Main = props => {
+const Index = props => {
 	return <MainContainer>{props.children}</MainContainer>
 }
 
-export default Main
+export default Index
