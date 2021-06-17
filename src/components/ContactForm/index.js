@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import * as S from './index.style'
-import Main from 'containers/Main'
-import 'bootstrap/dist/css/bootstrap.css'
+import { useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import * as S from './index.style';
+import Main from 'containers/Main';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const ContactForm = () => {
-	const [alert, setAlert] = useState(false)
+	const [alert, setAlert] = useState(false);
 
 	const submit = e => {
-		e.preventDefault()
-		setAlert(true)
+		e.preventDefault();
+		setAlert(true);
 
 		setTimeout(() => {
-			setAlert(false)
-		}, 4000)
-	}
+			setAlert(false);
+		}, 4000);
+	};
 
 	return (
 		<Container>
@@ -36,17 +36,19 @@ const ContactForm = () => {
 
 								<S.Button type='submit'>Send</S.Button>
 
-								<S.Alert className={alert ? 'alert' : ''}>
-									{alert ? 'Thank you for getting in touch with me!' : ''}
-								</S.Alert>
+								{alert && (
+									<S.Alert className={alert ? 'alert' : ''}>
+										Thank you for getting in touch with me!
+									</S.Alert>
+								)}
 							</S.Form>
 						</Col>
 					</Row>
 				</S.Styled>
 			</Main>
 		</Container>
-	)
-}
+	);
+};
 
 const inputs = [
 	{
@@ -64,6 +66,6 @@ const inputs = [
 		type: '',
 		placeholder: 'Message',
 	},
-]
+];
 
-export default ContactForm
+export default ContactForm;
