@@ -76,7 +76,7 @@ const entropiyaWeb = 'https://www.entropiya.ph/'
 const entropiyaGithub = 'https://github.com/vilmarcabanero/entropiya-client'
 
 const niventaDescription = `Niventa is an e-commerce website written in React for the front end, and Node / Express for the back end.`
-const entropiyaDescription = `Entropiya is an educational website which provides online review for licensure exam takers. This is written in React and Node /  Express.  `
+const entropiyaDescription = `Entropiya would be an educational website which provides online review for licensure exam takers. This is written in React and Node /  Express.  Currently under development.`
 
 const cards = [
 	// {
