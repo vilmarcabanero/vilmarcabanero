@@ -14,12 +14,6 @@
                         <li>This is written in React and Node / Express.</li>
                     </ul>
                 </li>
-                <li> <i> Niventa <a href="https://github.com/vilmarcabanero/niventa-client">📦</a> </i>
-                    <ul>
-                        <li>Niventa is an e-commerce website, which envisions to be a full fledged production ready website that will be used by online sellers of Burauen, Leyte. </li>
-                        <li>This is also written in React and Node / Express.</li>
-                    </ul>
-                </li>
                 <li> <i> Portfolio <a href="https://github.com/vilmarcabanero/vilmarcabanero">📦</a> </i>
                     <ul>
                         <li>This is my official portfolio website.</li>
