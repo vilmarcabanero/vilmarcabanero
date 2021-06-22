@@ -32,7 +32,7 @@ const navLinks = [
 	{
 		to: '/skills',
 		icon: faCode,
-		title: 'Skills',
+		title: 'Skill Set',
 	},
 	{
 		to: '/projects',

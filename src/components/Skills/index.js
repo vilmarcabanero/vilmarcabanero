@@ -18,7 +18,7 @@ const Index = () => {
 		<Container>
 			<Main>
 				<S.Styled>
-					<S.Title>Skills</S.Title>
+					<S.Title>Skill Set</S.Title>
 					<S.Details>
 						I'm a full stack developer who uses the MERN Stack to develop my web
 						apps or websites. My current skill set is as follows:

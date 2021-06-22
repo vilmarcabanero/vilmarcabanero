@@ -18,11 +18,11 @@ const Projects = () => {
 						{cards.map(items => (
 							<Col md={6} className='card-col'>
 								<Card className='card'>
-									<Card.Img
+									{/* <Card.Img
 										variant='top'
 										src={items.src}
 										className='card-img'
-									/>
+									/> */}
 									<Card.Body>
 										<Card.Title className='card-title'>
 											{items.title}
@@ -79,15 +79,15 @@ const niventaDescription = `Niventa is an e-commerce website written in React fo
 const entropiyaDescription = `Entropiya is an educational website which provides online review for licensure exam takers. This is written in React and Node /  Express.  `
 
 const cards = [
-	{
-		src: niventa,
-		title: 'Niventa',
-		description: niventaDescription,
-		hrefWeb: niventaWeb,
-		iconWeb: faGlobe,
-		hrefGitHub: niventaGithub,
-		iconGithub: faGithub,
-	},
+	// {
+	// 	src: niventa,
+	// 	title: 'Niventa',
+	// 	description: niventaDescription,
+	// 	hrefWeb: niventaWeb,
+	// 	iconWeb: faGlobe,
+	// 	hrefGitHub: niventaGithub,
+	// 	iconGithub: faGithub,
+	// },
 	{
 		src: entropiya,
 		title: 'Entropiya',
@@ -95,6 +95,60 @@ const cards = [
 		hrefWeb: entropiyaWeb,
 		iconWeb: faGlobe,
 		hrefGitHub: entropiyaGithub,
+		iconGithub: faGithub,
+	},
+	{
+		// src: entropiya,
+		title: 'Task',
+		description: 'This is a simple but full stack task app, with user authentication. It uses the React/Node technology.',
+		hrefWeb: 'https://task.vilmarcabanero.com',
+		iconWeb: faGlobe,
+		hrefGitHub: 'https://github.com/vilmarcabanero/task',
+		iconGithub: faGithub,
+	},
+	{
+		// src: entropiya,
+		title: 'Fiona',
+		description: 'This would be a full stack social media app. It will use the React/Node technology. Currently under development.',
+		hrefWeb: 'https://fiona.vilmarcabanero.com',
+		iconWeb: faGlobe,
+		hrefGitHub: 'https://github.com/vilmarcabanero/fiona',
+		iconGithub: faGithub,
+	},
+	{
+		// src: entropiya,
+		title: 'Gasto v1.0',
+		description: 'This is an expense tracker app developed using React. Current version uses local storage.',
+		hrefWeb: 'https://gasto-v1.vilmarcabanero.com',
+		iconWeb: faGlobe,
+		hrefGitHub: 'https://github.com/vilmarcabanero/gasto-v1',
+		iconGithub: faGithub,
+	},
+	{
+		// src: entropiya,
+		title: 'Gasto v2.0',
+		description: 'This would be a full stack expense tracker app that will use the React/Node technology.  Currently under development.',
+		hrefWeb: 'https://gasto.vilmarcabanero.com',
+		iconWeb: faGlobe,
+		hrefGitHub: 'https://github.com/vilmarcabanero/gasto',
+		iconGithub: faGithub,
+	},
+	{
+		// src: entropiya,
+		title: 'My Portfolio',
+		description: 'This website was developed using React. As for styling, I used styled-components.',
+		hrefWeb: 'https://vilmarcabanero.com',
+		iconWeb: faGlobe,
+		hrefGitHub: 'https://github.com/vilmarcabanero/vilmarcabanero',
+		iconGithub: faGithub,
+	},
+	{
+		// src: entropiya,
+		title: 'Niventa API',
+		description: 'This is an e-commerce api writen in Node. This features adding items to cart, updating the cart and clearing the cart, with full user authentication.',
+		hrefWeb: 'https://niventa-api-2.herokuapp.com',
+		iconWeb: faGlobe,
+		hrefGitHub: 'https://github.com/vilmarcabanero/niventa-api-cap2',
 		iconGithub: faGithub,
 	},
 ]
