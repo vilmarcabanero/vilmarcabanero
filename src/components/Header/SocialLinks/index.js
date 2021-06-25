@@ -25,7 +25,7 @@ const links = [
 		icon: faFacebookF,
 	},
 	{
-		href: 'https://www.linkedin.com/in/vilmar-caba%C3%B1ero-b189a9184/',
+		href: 'https://www.linkedin.com/in/vilmarcabanero/',
 		icon: faLinkedin,
 	},
 	{

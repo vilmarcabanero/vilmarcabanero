@@ -9,7 +9,7 @@ import {
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 const facebook = 'https://www.facebook.com/vilmarcabanero'
-const linkedin = 'https://www.linkedin.com/in/vilmar-caba%C3%B1ero-b189a9184/'
+const linkedin = 'https://www.linkedin.com/in/vilmarcabanero/'
 const github = 'https://github.com/vilmarcabanero'
 
 const Index = () => {
