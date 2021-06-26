@@ -127,7 +127,7 @@ const cards = [
 	{
 		// src: entropiya,
 		title: 'Gasto v2.0',
-		description: 'This would be a full stack expense tracker app that will use the React/Node technology.  Currently under development.',
+		description: 'This would be a full stack expense tracker app that will use the React/Node technology.  As for the CSS framework, I used the Material UI.',
 		hrefWeb: 'https://gasto.vilmarcabanero.com',
 		iconWeb: faGlobe,
 		hrefGitHub: 'https://github.com/vilmarcabanero/gasto',
