@@ -1,4 +1,4 @@
-<img width="100%" height="100%" style="display:inline; border-radius:5px; box-shadow: 5px 5px 10px gray;" align="center" src="./banner.JPG" />
+<!-- <img width="100%" height="100%" style="display:inline; border-radius:5px; box-shadow: 5px 5px 10px gray;" align="center" src="./banner.JPG" /> -->
 
 [//]: # 'IMG SHIELDS FROM: https://github.com/alexandresanlim/Badges4-README.md-Profile'
 
