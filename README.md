@@ -1,20 +1,12 @@
 <h1 align="center" style="margin-bottom: 8px;">Hi 👋, I'm Vil</h1>
 
-- 🔭 I’m currently focusing on **Fullstack Development**
+- 👨‍💻 My personal projects are available at [https://vilmarcabanero.com/](https://vilmarcabanero.com/)
 
-- 👨‍💻 Some of my personal projects are available at [https://vilmarcabanero.com/](https://vilmarcabanero.com/)
-
-- 📫 How to reach me **https://www.linkedin.com/in/vilmarcabanero/**
+- 🔗 You can connect with me on LinkedIn at [https://www.linkedin.com/in/vilmarcabanero/](https://www.linkedin.com/in/vilmarcabanero/)
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=vilmarcabanero&theme=darcula&border_radius=15&card_width=1000)](https://git.io/streak-stats)
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/vilmarcabanero/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="vilmarcabanero" height="30" width="40" /></a>
-<a href="https://fb.com/vilmarcabanero" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="vilmarcabanero" height="30" width="40" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
+<h3 align="left" style="margin-top: -14px; margin-bottom: 4px; padding-top: 0;">Languages and Tools:</h3>
 <p align="left">
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
