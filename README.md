@@ -1,9 +1,6 @@
 <h1 align="center" style="margin-bottom: 8px;">Hi 👋, I'm Vil</h1>
-<h3 align="center" style="margin-top: 0;">A Computer Enthusiast and Software Engineer</h3>
 
 - 🔭 I’m currently focusing on **Fullstack Development**
-
-- 🌱 Motto: **Future is in our hands, create it.**
 
 - 👨‍💻 Some of my personal projects are available at [https://vilmarcabanero.com/](https://vilmarcabanero.com/)
 
