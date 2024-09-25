@@ -1,0 +1,32 @@
+JavaScript
+TypeScript
+React
+CSS3
+Tailwind CSS
+Mantine
+Material UI
+Next.js
+Redux
+React Native
+Node.js
+Express
+MongoDB
+PostgreSQL
+AWS
+Kotlin
+Jetpack Compose
+Java
+Spring Boot
+SQLite
+Jest
+Pytest
+Vitest
+Cypress
+Selenium
+Docker
+Kubernetes
+Git
+GraphQL
+Linux
+Figma
+
