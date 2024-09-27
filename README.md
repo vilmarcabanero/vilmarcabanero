@@ -1,11 +1,12 @@
-<h1 align="center" style="margin-bottom: 8px;">Hi 👋, I'm Vil</h1>
+<!-- <h1 align="center" style="margin-bottom: 8px;">Hi 👋, I'm Vil</h1>
 
 - 👨‍💻 My personal projects are available at [https://vilmarcabanero.com/](https://vilmarcabanero.com/)
 
-- 🔗 You can connect with me on LinkedIn at [https://www.linkedin.com/in/vilmarcabanero/](https://www.linkedin.com/in/vilmarcabanero/)
+- 🔗 You can connect with me on LinkedIn at [https://www.linkedin.com/in/vilmarcabanero/](https://www.linkedin.com/in/vilmarcabanero/) -->
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=vilmarcabanero&theme=darcula&border_radius=15&card_width=1000)](https://git.io/streak-stats)
 
+<!-- 
 <h3 align="left" style="margin-top: -14px; margin-bottom: 4px; padding-top: 0;">Languages and Tools:</h3>
 <p align="left">
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
@@ -97,6 +98,7 @@
   </a>
 </p>
 
+ -->
 
 <!--
 <h3 align="left">Languages and Tools:</h3>
