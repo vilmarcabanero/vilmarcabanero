@@ -3,9 +3,7 @@
 - 👨‍💻 My personal projects are available at [https://vilmarcabanero.com/](https://vilmarcabanero.com/)
 
 - 🔗 You can connect with me on LinkedIn at [https://www.linkedin.com/in/vilmarcabanero/](https://www.linkedin.com/in/vilmarcabanero/) -->
-
 ![](https://komarev.com/ghpvc/?vilmarcabanero=your-github-username&color=blue&style=pixel)
-
 [![GitHub Streak](https://streak-stats.demolab.com?user=vilmarcabanero&theme=darcula&border_radius=15&card_width=1000)](https://git.io/streak-stats)
 
 <!-- 
